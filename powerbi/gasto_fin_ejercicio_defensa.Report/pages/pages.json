@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/pagesMetadata/1.1.0/schema.json",
+  "pageOrder": [
+    "resumen",
+    "serie",
+    "65f97b4ae7d01b01762b",
+    "concentracion",
+    "picos",
+    "cierre",
+    "linea_base",
+    "linea_base_tipo",
+    "adjudicatarios",
+    "menores",
+    "contexto",
+    "metodo"
+  ],
+  "activePageName": "resumen"
+}

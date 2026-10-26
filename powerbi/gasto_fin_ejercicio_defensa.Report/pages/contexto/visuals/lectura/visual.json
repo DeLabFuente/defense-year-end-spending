@@ -1,0 +1,82 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "lectura",
+  "position": {
+    "x": 1290,
+    "y": 584,
+    "z": 5,
+    "height": 472,
+    "width": 606,
+    "tabOrder": 5
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Cómo leerlo",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "16pt",
+                      "color": "#2A7F8F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Euros constantes: cada año se multiplica por el deflactor del PIB hasta llevarlo a precios de 2025. 2026 queda en euros corrientes hasta que haya datos del año.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#374151"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• El umbral de programa especial (100 M€) se mide también en euros de 2025; con los datos actuales no cambia ningún expediente de clase.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#374151"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• La OTAN incluye gasto que no es contratación de la sección 14 (pensiones, otros ministerios). Sirve para ver el tamaño del esfuerzo, no para cuadrar con la plataforma.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#374151"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Fuentes: INE (IPC), Eurostat con datos del INE (PIB y deflactor), OTAN (gasto en defensa; 2024 y 2025 estimados) e IGAE. Detalle en macro_2017_2026.csv.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#4B5563"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
