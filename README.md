@@ -4,6 +4,17 @@
 
 **Herramientas:** Power BI (modelo semántico, DAX, Power Query, tema propio `DefensaSobrio`), Python y JavaScript para la extracción de datos.
 
+## Capturas
+
+![Resumen: cuatro conclusiones](capturas/01_resumen.png)
+
+| | |
+|---|---|
+| ![Serie 2017-2026](capturas/02_serie_2017_2026.png) | ![Cómo se adjudica en el cierre](capturas/03_como_se_adjudica.png) |
+| Serie 2017-2026 y sucesos | Cómo se adjudica en el cierre |
+| ![Defensa frente al resto del sector público](capturas/04_frente_sector_publico.png) | El informe completo, con sus 12 páginas, está en [`informe_gasto_fin_ejercicio_defensa.pdf`](informe_gasto_fin_ejercicio_defensa.pdf). |
+| Defensa frente al resto del sector público | |
+
 ## Principios
 
 - **Solo datos públicos.** Nada interno, nada de destinos propios ni de casos conocidos por el servicio (deber de reserva).
