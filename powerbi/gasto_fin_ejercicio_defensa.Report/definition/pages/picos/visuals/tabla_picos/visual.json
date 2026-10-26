@@ -1,0 +1,304 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "tabla_picos",
+  "position": {
+    "x": 24,
+    "y": 564,
+    "z": 5,
+    "height": 492,
+    "width": 1872,
+    "tabOrder": 5
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Picos"
+                    }
+                  },
+                  "Property": "anio"
+                }
+              },
+              "queryRef": "Picos.anio",
+              "nativeQueryRef": "anio",
+              "displayName": "Año"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Picos"
+                    }
+                  },
+                  "Property": "nivel"
+                }
+              },
+              "queryRef": "Picos.nivel",
+              "nativeQueryRef": "nivel",
+              "displayName": "Nivel"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Picos"
+                    }
+                  },
+                  "Property": "rama"
+                }
+              },
+              "queryRef": "Picos.rama",
+              "nativeQueryRef": "rama",
+              "displayName": "Rama"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Picos"
+                    }
+                  },
+                  "Property": "organo"
+                }
+              },
+              "queryRef": "Picos.organo",
+              "nativeQueryRef": "organo",
+              "displayName": "Órgano de contratación"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Picos"
+                    }
+                  },
+                  "Property": "importe_nov_dic_meur"
+                }
+              },
+              "queryRef": "Picos.importe_nov_dic_meur",
+              "nativeQueryRef": "importe_nov_dic_meur",
+              "displayName": "Nov-dic (M€)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Picos"
+                    }
+                  },
+                  "Property": "cuota_nov_dic"
+                }
+              },
+              "queryRef": "Picos.cuota_nov_dic",
+              "nativeQueryRef": "cuota_nov_dic",
+              "displayName": "Nov-dic, % del año"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Picos"
+                    }
+                  },
+                  "Property": "cuota_nov_dic_ordinaria"
+                }
+              },
+              "queryRef": "Picos.cuota_nov_dic_ordinaria",
+              "nativeQueryRef": "cuota_nov_dic_ordinaria",
+              "displayName": "Ordinaria"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Picos"
+                    }
+                  },
+                  "Property": "clasificacion"
+                }
+              },
+              "queryRef": "Picos.clasificacion",
+              "nativeQueryRef": "clasificacion",
+              "displayName": "Clasificación"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Picos"
+                    }
+                  },
+                  "Property": "motivo"
+                }
+              },
+              "queryRef": "Picos.motivo",
+              "nativeQueryRef": "motivo",
+              "displayName": "Motivo"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Picos"
+                    }
+                  },
+                  "Property": "notas"
+                }
+              },
+              "queryRef": "Picos.notas",
+              "nativeQueryRef": "notas",
+              "displayName": "Notas"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Picos"
+                    }
+                  },
+                  "Property": "sucesos_del_ultimo_cuatrimestre"
+                }
+              },
+              "queryRef": "Picos.sucesos_del_ultimo_cuatrimestre",
+              "nativeQueryRef": "sucesos_del_ultimo_cuatrimestre",
+              "displayName": "Sucesos sep-dic"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Picos"
+                  }
+                },
+                "Property": "anio"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Detalle de los picos'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

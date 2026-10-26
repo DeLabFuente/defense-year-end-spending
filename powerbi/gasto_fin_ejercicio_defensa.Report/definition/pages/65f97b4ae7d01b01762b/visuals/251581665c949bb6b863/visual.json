@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "251581665c949bb6b863",
+  "position": {
+    "x": 24,
+    "y": 16,
+    "z": 0,
+    "height": 96,
+    "width": 1250,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Gasto de fin de ejercicio en la contratación de Defensa",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "24pt",
+                      "color": "#1F3A5F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Adjudicaciones de la Plataforma de Contratación del Sector Público frente a las obligaciones reconocidas por la IGAE. Sección 14, sin establecimiento de acuerdos marco. Elige el año arriba a la derecha.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#4B5563"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

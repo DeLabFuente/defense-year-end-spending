@@ -1,0 +1,82 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "notas",
+  "position": {
+    "x": 1290,
+    "y": 596,
+    "z": 5,
+    "height": 460,
+    "width": 606,
+    "tabOrder": 5
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Cómo leerlo",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "16pt",
+                      "color": "#2A7F8F"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Un contrato menor se adjudica sin licitación: hasta 15.000 € sin IVA en servicios y suministros y 40.000 € en obras (Ley 9/2017).",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#374151"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• En número, noviembre y diciembre pesan más en los menores que en las licitaciones todos los años de 2018 a 2025 (24-35 % frente a 22-32 %). Es compatible con usar a fin de año el crédito que queda, pero no lo prueba.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#374151"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Hay 401 contratos menores de la sección 14 por encima de 40.000 € sin IVA; los mayores son suscripciones a bases de datos y servicios hospitalarios, que tienen reglas propias.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#374151"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• 2017 no tiene fichero de menores. El de 2018 es el primero completo.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#4B5563"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

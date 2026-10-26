@@ -1,0 +1,131 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "menores_rama_mes",
+  "position": {
+    "x": 24,
+    "y": 596,
+    "z": 4,
+    "height": 460,
+    "width": 1250,
+    "tabOrder": 4
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Adjudicaciones"
+                    }
+                  },
+                  "Property": "rama"
+                }
+              },
+              "queryRef": "Adjudicaciones.rama",
+              "nativeQueryRef": "rama",
+              "displayName": "Rama",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Adjudicaciones"
+                    }
+                  },
+                  "Property": "organo"
+                }
+              },
+              "queryRef": "Adjudicaciones.organo",
+              "nativeQueryRef": "organo",
+              "displayName": "Órgano de contratación",
+              "active": false
+            }
+          ]
+        },
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Meses"
+                    }
+                  },
+                  "Property": "mes_nombre"
+                }
+              },
+              "queryRef": "Meses.mes_nombre",
+              "nativeQueryRef": "mes_nombre",
+              "displayName": "Mes",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Contratos menores"
+                }
+              },
+              "queryRef": "Medidas.Contratos menores",
+              "nativeQueryRef": "Contratos menores",
+              "displayName": "N.º"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Contratos menores por rama y mes (n.º, todos los años; despliega cada rama)'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
