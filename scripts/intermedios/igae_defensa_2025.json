@@ -1,0 +1,35 @@
+{
+ "fuente": "IGAE, Estadísticas mensuales de ejecución del Presupuesto del Estado, hasta el 31 de diciembre de 2025 (MENSUAL 12-25.pdf)",
+ "url": "https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/Contabilidad/ContabilidadPublica/CPE/EjecucionPresupuestaria/Documents/MENSUAL%2012-25.pdf",
+ "unidad": "miles de euros, acumulado enero-diciembre",
+ "capitulo_2_secciones_p128": {
+  "seccion": "DEFENSA",
+  "creditos_definitivos_2025": 2106297,
+  "obligaciones_reconocidas_netas_2025": 1986138,
+  "pagos_2025": 1938660,
+  "creditos_definitivos_2024": 1976937,
+  "obligaciones_reconocidas_netas_2024": 1856269,
+  "pagos_2024": 1743191
+ },
+ "capitulo_6_secciones_p147": {
+  "seccion": "DEFENSA",
+  "creditos_definitivos_2025": 9314606,
+  "gastos_comprometidos_2025": 9184999,
+  "obligaciones_reconocidas_netas_2025": 9148800,
+  "pagos_2025": 8878830,
+  "creditos_definitivos_2024": 7106866,
+  "gastos_comprometidos_2024": 6909930,
+  "obligaciones_reconocidas_netas_2024": 6859221,
+  "pagos_2024": 5992438
+ },
+ "orn_politica_defensa_por_programas_y_capitulos_p101": {
+  "DEFENSA_total": {
+   "cap2": 1986138,
+   "cap6": 9148800
+  },
+  "122B Programas especiales de modernizacion": {
+   "cap6": 5610253,
+   "total": 5610253
+  }
+ }
+}

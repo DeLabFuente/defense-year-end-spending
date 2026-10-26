@@ -1,0 +1,267 @@
+/// Línea base: adjudicaciones de todo el sector público en la PLACSP por año, mes, comparador y grupo (scripts/07).
+table LineaBase
+	lineageTag: 4caf6384-0102-4b8b-a014-1c0708e624da
+
+	column anio
+		dataType: int64
+		formatString: 0
+		lineageTag: 9801cbb1-a971-4c25-ac65-467dccdf493a
+		summarizeBy: none
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes
+		dataType: int64
+		formatString: 0
+		lineageTag: fb42842f-6c1d-4d26-88f2-910de71860bd
+		summarizeBy: none
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_mes
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: 157485a3-9703-4e38-9b20-985dd194ee41
+		summarizeBy: none
+		sourceColumn: fecha_mes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	/// Ene-oct o Nov-dic.
+	column periodo
+		dataType: string
+		lineageTag: 8b23c613-a0f8-4c8f-9b96-a91dc16288a2
+		summarizeBy: none
+		sourceColumn: periodo
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Defensa, resto de la Administración General del Estado o resto del sector público.
+	column bloque
+		dataType: string
+		lineageTag: bedbdebb-3d23-4386-9bae-8ccb20fcd615
+		summarizeBy: none
+		sourceColumn: bloque
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Tipo de administración; la AGE se separa en Defensa y resto de ministerios.
+	column comparador
+		dataType: string
+		lineageTag: 35b0f026-4890-4779-a474-a123aaeec9cb
+		summarizeBy: none
+		sourceColumn: comparador
+		sortByColumn: orden_comparador
+
+		annotation SummarizationSetBy = Automatic
+
+	column orden_comparador
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 2863d6a8-be85-4916-9f96-5df47d6fd1d7
+		summarizeBy: none
+		sourceColumn: orden_comparador
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Ministerio (estructura ministerial actual) dentro de la AGE; tipo de administración fuera de ella.
+	column grupo
+		dataType: string
+		lineageTag: b8d09a6c-ed08-420e-83e1-dc9e80cd530c
+		summarizeBy: none
+		sourceColumn: grupo
+
+		annotation SummarizationSetBy = Automatic
+
+	column es_contrato_menor
+		dataType: string
+		lineageTag: 2c2ab49e-2859-4035-8f22-224b9735d66f
+		summarizeBy: none
+		sourceColumn: es_contrato_menor
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_adjudicaciones
+		dataType: int64
+		formatString: #,0
+		lineageTag: 15ec1769-9131-467b-b77b-b357b47d6df1
+		summarizeBy: none
+		sourceColumn: n_adjudicaciones
+
+		annotation SummarizationSetBy = Automatic
+
+	column importe_con_iva_eur
+		dataType: double
+		formatString: #,0
+		lineageTag: a8aede89-4731-4940-8f63-9ff5ff25d652
+		summarizeBy: none
+		sourceColumn: importe_con_iva_eur
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_programa_especial
+		dataType: int64
+		formatString: #,0
+		lineageTag: 2cbe2e85-91a4-450f-b008-5cf03f886744
+		summarizeBy: none
+		sourceColumn: n_programa_especial
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Expedientes de 100 M€ o más (euros de 2025) en un año.
+	column importe_programa_especial_eur
+		dataType: double
+		formatString: #,0
+		lineageTag: 8b905291-7887-46f6-9146-4613b6e9fc9c
+		summarizeBy: none
+		sourceColumn: importe_programa_especial_eur
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_menor_importe_atipico
+		dataType: int64
+		formatString: #,0
+		lineageTag: 256ea86e-9331-40f3-b34d-5dced70ee090
+		summarizeBy: none
+		sourceColumn: n_menor_importe_atipico
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Contratos menores publicados por más de 60.500 € con IVA: importe imposible para un menor.
+	column importe_menor_atipico_eur
+		dataType: double
+		formatString: #,0
+		lineageTag: 3c6c4b10-c998-4090-99f7-4b2106d15683
+		summarizeBy: none
+		sourceColumn: importe_menor_atipico_eur
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_ordinario
+		dataType: int64
+		formatString: #,0
+		lineageTag: 4ea66349-1828-40ab-9b4b-dc7dec0f5b35
+		summarizeBy: none
+		sourceColumn: n_ordinario
+
+		annotation SummarizationSetBy = Automatic
+
+	column importe_ordinario_eur
+		dataType: double
+		formatString: #,0
+		lineageTag: 83d44cab-39eb-45d1-8580-b0b5bcfeb52f
+		summarizeBy: none
+		sourceColumn: importe_ordinario_eur
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_con_ofertas
+		dataType: int64
+		formatString: #,0
+		lineageTag: 00cebdad-21a9-45af-9c5c-e780c126aa6e
+		summarizeBy: none
+		sourceColumn: n_con_ofertas
+
+		annotation SummarizationSetBy = Automatic
+
+	column suma_ofertas
+		dataType: int64
+		formatString: #,0
+		lineageTag: a660640c-51c7-460b-b51a-cc81e6e0c998
+		summarizeBy: none
+		sourceColumn: suma_ofertas
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_oferta_unica
+		dataType: int64
+		formatString: #,0
+		lineageTag: 3a6b2f2d-1666-4b65-be25-8fe059b5b3cd
+		summarizeBy: none
+		sourceColumn: n_oferta_unica
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_negociado_sin_publicidad
+		dataType: int64
+		formatString: #,0
+		lineageTag: 34015aa7-b4de-477c-af73-cf218e346394
+		summarizeBy: none
+		sourceColumn: n_negociado_sin_publicidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_urgente_o_emergencia
+		dataType: int64
+		formatString: #,0
+		lineageTag: 793ee887-b7ae-44b0-8537-8ee719bba626
+		summarizeBy: none
+		sourceColumn: n_urgente_o_emergencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_con_baja
+		dataType: int64
+		formatString: #,0
+		lineageTag: 7def864e-e9a2-4d7b-abd6-6e68e9bc1a2e
+		summarizeBy: none
+		sourceColumn: n_con_baja
+
+		annotation SummarizationSetBy = Automatic
+
+	column suma_baja
+		dataType: double
+		formatString: 0.0000
+		lineageTag: 529c045b-56b1-401e-aaff-0bb7f1ce3a51
+		summarizeBy: none
+		sourceColumn: suma_baja
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_sin_baja
+		dataType: int64
+		formatString: #,0
+		lineageTag: 2e4ec79b-5d6c-4021-ad83-e6ba75f13609
+		summarizeBy: none
+		sourceColumn: n_sin_baja
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Suministros, servicios, obras u otros (concesiones, administrativos especiales, privados, patrimoniales).
+	column tipo_contrato
+		dataType: string
+		lineageTag: 12e1b9c8-7c54-4666-ae63-fd0f731bcb24
+		summarizeBy: none
+		sourceColumn: tipo_contrato
+		sortByColumn: orden_tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column orden_tipo
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 0b8a0e75-e9aa-4008-958f-28e2efe6a70d
+		summarizeBy: none
+		sourceColumn: orden_tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition LineaBase = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(RutaDatos & "linea_base_cierre.csv"), [Delimiter = ";", Columns = 27, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Limpio = Table.TransformColumnNames(Encabezados, each Text.Replace(_, Character.FromNumber(65279), "")),
+				    Tipos = Table.TransformColumnTypes(Limpio, {{"anio", Int64.Type}, {"mes", Int64.Type}, {"fecha_mes", type date}, {"periodo", type text}, {"bloque", type text}, {"comparador", type text}, {"orden_comparador", Int64.Type}, {"grupo", type text}, {"es_contrato_menor", type text}, {"tipo_contrato", type text}, {"orden_tipo", Int64.Type}, {"n_adjudicaciones", Int64.Type}, {"importe_con_iva_eur", type number}, {"n_programa_especial", Int64.Type}, {"importe_programa_especial_eur", type number}, {"n_menor_importe_atipico", Int64.Type}, {"importe_menor_atipico_eur", type number}, {"n_ordinario", Int64.Type}, {"importe_ordinario_eur", type number}, {"n_con_ofertas", Int64.Type}, {"suma_ofertas", Int64.Type}, {"n_oferta_unica", Int64.Type}, {"n_negociado_sin_publicidad", Int64.Type}, {"n_urgente_o_emergencia", Int64.Type}, {"n_con_baja", Int64.Type}, {"suma_baja", type number}, {"n_sin_baja", Int64.Type}}, "es-ES")
+				in
+				    Tipos
+
+	annotation PBI_ResultType = Table
+

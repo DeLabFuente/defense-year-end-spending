@@ -1,0 +1,116 @@
+/// Situación del presupuesto, ejecución de la IGAE y peso del cierre por año.
+table PresupuestoCierre
+	lineageTag: d80f61ff-bff7-4c3c-a41d-59e5afed712e
+
+	column anio
+		dataType: int64
+		formatString: 0
+		lineageTag: e435143d-eabc-426b-932e-c0c6dd39ca12
+		summarizeBy: none
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column situacion_presupuesto
+		dataType: string
+		lineageTag: 021cecb5-f5fd-46f8-9c31-4d3743020bb5
+		summarizeBy: none
+		sourceColumn: situacion_presupuesto
+
+		annotation SummarizationSetBy = Automatic
+
+	column creditos_caps26_meur
+		dataType: double
+		formatString: #,0.0
+		lineageTag: 889e7dd6-acd2-4b04-9a06-31775a10f553
+		summarizeBy: none
+		sourceColumn: creditos_caps26_meur
+
+		annotation SummarizationSetBy = Automatic
+
+	column obligaciones_caps26_meur
+		dataType: double
+		formatString: #,0.0
+		lineageTag: 8766abc2-c767-43a6-819d-2a6e79257664
+		summarizeBy: none
+		sourceColumn: obligaciones_caps26_meur
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Obligaciones / créditos definitivos, sección 14, capítulos 2 y 6.
+	column ejecucion
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 95c845bf-d210-42c7-bf38-d21c27ae358c
+		summarizeBy: none
+		sourceColumn: ejecucion
+
+		annotation SummarizationSetBy = Automatic
+
+	column credito_sin_ejecutar_meur
+		dataType: double
+		formatString: #,0.0
+		lineageTag: 468ab340-aef9-4d9d-bf38-a5233a2b7dde
+		summarizeBy: none
+		sourceColumn: credito_sin_ejecutar_meur
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_nov_dic_importe
+		dataType: double
+		formatString: 0.0%
+		lineageTag: aea22928-63d4-466e-8ce8-29f67e0e08c2
+		summarizeBy: none
+		sourceColumn: cuota_nov_dic_importe
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_nov_dic_n
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 4fd09e33-7f15-438d-af97-3c42fe04aa41
+		summarizeBy: none
+		sourceColumn: cuota_nov_dic_n
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_ultima_quincena_importe
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 273b7f02-dabc-493e-91ac-5152836d8f3c
+		summarizeBy: none
+		sourceColumn: cuota_ultima_quincena_importe
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_ultima_quincena_n
+		dataType: double
+		formatString: 0.0%
+		lineageTag: f0fdccd8-fe47-46fc-b738-072d677bfcb2
+		summarizeBy: none
+		sourceColumn: cuota_ultima_quincena_n
+
+		annotation SummarizationSetBy = Automatic
+
+	column nota
+		dataType: string
+		lineageTag: 78da637c-1985-48c6-9fb5-e60129b86a41
+		summarizeBy: none
+		sourceColumn: nota
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PresupuestoCierre = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(RutaDatos & "presupuesto_y_cierre.csv"), [Delimiter = ";", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Limpio = Table.TransformColumnNames(Encabezados, each Text.Replace(_, Character.FromNumber(65279), "")),
+				    Vacios = Table.ReplaceValue(Limpio, "", null, Replacer.ReplaceValue, Table.ColumnNames(Limpio)),
+				    Tipos = Table.TransformColumnTypes(Vacios, {{"anio", Int64.Type}, {"situacion_presupuesto", type text}, {"creditos_caps26_meur", type number}, {"obligaciones_caps26_meur", type number}, {"credito_sin_ejecutar_meur", type number}, {"ejecucion", type number}, {"cuota_nov_dic_importe", type number}, {"cuota_nov_dic_n", type number}, {"cuota_ultima_quincena_importe", type number}, {"cuota_ultima_quincena_n", type number}, {"nota", type text}}, "es-ES")
+				in
+				    Tipos
+
+	annotation PBI_ResultType = Table
+

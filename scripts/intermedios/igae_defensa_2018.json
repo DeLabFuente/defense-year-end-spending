@@ -1,0 +1,24 @@
+{
+  "fuente": "IGAE, Estadísticas mensuales de ejecución del Presupuesto del Estado, hasta el 31 de diciembre de 2018 (MENSUAL 12-18.pdf, 764 págs.)",
+  "url": "https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/Contabilidad/ContabilidadPublica/CPE/EjecucionPresupuestaria/Documents/MENSUAL%2012-18.pdf",
+  "unidad": "miles de euros, acumulado enero-diciembre",
+  "capitulo_2_secciones_p100": {
+    "seccion": "DEFENSA",
+    "creditos_definitivos_2018": 1233253, "obligaciones_reconocidas_netas_2018": 1192639, "pagos_2018": 1067550,
+    "creditos_definitivos_2017": 1236204, "obligaciones_reconocidas_netas_2017": 1191201, "pagos_2017": 1082549
+  },
+  "capitulo_6_secciones_p114": {
+    "seccion": "DEFENSA",
+    "creditos_definitivos_2018": 3303163, "gastos_comprometidos_2018": 3291690, "obligaciones_reconocidas_netas_2018": 3276916, "pagos_2018": 3096512,
+    "creditos_definitivos_2017": 2919940, "gastos_comprometidos_2017": 2898187, "obligaciones_reconocidas_netas_2017": 2885576, "pagos_2017": 2580381
+  },
+  "orn_politica_defensa_por_programas_y_capitulos_p83": {
+    "DEFENSA_total": {"cap1": 4609761, "cap2": 1192639, "cap4": 162474, "cap6": 3276916, "cap7": 26204, "cap8": 12457, "total": 9280451},
+    "121M Administracion y Servicios Generales de Defensa": {"cap1": 727081, "cap2": 386590, "cap4": 78120, "cap6": 18841, "cap8": 12457, "total": 1223089},
+    "121N Formacion del Personal de las Fuerzas Armadas": {"cap1": 342925, "cap2": 56167, "cap4": 19079, "cap6": 13, "cap7": 459, "total": 418643},
+    "122A Modernizacion de las Fuerzas Armadas": {"cap6": 82467, "total": 82467},
+    "122B Programas especiales de modernizacion": {"cap6": 2174208, "total": 2174208},
+    "122M Gastos Operativos de las Fuerzas Armadas": {"cap1": 2098393, "cap2": 570466, "cap6": 668145, "total": 3337004}
+  },
+  "nota": "El cuadro de programas solo trae el año del informe. El programa 122B de 2017 requiere el informe de diciembre de 2017, que no está publicado con el mismo nombre de fichero."
+}

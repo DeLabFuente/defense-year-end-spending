@@ -1,0 +1,207 @@
+/// Adjudicaciones de órganos del Ministerio de Defensa en la PLACSP, agregadas por mes, rama, tipo, procedimiento, tramitación y sistema.
+table Adjudicaciones
+	lineageTag: 254fb38a-f2a4-5d42-a60a-677f45365085
+
+	column fecha_mes
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 4e252b67-bb6c-5d8b-ae52-0886d165211a
+		summarizeBy: none
+		sourceColumn: fecha_mes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column anio
+		dataType: int64
+		isHidden
+		lineageTag: 2741b99e-c295-54db-9a6d-b0470f1dcf79
+		summarizeBy: none
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes
+		dataType: int64
+		isHidden
+		lineageTag: ee25a0a5-c141-52e5-a11b-c4ccfb3f9872
+		summarizeBy: none
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Nivel de la jerarquía de la PLACSP inmediatamente inferior al Ministerio de Defensa.
+	column rama
+		dataType: string
+		lineageTag: 6dc585dc-3c8c-54d2-9962-03bf6e42e295
+		summarizeBy: none
+		sourceColumn: rama
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Secretaría de Estado de Defensa, resto de la sección 14 o fuera de la sección 14 (ISDEFE, SAES).
+	column grupo
+		dataType: string
+		lineageTag: e1c0fd42-f9f2-53cd-bc5c-88075e9bdbb9
+		summarizeBy: none
+		sourceColumn: grupo
+
+		annotation SummarizationSetBy = Automatic
+
+	column en_seccion_14
+		dataType: string
+		lineageTag: bab6d1a8-79f1-52c5-a070-4b9b10c9e07a
+		summarizeBy: none
+		sourceColumn: en_seccion_14
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_contrato
+		dataType: string
+		lineageTag: 191e8cc5-dad0-5931-b1e0-fbfd02bbd8fd
+		summarizeBy: none
+		sourceColumn: tipo_contrato
+
+		annotation SummarizationSetBy = Automatic
+
+	column procedimiento
+		dataType: string
+		lineageTag: 77840400-3fb9-5ed0-b82f-75e86db94d44
+		summarizeBy: none
+		sourceColumn: procedimiento
+
+		annotation SummarizationSetBy = Automatic
+
+	column tramitacion
+		dataType: string
+		lineageTag: ba5d4b78-0025-5ee7-8a20-afc0668e6524
+		summarizeBy: none
+		sourceColumn: tramitacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column sistema_contratacion
+		dataType: string
+		lineageTag: a3acc9af-7b2e-5cb5-bbec-ebe12dba09f3
+		summarizeBy: none
+		sourceColumn: sistema_contratacion
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Sí = adjudicación de un acuerdo marco o sistema dinámico: es un techo, no un gasto.
+	column es_establecimiento_marco
+		dataType: string
+		lineageTag: f280c8d1-51b7-59fe-8a98-16fbb248585f
+		summarizeBy: none
+		sourceColumn: es_establecimiento_marco
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_adjudicaciones
+		dataType: int64
+		isHidden
+		lineageTag: 5baa2224-2c45-5d9d-a99c-1353af3121e6
+		summarizeBy: sum
+		sourceColumn: n_adjudicaciones
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_expedientes
+		dataType: int64
+		isHidden
+		lineageTag: 6e5e0c57-19a0-5959-b7ca-a810f86b1d92
+		summarizeBy: sum
+		sourceColumn: n_expedientes
+
+		annotation SummarizationSetBy = Automatic
+
+	column importe_sin_iva_eur
+		dataType: double
+		isHidden
+		lineageTag: 0449d977-cc87-5d35-82fd-04447a7bce1b
+		summarizeBy: sum
+		sourceColumn: importe_sin_iva_eur
+
+		annotation SummarizationSetBy = Automatic
+
+	column importe_con_iva_eur
+		dataType: double
+		isHidden
+		lineageTag: b1614214-813b-5b77-b577-2c300f99625a
+		summarizeBy: sum
+		sourceColumn: importe_con_iva_eur
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Serie 2017-2026 (método por licitación) o prueba de cobertura de 2023 (método anterior), para los años aún no reprocesados.
+	column origen
+		dataType: string
+		lineageTag: 82c9f9ea-efc3-544d-acb6-4f82f7decd78
+		summarizeBy: none
+		sourceColumn: origen
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Sí = expediente con adjudicaciones de 100 M€ o más con IVA en un mismo año (grandes programas de modernización). Vista de gasto ordinario = No.
+	column es_programa_especial
+		dataType: string
+		lineageTag: 33707529-f222-459a-8bff-0ecfdea0b83f
+		summarizeBy: none
+		sourceColumn: es_programa_especial
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Órgano de contratación (jefatura económica que adjudica), no la unidad destinataria.
+	column organo
+		dataType: string
+		lineageTag: afd91c42-54f8-450d-a0a9-af76271dbded
+		summarizeBy: none
+		sourceColumn: organo
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Sí = contrato menor (sindicación 1143). Queda fuera del importe analizado.
+	column es_contrato_menor
+		dataType: string
+		lineageTag: a2e6974b-3c4a-4e56-8ac5-951d1071f166
+		summarizeBy: none
+		sourceColumn: es_contrato_menor
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Adjudicaciones = m
+		mode: import
+		source =
+				let
+				    Leer = (fichero as text, columnas as number) as table =>
+				        let
+				            Origen = Csv.Document(File.Contents(RutaDatos & fichero), [Delimiter = ";", Columns = columnas, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				            Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				            Limpio = Table.TransformColumnNames(Encabezados, each Text.Replace(_, Character.FromNumber(65279), "")),
+				            Tipos = Table.TransformColumnTypes(Limpio, {
+				                {"anio", Int64.Type}, {"mes", Int64.Type}, {"rama", type text}, {"en_seccion_14", type text},
+				                {"tipo_contrato", type text}, {"procedimiento", type text}, {"tramitacion", type text},
+				                {"sistema_contratacion", type text}, {"es_establecimiento_marco", type text},
+				                {"n_adjudicaciones", Int64.Type}, {"n_expedientes", Int64.Type},
+				                {"importe_sin_iva_eur", type number}, {"importe_con_iva_eur", type number}}, "es-ES")
+				        in
+				            Tipos,
+				    Serie = Table.Buffer(Table.AddColumn(Table.TransformColumnTypes(Leer("placsp_defensa_adjudicaciones.csv", 17), {{"organo", type text}}), "origen", each "Serie 2017-2026", type text)),
+				    AniosSerie = List.Buffer(List.Distinct(Serie[anio])),
+				    Prueba = Table.AddColumn(
+				        Table.AddColumn(Table.AddColumn(Table.AddColumn(Table.SelectRows(Leer("placsp_defensa_adjudicaciones_2023.csv", 14), each not List.Contains(AniosSerie, [anio])), "es_programa_especial", each "No", type text), "organo", each "(prueba 2023, sin órgano)", type text), "es_contrato_menor", each "No", type text),
+				        "origen", each "Prueba de cobertura 2023", type text),
+				    Union = Table.Combine({Serie, Prueba}),
+				    SinFechaTexto = Table.RemoveColumns(Union, {"fecha_mes"}),
+				    Fecha = Table.AddColumn(SinFechaTexto, "fecha_mes", each #date([anio], [mes], 1), type date),
+				    Grupo = Table.AddColumn(Fecha, "grupo", each
+				        if [rama] = "Secretaría de Estado de Defensa" then "Secretaría de Estado de Defensa"
+				        else if [en_seccion_14] = "Sí" then "Ejércitos, EMAD y Subsecretaría"
+				        else "Fuera de la sección 14", type text)
+				in
+				    Grupo
+
+	annotation PBI_ResultType = Table
+

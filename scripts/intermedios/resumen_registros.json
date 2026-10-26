@@ -1,0 +1,353 @@
+{
+ "ficheros": [
+  {
+   "fichero_local": "placsp_defensa_registros_2017.jsonl.gz",
+   "anio": 2017,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 09:52:07 GMT",
+   "entradas": 93068,
+   "entradasDefensaJerarquia": 14,
+   "entradasCandidatasSinJerarquia": 45116,
+   "licitacionesGuardadas": 19540,
+   "organos": 2102,
+   "errores": 0
+  },
+  {
+   "fichero_local": "placsp_defensa_registros_2018.jsonl.gz",
+   "anio": 2018,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 10:19:13 GMT",
+   "entradas": 156186,
+   "entradasDefensaJerarquia": 590,
+   "entradasCandidatasSinJerarquia": 43109,
+   "licitacionesGuardadas": 21202,
+   "organos": 6321,
+   "errores": 0
+  },
+  {
+   "fichero_local": "placsp_defensa_registros_2019.jsonl.gz",
+   "anio": 2019,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 11:16:48 GMT",
+   "entradas": 235168,
+   "entradasDefensaJerarquia": 681,
+   "entradasCandidatasSinJerarquia": 60614,
+   "licitacionesGuardadas": 26911,
+   "organos": 7819,
+   "errores": 0
+  },
+  {
+   "fichero_local": "placsp_defensa_registros_2020.jsonl.gz",
+   "anio": 2020,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 11:19:56 GMT",
+   "entradas": 249111,
+   "entradasDefensaJerarquia": 946,
+   "entradasCandidatasSinJerarquia": 60163,
+   "licitacionesGuardadas": 26849,
+   "organos": 7957,
+   "errores": 0
+  },
+  {
+   "fichero_local": "placsp_defensa_registros_2021.jsonl.gz",
+   "anio": 2021,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 12:25:56 GMT",
+   "entradas": 333430,
+   "entradasDefensaJerarquia": 1500,
+   "entradasCandidatasSinJerarquia": 80081,
+   "licitacionesGuardadas": 33172,
+   "organos": 13888,
+   "errores": 0
+  },
+  {
+   "fichero_local": "placsp_defensa_registros_2022.jsonl.gz",
+   "anio": 2022,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 12:47:40 GMT",
+   "entradas": 423656,
+   "entradasDefensaJerarquia": 8423,
+   "entradasCandidatasSinJerarquia": 67034,
+   "licitacionesGuardadas": 34152,
+   "organos": 15823,
+   "errores": 0
+  },
+  {
+   "fichero_local": "placsp_defensa_registros_2023.jsonl.gz",
+   "anio": 2023,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 13:24:53 GMT",
+   "entradas": 614269,
+   "entradasDefensaJerarquia": 28604,
+   "entradasCandidatasSinJerarquia": 2011,
+   "licitacionesGuardadas": 11643,
+   "organos": 12405,
+   "errores": 0
+  },
+  {
+   "fichero_local": "placsp_defensa_registros_2024.jsonl.gz",
+   "anio": 2024,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 14:02:16 GMT",
+   "entradas": 633995,
+   "entradasDefensaJerarquia": 30098,
+   "entradasCandidatasSinJerarquia": 400,
+   "licitacionesGuardadas": 10744,
+   "organos": 11273,
+   "errores": 0
+  },
+  {
+   "fichero_local": "placsp_defensa_registros_2025.jsonl.gz",
+   "anio": 2025,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 13:59:25 GMT",
+   "entradas": 693088,
+   "entradasDefensaJerarquia": 32434,
+   "entradasCandidatasSinJerarquia": 388,
+   "licitacionesGuardadas": 11813,
+   "organos": 11411,
+   "errores": 0
+  },
+  {
+   "fichero_local": "placsp_defensa_registros_2026.jsonl.gz",
+   "anio": 2026,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 14:21:47 GMT",
+   "entradas": 596847,
+   "entradasDefensaJerarquia": 29387,
+   "entradasCandidatasSinJerarquia": 388,
+   "licitacionesGuardadas": 11384,
+   "organos": 10604,
+   "errores": 0
+  },
+  {
+   "fichero_local": "placsp_defensa_menores_2018.jsonl.gz",
+   "anio": 2018,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 16:14:12 GMT",
+   "entradas": 164000,
+   "entradasDefensaJerarquia": 1240,
+   "entradasCandidatasSinJerarquia": 49778,
+   "licitacionesGuardadas": 50439,
+   "organos": 2452,
+   "errores": 0
+  },
+  {
+   "fichero_local": "placsp_defensa_menores_2019.jsonl.gz",
+   "anio": 2019,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 16:15:05 GMT",
+   "entradas": 297155,
+   "entradasDefensaJerarquia": 886,
+   "entradasCandidatasSinJerarquia": 46633,
+   "licitacionesGuardadas": 47087,
+   "organos": 3525,
+   "errores": 0
+  },
+  {
+   "fichero_local": "placsp_defensa_menores_2020.jsonl.gz",
+   "anio": 2020,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 16:15:06 GMT",
+   "entradas": 284539,
+   "entradasDefensaJerarquia": 865,
+   "entradasCandidatasSinJerarquia": 49483,
+   "licitacionesGuardadas": 49826,
+   "organos": 3828,
+   "errores": 0
+  },
+  {
+   "fichero_local": "placsp_defensa_menores_2021.jsonl.gz",
+   "anio": 2021,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 16:15:58 GMT",
+   "entradas": 405067,
+   "entradasDefensaJerarquia": 1029,
+   "entradasCandidatasSinJerarquia": 50409,
+   "licitacionesGuardadas": 50873,
+   "organos": 6244,
+   "errores": 0
+  },
+  {
+   "fichero_local": "placsp_defensa_menores_2022.jsonl.gz",
+   "anio": 2022,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 16:17:08 GMT",
+   "entradas": 493115,
+   "entradasDefensaJerarquia": 7273,
+   "entradasCandidatasSinJerarquia": 38629,
+   "licitacionesGuardadas": 45229,
+   "organos": 6636,
+   "errores": 0
+  },
+  {
+   "fichero_local": "placsp_defensa_menores_2023.jsonl.gz",
+   "anio": 2023,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 16:19:07 GMT",
+   "entradas": 512227,
+   "entradasDefensaJerarquia": 16605,
+   "entradasCandidatasSinJerarquia": 0,
+   "licitacionesGuardadas": 15411,
+   "organos": 5729,
+   "errores": 0
+  },
+  {
+   "fichero_local": "placsp_defensa_menores_2024.jsonl.gz",
+   "anio": 2024,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 16:19:30 GMT",
+   "entradas": 523852,
+   "entradasDefensaJerarquia": 15840,
+   "entradasCandidatasSinJerarquia": 0,
+   "licitacionesGuardadas": 15575,
+   "organos": 5767,
+   "errores": 0
+  },
+  {
+   "fichero_local": "placsp_defensa_menores_2025.jsonl.gz",
+   "anio": 2025,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 16:18:44 GMT",
+   "entradas": 550102,
+   "entradasDefensaJerarquia": 13512,
+   "entradasCandidatasSinJerarquia": 0,
+   "licitacionesGuardadas": 12622,
+   "organos": 6358,
+   "errores": 0
+  },
+  {
+   "fichero_local": "placsp_defensa_menores_2026.jsonl.gz",
+   "anio": 2026,
+   "version": 3,
+   "lastModified": "Fri, 23 Oct 2026 16:18:33 GMT",
+   "entradas": 441577,
+   "entradasDefensaJerarquia": 9118,
+   "entradasCandidatasSinJerarquia": 0,
+   "licitacionesGuardadas": 7622,
+   "organos": 5670,
+   "errores": 0
+  }
+ ],
+ "control": {
+  "licitaciones_defensa": 186510,
+  "bajas_por_purga_ignoradas": 5274,
+  "adjudicaciones": 186360,
+  "adjudicaciones_fuera_de_serie": 9205,
+  "retiradas": 347,
+  "anuladas": 209
+ },
+ "rama_asignada_por": {
+  "DIR3": 79679,
+  "jerarquía": 104258,
+  "regla de nombre": 2511,
+  "nombre": 61,
+  "regla DIR3": 1
+ },
+ "catalogo": {
+  "dir3": 7091,
+  "idp": 15447,
+  "nombre": 16439
+ },
+ "por_anio": {
+  "2017": {
+   "adjudicaciones": 4179,
+   "importe_con_iva_MEUR": 916.0,
+   "s14_sin_marco_MEUR": 805.0,
+   "s14_sin_marco_n": 3922,
+   "nov_dic_s14_sin_marco_MEUR": 206.5,
+   "nov_dic_s14_sin_marco_n": 1066,
+   "cuota_nov_dic_importe": 0.257,
+   "cuota_nov_dic_numero": 0.272
+  },
+  "2018": {
+   "adjudicaciones": 20108,
+   "importe_con_iva_MEUR": 2854.5,
+   "s14_sin_marco_MEUR": 2247.1,
+   "s14_sin_marco_n": 18112,
+   "nov_dic_s14_sin_marco_MEUR": 1487.9,
+   "nov_dic_s14_sin_marco_n": 5761,
+   "cuota_nov_dic_importe": 0.662,
+   "cuota_nov_dic_numero": 0.318
+  },
+  "2019": {
+   "adjudicaciones": 16116,
+   "importe_con_iva_MEUR": 7764.7,
+   "s14_sin_marco_MEUR": 7177.8,
+   "s14_sin_marco_n": 15122,
+   "nov_dic_s14_sin_marco_MEUR": 526.2,
+   "nov_dic_s14_sin_marco_n": 3747,
+   "cuota_nov_dic_importe": 0.073,
+   "cuota_nov_dic_numero": 0.248
+  },
+  "2020": {
+   "adjudicaciones": 17748,
+   "importe_con_iva_MEUR": 4304.3,
+   "s14_sin_marco_MEUR": 3498.9,
+   "s14_sin_marco_n": 17021,
+   "nov_dic_s14_sin_marco_MEUR": 606.1,
+   "nov_dic_s14_sin_marco_n": 4910,
+   "cuota_nov_dic_importe": 0.173,
+   "cuota_nov_dic_numero": 0.288
+  },
+  "2021": {
+   "adjudicaciones": 19155,
+   "importe_con_iva_MEUR": 3290.9,
+   "s14_sin_marco_MEUR": 2649.2,
+   "s14_sin_marco_n": 18601,
+   "nov_dic_s14_sin_marco_MEUR": 1340.4,
+   "nov_dic_s14_sin_marco_n": 5041,
+   "cuota_nov_dic_importe": 0.506,
+   "cuota_nov_dic_numero": 0.271
+  },
+  "2022": {
+   "adjudicaciones": 23006,
+   "importe_con_iva_MEUR": 3116.1,
+   "s14_sin_marco_MEUR": 2108.0,
+   "s14_sin_marco_n": 21823,
+   "nov_dic_s14_sin_marco_MEUR": 628.3,
+   "nov_dic_s14_sin_marco_n": 6765,
+   "cuota_nov_dic_importe": 0.298,
+   "cuota_nov_dic_numero": 0.31
+  },
+  "2023": {
+   "adjudicaciones": 24253,
+   "importe_con_iva_MEUR": 8899.7,
+   "s14_sin_marco_MEUR": 7706.2,
+   "s14_sin_marco_n": 22677,
+   "nov_dic_s14_sin_marco_MEUR": 5204.9,
+   "nov_dic_s14_sin_marco_n": 6017,
+   "cuota_nov_dic_importe": 0.675,
+   "cuota_nov_dic_numero": 0.265
+  },
+  "2024": {
+   "adjudicaciones": 23008,
+   "importe_con_iva_MEUR": 5389.2,
+   "s14_sin_marco_MEUR": 3277.5,
+   "s14_sin_marco_n": 22122,
+   "nov_dic_s14_sin_marco_MEUR": 588.7,
+   "nov_dic_s14_sin_marco_n": 5169,
+   "cuota_nov_dic_importe": 0.18,
+   "cuota_nov_dic_numero": 0.234
+  },
+  "2025": {
+   "adjudicaciones": 22911,
+   "importe_con_iva_MEUR": 27429.2,
+   "s14_sin_marco_MEUR": 25712.4,
+   "s14_sin_marco_n": 20243,
+   "nov_dic_s14_sin_marco_MEUR": 23668.8,
+   "nov_dic_s14_sin_marco_n": 5005,
+   "cuota_nov_dic_importe": 0.921,
+   "cuota_nov_dic_numero": 0.247
+  },
+  "2026": {
+   "adjudicaciones": 15876,
+   "importe_con_iva_MEUR": 4241.4,
+   "s14_sin_marco_MEUR": 2944.3,
+   "s14_sin_marco_n": 14431,
+   "cuota_nov_dic_importe": 0.0,
+   "cuota_nov_dic_numero": 0.0
+  }
+ },
+ "organos_militares_sin_asignar": []
+}

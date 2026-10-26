@@ -1,0 +1,76 @@
+/// Ejecución presupuestaria de la sección 14 (Defensa), capítulos 2 y 6, según la IGAE (informes de diciembre de cada año).
+table IGAE
+	lineageTag: 74068891-12c7-52b0-96fd-04974654b5ea
+
+	column seccion
+		dataType: string
+		lineageTag: cb939633-6e32-5054-a5fd-12f08e363460
+		summarizeBy: none
+		sourceColumn: seccion
+
+		annotation SummarizationSetBy = Automatic
+
+	column programa
+		dataType: string
+		lineageTag: e0f22461-9528-5716-b166-0a54bc5c3dc2
+		summarizeBy: none
+		sourceColumn: programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column capitulo
+		dataType: string
+		lineageTag: 1c8c6f10-6614-5d97-9051-5ee4b856ebc8
+		summarizeBy: none
+		sourceColumn: capitulo
+
+		annotation SummarizationSetBy = Automatic
+
+	column anio
+		dataType: int64
+		lineageTag: 2f038802-3a15-51b9-a276-aef0269af042
+		summarizeBy: none
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column medida
+		dataType: string
+		lineageTag: 393b5529-7294-5f84-8dd2-78a1d642faa2
+		summarizeBy: none
+		sourceColumn: medida
+
+		annotation SummarizationSetBy = Automatic
+
+	column importe_eur
+		dataType: double
+		isHidden
+		lineageTag: a179ba3c-28b5-5119-bf7c-bb25fb24b0b7
+		summarizeBy: sum
+		sourceColumn: importe_eur
+
+		annotation SummarizationSetBy = Automatic
+
+	column fuente
+		dataType: string
+		lineageTag: afaecb47-bd31-5a6c-a129-f586598b9ada
+		summarizeBy: none
+		sourceColumn: fuente
+
+		annotation SummarizationSetBy = Automatic
+
+	partition IGAE = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(RutaDatos & "igae_defensa.csv"), [Delimiter = ";", Columns = 7, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Limpio = Table.TransformColumnNames(Encabezados, each Text.Replace(_, Character.FromNumber(65279), "")),
+				    Tipos = Table.TransformColumnTypes(Limpio, {
+				        {"seccion", type text}, {"programa", type text}, {"capitulo", type text}, {"anio", Int64.Type},
+				        {"medida", type text}, {"importe_eur", type number}, {"fuente", type text}}, "es-ES")
+				in
+				    Tipos
+
+	annotation PBI_ResultType = Table
+

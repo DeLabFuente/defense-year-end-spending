@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Extractor PLACSP · Defensa</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --card: #ffffff; --ink: #1f2937; --muted: #6b7280; --line: #e5e7eb;
+    --accent: #2b6cb0; --accent-soft: #e8f0f9; --ok: #2f7d4f; --warn: #9a5b00; --err: #b42318;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #111418; --card: #1a1f25; --ink: #e5e7eb; --muted: #9aa3ae; --line: #2a313a;
+      --accent: #6ea8e6; --accent-soft: #1d2b3b; --ok: #6cc28f; --warn: #e0a84a; --err: #f08a80;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 920px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 28px; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 20px; margin-bottom: 18px; }
+  h2 { font-size: 16px; margin: 0 0 10px; }
+  .paso { display: inline-block; width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: #fff; text-align: center; font-size: 13px; line-height: 24px; margin-right: 8px; }
+  ul.anios { list-style: none; padding: 0; margin: 10px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+  ul.anios a { display: block; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; color: var(--accent); text-decoration: none; }
+  ul.anios a:hover { background: var(--accent-soft); }
+  ul.anios small { display: block; color: var(--muted); }
+  .nota { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+  label.boton, button { display: inline-block; padding: 9px 16px; border-radius: 8px; border: 1px solid var(--accent); background: var(--accent); color: #fff; font: inherit; cursor: pointer; }
+  button.sec { background: transparent; color: var(--accent); }
+  button:disabled { opacity: .5; cursor: default; }
+  input[type=file] { display: none; }
+  input[type=checkbox] { width: 16px; height: 16px; vertical-align: -2px; margin-right: 6px; }
+  .trabajo { border-top: 1px solid var(--line); padding: 14px 0 4px; }
+  .trabajo:first-child { border-top: 0; }
+  .fila { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: baseline; }
+  .nombre { font-weight: 600; }
+  .estado { font-size: 13px; color: var(--muted); }
+  .estado.ok { color: var(--ok); } .estado.err { color: var(--err); }
+  progress { width: 100%; height: 8px; margin: 8px 0; accent-color: var(--accent); }
+  .datos { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  code { background: var(--accent-soft); padding: 1px 5px; border-radius: 4px; font-size: 13px; }
+  .clave { font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Extractor PLACSP · Defensa</h1>
+  <p class="sub">Convierte cada fichero anual de licitaciones de la Plataforma de Contratación en el fichero de registros del proyecto «Gasto de fin de ejercicio en la contratación de Defensa». Funciona sin conexión y no envía nada a ningún sitio: todo se procesa en este navegador.</p>
+
+  <section>
+    <h2><span class="paso">1</span>Descarga los ficheros anuales</h2>
+    <p>Ficheros oficiales de la sindicación 643 (licitaciones de los perfiles del contratante, sin contratos menores). Pulsa cada año para descargarlo con tu navegador; puedes descargar varios a la vez.</p>
+    <ul class="anios" id="enlaces"></ul>
+    <p class="nota">El fichero del año AAAA trae lo publicado o actualizado durante ese año; por eso diciembre de un año se completa con el fichero del siguiente. El de 2026 es el del año en curso y crece cada día.</p>
+    <p style="margin-top:16px">Contratos menores (sindicación 1143, desde 2018). Se procesan igual y se guardan aparte como <code>placsp_defensa_menores_AAAA.jsonl.gz</code>.</p>
+    <ul class="anios" id="enlaces_menores"></ul>
+  </section>
+
+  <section>
+    <h2><span class="paso">2</span>Procesa los zip descargados</h2>
+    <p>Elige uno o varios zip. Se procesan de uno en uno; deja esta pestaña abierta y el PC encendido. Al terminar cada año se descarga <code>placsp_defensa_registros_AAAA.jsonl.gz</code>.</p>
+    <p><label><input type="checkbox" id="todos" checked style="display:inline"> Generar también el fichero de <strong>todo el sector público</strong> (<code>placsp_sector_publico_AAAA.jsonl.gz</code>): todas las licitaciones de todos los órganos, sin adjudicatarios ni objeto, para comparar Defensa con el resto de ministerios.</label></p>
+    <p><label><input type="checkbox" id="defensa" checked> Generar el fichero de <strong>Defensa</strong> (<code>placsp_defensa_…</code>). Si ya lo tienes de ese año, puedes desmarcarlo: saldría igual.</label></p>
+    <label class="boton" for="zips">Elegir ficheros zip…</label>
+    <input type="file" id="zips" accept=".zip" multiple>
+    <p class="clave" id="clave"></p>
+    <div id="trabajos"></div>
+  </section>
+
+  <section>
+    <h2><span class="paso">3</span>Guarda los resultados en la carpeta del proyecto</h2>
+    <p>Mueve cada <code>placsp_defensa_registros_AAAA.jsonl.gz</code> y <code>placsp_defensa_menores_AAAA.jsonl.gz</code> a <code>GASTO DEFENSA\registros</code>, y los <code>placsp_sector_publico_*.jsonl.gz</code> a <code>GASTO DEFENSA\registros\sector_publico</code>. Si el navegador pregunta dónde guardarlo, elige directamente esa carpeta. Después, la unión de años y el Power BI se hacen con <code>scripts\03_unir_registros.py</code>.</p>
+  </section>
+</main>
+
+<script>
+// Lógica de extracción: la misma que scripts/01_placsp_navegador.js (versión 3), leyendo el zip desde disco.
+// Identificador corto: lo que sigue a la ruta de la sindicación (igual para licitaciones y contratos menores).
+const corto = s => s ? s.replace(/^https?:\/\/[^/]+\/sindicacion\/[^/]+\//, '') : s;
+const RX = /defensa|ej[eé]rcito|armada|militar|fuerzas armadas|arsenal|intendencia|intendente|mando de|cuartel general|guardia real|isfas|invied|unidad militar de emergencias|estado mayor|aeródromo|base aérea|ala \d|aérea/i;
+
+// Enlaces oficiales
+const URL_BASE = 'https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_643/licitacionesPerfilesContratanteCompleto3_';
+const enlaces = document.getElementById('enlaces');
+for (let a = 2017; a <= 2026; a++) {
+  const li = document.createElement('li');
+  li.innerHTML = `<a href="${URL_BASE}${a}.zip">${a}<small>${a === 2026 ? 'año en curso' : 'fichero anual'}</small></a>`;
+  enlaces.appendChild(li);
+}
+const URL_MENORES = 'https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_1143/contratosMenoresPerfilesContratantes_';
+const enlacesMenores = document.getElementById('enlaces_menores');
+for (let a = 2018; a <= 2026; a++) {
+  const li = document.createElement('li');
+  li.innerHTML = `<a href="${URL_MENORES}${a}.zip">${a}<small>${a === 2026 ? 'año en curso' : 'menores, anual'}</small></a>`;
+  enlacesMenores.appendChild(li);
+}
+
+// Clave para las huellas de adjudicatarios: aleatoria, guardada solo en este navegador
+let SAL = null;
+try { SAL = localStorage.getItem('gd_sal_v1'); } catch (e) {}
+if (!SAL) {
+  const b = crypto.getRandomValues(new Uint8Array(32));
+  SAL = Array.from(b, x => x.toString(16).padStart(2, '0')).join('');
+  try { localStorage.setItem('gd_sal_v1', SAL); } catch (e) {}
+}
+(async () => {
+  const d = await crypto.subtle.digest('SHA-256', new TextEncoder().encode('control|' + SAL));
+  const h = Array.from(new Uint8Array(d).slice(0, 3), x => x.toString(16).padStart(2, '0')).join('');
+  document.getElementById('clave').textContent = `Clave anónima de adjudicatarios en este navegador: ${h}. Procesa todos los años en el mismo navegador para que la clave coincida (si cambia, avisa).`;
+})();
+async function huella(nif) {
+  if (!nif) return null;
+  const d = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(SAL + '|' + nif.trim().toUpperCase()));
+  return Array.from(new Uint8Array(d).slice(0, 6), x => x.toString(16).padStart(2, '0')).join('');
+}
+
+// Cola de trabajos
+const cola = [];
+let ocupado = false;
+document.getElementById('zips').addEventListener('change', ev => {
+  for (const f of ev.target.files) {
+    const m = f.name.match(/(20\d\d)\.zip$/);
+    const anio = m ? Number(m[1]) : null;
+    const menores = /contratosMenores/i.test(f.name);
+    const el = document.createElement('div');
+    el.className = 'trabajo';
+    el.innerHTML = `<div class="fila"><span class="nombre">${f.name}</span><span class="estado">En cola</span></div>
+      <progress max="1" value="0"></progress><div class="datos"></div><div class="acciones"></div>`;
+    document.getElementById('trabajos').appendChild(el);
+    if (!anio) { el.querySelector('.estado').textContent = 'No reconozco el año en el nombre del fichero'; el.querySelector('.estado').classList.add('err'); continue; }
+    cola.push({ f, anio, el, menores, todos: document.getElementById('todos').checked, defensa: document.getElementById('defensa').checked });
+  }
+  ev.target.value = '';
+  siguiente();
+});
+async function siguiente() {
+  if (ocupado || !cola.length) return;
+  ocupado = true;
+  const t = cola.shift();
+  try { await procesar(t); } catch (e) { pinta(t, 'Error: ' + (e && e.message || e), 'err'); }
+  ocupado = false;
+  siguiente();
+}
+function pinta(t, texto, clase) {
+  const e = t.el.querySelector('.estado');
+  e.textContent = texto; e.className = 'estado' + (clase ? ' ' + clase : '');
+}
+const fmt = n => n.toLocaleString('es-ES');
+
+async function procesar(t) {
+  const blob = t.f, anio = t.anio;
+  const J = { entries: 0, defEntries: 0, candEntries: 0, deleted: 0, errors: [] };
+  pinta(t, 'Leyendo el índice del zip…');
+  const ab = async (s, e) => new DataView(await blob.slice(s, e).arrayBuffer());
+  const u64 = (dv, o) => dv.getUint32(o, true) + dv.getUint32(o + 4, true) * 4294967296;
+  const tailLen = Math.min(blob.size, 70000);
+  const tail = await ab(blob.size - tailLen, blob.size);
+  let eocd = -1;
+  for (let i = tailLen - 22; i >= 0; i--) { if (tail.getUint32(i, true) === 0x06054b50) { eocd = i; break; } }
+  if (eocd < 0) throw new Error('el fichero no parece un zip completo (¿descarga a medias?)');
+  let nEntries = tail.getUint16(eocd + 10, true), cdSize = tail.getUint32(eocd + 12, true), cdOff = tail.getUint32(eocd + 16, true);
+  if (nEntries === 0xFFFF || cdSize === 0xFFFFFFFF || cdOff === 0xFFFFFFFF) {
+    const loc = eocd - 20;
+    if (tail.getUint32(loc, true) !== 0x07064b50) throw new Error('zip64 sin localizador');
+    const z64off = u64(tail, loc + 8); const z = await ab(z64off, z64off + 56);
+    nEntries = u64(z, 32); cdSize = u64(z, 40); cdOff = u64(z, 48);
+  }
+  const cd = await ab(cdOff, cdOff + cdSize);
+  const files = []; let p = 0; const dec = new TextDecoder();
+  for (let k = 0; k < nEntries; k++) {
+    if (cd.getUint32(p, true) !== 0x02014b50) throw new Error('índice del zip dañado');
+    const method = cd.getUint16(p + 10, true);
+    let comp = cd.getUint32(p + 20, true), unc = cd.getUint32(p + 24, true);
+    const nl = cd.getUint16(p + 28, true), el = cd.getUint16(p + 30, true), cl = cd.getUint16(p + 32, true);
+    let lho = cd.getUint32(p + 42, true);
+    const name = dec.decode(new Uint8Array(cd.buffer, cd.byteOffset + p + 46, nl));
+    let q = p + 46 + nl; const qe = q + el;
+    while (q + 4 <= qe) {
+      const hid = cd.getUint16(q, true), hs = cd.getUint16(q + 2, true); let r2 = q + 4;
+      if (hid === 1) { if (unc === 0xFFFFFFFF) { unc = u64(cd, r2); r2 += 8; } if (comp === 0xFFFFFFFF) { comp = u64(cd, r2); r2 += 8; } if (lho === 0xFFFFFFFF) { lho = u64(cd, r2); r2 += 8; } }
+      q += 4 + hs;
+    }
+    files.push({ name, method, comp, unc, lho }); p += 46 + nl + el + cl;
+  }
+  const atoms = files.filter(f => /\.atom$/i.test(f.name));
+  const barra = t.el.querySelector('progress'); barra.max = atoms.length;
+  const datos = t.el.querySelector('.datos');
+
+  const kid = (e, n) => { if (!e) return null; for (const c of e.children) if (c.localName === n) return c; return null; };
+  const kids = (e, n) => e ? Array.from(e.children).filter(c => c.localName === n) : [];
+  const tx = e => e ? e.textContent.trim() : null;
+  const num = s => { if (s == null || s === '') return null; const v = Number(s); return Number.isFinite(v) ? v : null; };
+  const recs = new Map(), dels = new Map(), inv = new Map(), todos = new Map();
+  let hechos = 0; const t0 = Date.now();
+  for (const f of atoms) {
+    try {
+      const lh = await ab(f.lho, f.lho + 30);
+      if (lh.getUint32(0, true) !== 0x04034b50) throw new Error('cabecera local');
+      const start = f.lho + 30 + lh.getUint16(26, true) + lh.getUint16(28, true);
+      let stream = blob.slice(start, start + f.comp).stream();
+      if (f.method === 8) stream = stream.pipeThrough(new DecompressionStream('deflate-raw')); else if (f.method !== 0) throw new Error('método ' + f.method);
+      const doc = new DOMParser().parseFromString(await new Response(stream).text(), 'application/xml');
+      for (const e of doc.documentElement.children) {
+        if (e.localName === 'deleted-entry') { J.deleted++; const ref = corto(e.getAttribute('ref')), w = e.getAttribute('when'); if (!dels.has(ref) || dels.get(ref) < w) dels.set(ref, w); continue; }
+        if (e.localName !== 'entry') continue;
+        J.entries++;
+        const cfs = kid(e, 'ContractFolderStatus'); if (!cfs) continue;
+        const lcp = kid(cfs, 'LocatedContractingParty'); if (!lcp) continue;
+        const party = kid(lcp, 'Party');
+        const chain = [tx(kid(kid(party, 'PartyName'), 'Name'))];
+        let pp = kid(lcp, 'ParentLocatedParty');
+        while (pp) { chain.push(tx(kid(kid(pp, 'PartyName'), 'Name'))); pp = kid(pp, 'ParentLocatedParty'); }
+        let dir3 = null, idp = null;
+        for (const pi of kids(party, 'PartyIdentification')) { const idEl = kid(pi, 'ID'); const sch = idEl && idEl.getAttribute('schemeName'); if (sch === 'DIR3') dir3 = tx(idEl); if (sch === 'ID_PLATAFORMA') idp = tx(idEl); }
+        const ik = chain.join(' < ') + '|' + (dir3 || '') + '|' + (idp || '');
+        let io = inv.get(ik); if (io) io.n++; else { io = { k: inv.size, cad: chain, dir3, idp, n: 1 }; inv.set(ik, io); }
+        if (t.todos) {
+          // Fichero del sector público: todas las licitaciones, sin adjudicatario ni objeto
+          const idT = corto(tx(kid(e, 'id'))), updT = tx(kid(e, 'updated'));
+          const prevT = todos.get(idT);
+          if (!prevT || prevT.upd < updT) {
+            const projT = kid(cfs, 'ProcurementProject'), baT = kid(projT, 'BudgetAmount'), tpT = kid(cfs, 'TenderingProcess');
+            const resT = [];
+            for (const r of kids(cfs, 'TenderResult')) {
+              const lmt = kid(kid(r, 'AwardedTenderedProject'), 'LegalMonetaryTotal');
+              resT.push([tx(kid(r, 'ResultCode')), tx(kid(r, 'AwardDate')), num(tx(kid(lmt, 'TaxExclusiveAmount'))), num(tx(kid(lmt, 'PayableAmount'))), num(tx(kid(r, 'ReceivedTenderQuantity')))]);
+            }
+            todos.set(idT, { t: 'l', id: idT, upd: updT, est: tx(kid(cfs, 'ContractFolderStatusCode')), o: io.k,
+              tipo: tx(kid(projT, 'TypeCode')), cpv: tx(kid(kid(projT, 'RequiredCommodityClassification'), 'ItemClassificationCode')),
+              presIva: num(tx(kid(baT, 'TotalAmount'))), proc: tx(kid(tpT, 'ProcedureCode')), urg: tx(kid(tpT, 'UrgencyCode')), sist: tx(kid(tpT, 'ContractingSystemCode')), res: resT });
+          }
+        }
+        const esDef = chain.some(n => n && /^ministerio de defensa$/i.test(n));
+        if (esDef) J.defEntries++;
+        else {
+          if (chain.length > 1) continue;
+          if (!((!dir3 || dir3.startsWith('E')) || RX.test(chain[0] || ''))) continue;
+          J.candEntries++;
+        }
+        const id = corto(tx(kid(e, 'id'))), upd = tx(kid(e, 'updated'));
+        const prev = recs.get(id); if (prev && prev.upd >= upd) continue;
+        const proj = kid(cfs, 'ProcurementProject'), ba = kid(proj, 'BudgetAmount'), tp = kid(cfs, 'TenderingProcess'), per = kid(proj, 'PlannedPeriod');
+        const dm = kid(per, 'DurationMeasure');
+        const res = [];
+        for (const r of kids(cfs, 'TenderResult')) {
+          const atp = kid(r, 'AwardedTenderedProject'), lmt = kid(atp, 'LegalMonetaryTotal'), c = kid(r, 'Contract'), wp = kid(r, 'WinningParty');
+          let nif = null;
+          for (const pi of kids(wp, 'PartyIdentification')) { const v = tx(kid(pi, 'ID')); if (v) { nif = v; break; } }
+          res.push({ cod: tx(kid(r, 'ResultCode')), fAdj: tx(kid(r, 'AwardDate')), fForm: tx(kid(c, 'IssueDate')), lote: tx(kid(atp, 'ProcurementProjectLotID')),
+            sin: num(tx(kid(lmt, 'TaxExclusiveAmount'))), con: num(tx(kid(lmt, 'PayableAmount'))), nOf: num(tx(kid(r, 'ReceivedTenderQuantity'))),
+            pyme: tx(kid(r, 'SMEAwardedIndicator')), adj: nif });
+        }
+        recs.set(id, {
+          t: 'l', h: esDef ? 1 : 0, id, upd, exp: tx(kid(cfs, 'ContractFolderID')), est: tx(kid(cfs, 'ContractFolderStatusCode')),
+          cad: chain, dir3, idp,
+          tipo: tx(kid(proj, 'TypeCode')), sub: tx(kid(proj, 'SubTypeCode')), cpv: tx(kid(kid(proj, 'RequiredCommodityClassification'), 'ItemClassificationCode')),
+          obj: tx(kid(proj, 'Name')) || tx(kid(e, 'title')),
+          pres: num(tx(kid(ba, 'TaxExclusiveAmount'))), presIva: num(tx(kid(ba, 'TotalAmount'))), vest: num(tx(kid(ba, 'EstimatedOverallContractAmount'))),
+          dur: num(tx(dm)), durU: dm ? dm.getAttribute('unitCode') : null, ini: tx(kid(per, 'StartDate')), fin: tx(kid(per, 'EndDate')),
+          proc: tx(kid(tp, 'ProcedureCode')), urg: tx(kid(tp, 'UrgencyCode')), sist: tx(kid(tp, 'ContractingSystemCode')),
+          res
+        });
+      }
+    } catch (err) { J.errors.push(f.name + ': ' + String(err)); }
+    hechos++;
+    barra.value = hechos;
+    const min = (Date.now() - t0) / 60000;
+    const resta = hechos ? Math.round(min / hechos * (atoms.length - hechos)) : '–';
+    pinta(t, `Analizando ${fmt(hechos)} de ${fmt(atoms.length)} ficheros Atom · quedan unos ${resta} min`);
+    datos.textContent = `${fmt(J.entries)} entradas · ${fmt(J.defEntries)} de Defensa con jerarquía · ${fmt(J.candEntries)} candidatas sin jerarquía · ${fmt(recs.size)} licitaciones guardadas · ${J.errors.length} errores`;
+  }
+
+  pinta(t, 'Preparando el fichero de salida…');
+  const cache = new Map(); const lines = []; let nDef = 0;
+  for (const rec of recs.values()) {
+    if (rec.h) nDef++;
+    for (const x of rec.res) { if (x.adj) { if (!cache.has(x.adj)) cache.set(x.adj, await huella(x.adj)); x.adj = cache.get(x.adj); } }
+    lines.push(JSON.stringify(rec));
+  }
+  for (const [r2, w] of dels) lines.push(JSON.stringify({ t: 'b', id: r2, when: w }));
+  for (const o of inv.values()) { const { k, ...resto } = o; lines.push(JSON.stringify({ t: 'o', ...resto })); }
+  const cab = { t: 'cabecera', version: 3, anio, sindicacion: t.menores ? 1143 : 643, fichero: blob.name, lastModified: new Date(blob.lastModified).toUTCString(),
+    zipBytes: blob.size, ficherosAtom: atoms.length, entradas: J.entries, entradasDefensaJerarquia: J.defEntries, entradasCandidatasSinJerarquia: J.candEntries,
+    licitacionesDefensaJerarquia: nDef, licitacionesGuardadas: recs.size, organos: inv.size, errores: J.errors.length,
+    origen: 'extractor_placsp.html', generado: new Date().toISOString() };
+  const texto = JSON.stringify(cab) + '\n' + lines.join('\n') + '\n';
+  const salida = await new Response(new Blob([texto]).stream().pipeThrough(new CompressionStream('gzip'))).blob();
+  const nombre = t.menores ? `placsp_defensa_menores_${anio}.jsonl.gz` : `placsp_defensa_registros_${anio}.jsonl.gz`;
+  const guardar = () => { const a = document.createElement('a'); a.href = URL.createObjectURL(salida); a.download = nombre; document.body.appendChild(a); a.click(); a.remove(); };
+  const b = document.createElement('button'); b.className = 'sec'; b.textContent = 'Guardar otra vez ' + nombre; b.onclick = guardar;
+  t.el.querySelector('.acciones').appendChild(b);
+  let textoTodos = '';
+  if (t.todos) {
+    pinta(t, 'Preparando el fichero del sector público…');
+    const lt = [];
+    for (const o of inv.values()) lt.push(JSON.stringify({ t: 'o', k: o.k, cad: o.cad, dir3: o.dir3, idp: o.idp, n: o.n }));
+    for (const r of todos.values()) lt.push(JSON.stringify(r));
+    for (const [r2, w] of dels) lt.push(JSON.stringify({ t: 'b', id: r2, when: w }));
+    const cabT = { ...cab, ambito: 'sector_publico', licitaciones: todos.size };
+    const salidaT = await new Response(new Blob([JSON.stringify(cabT) + '\n' + lt.join('\n') + '\n']).stream().pipeThrough(new CompressionStream('gzip'))).blob();
+    const nombreT = t.menores ? `placsp_sector_publico_menores_${anio}.jsonl.gz` : `placsp_sector_publico_${anio}.jsonl.gz`;
+    const guardarT = () => { const a = document.createElement('a'); a.href = URL.createObjectURL(salidaT); a.download = nombreT; document.body.appendChild(a); a.click(); a.remove(); };
+    const bT = document.createElement('button'); bT.className = 'sec'; bT.style.marginLeft = '8px'; bT.textContent = 'Guardar otra vez ' + nombreT; bT.onclick = guardarT;
+    t.el.querySelector('.acciones').appendChild(bT);
+    textoTodos = ` y ${nombreT} (${(salidaT.size / 1048576).toFixed(1)} MB, ${fmt(todos.size)} licitaciones)`;
+    setTimeout(guardarT, 1500);
+  }
+  const textoDef = t.defensa === false ? 'fichero de Defensa no generado' : `${nombre} (${(salida.size / 1048576).toFixed(1)} MB)`;
+  pinta(t, `Listo · ${textoDef}` + textoTodos + (J.errors.length ? ` · ${J.errors.length} ficheros con error` : ''), J.errors.length ? 'err' : 'ok');
+  if (t.defensa === false) b.remove(); else guardar();
+}
+</script>
+</body>
+</html>

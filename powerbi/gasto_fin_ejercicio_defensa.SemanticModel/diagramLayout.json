@@ -1,0 +1,191 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 568,
+            "y": 25
+          },
+          "nodeIndex": "Medidas",
+          "nodeLineageTag": "2b3762b6-b248-5f8f-9c1c-7b4d0a89047b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 334,
+            "y": -25
+          },
+          "nodeIndex": "Adjudicaciones",
+          "nodeLineageTag": "254fb38a-f2a4-5d42-a60a-677f45365085",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 852,
+            "y": 51
+          },
+          "nodeIndex": "IGAE",
+          "nodeLineageTag": "74068891-12c7-52b0-96fd-04974654b5ea",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 25
+          },
+          "nodeIndex": "Meses",
+          "nodeLineageTag": "a754e2ef-bc4c-5ed0-b219-036820b8c7db",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1086,
+            "y": 25
+          },
+          "nodeIndex": "Sucesos",
+          "nodeLineageTag": "03ace71c-ef60-5971-8f11-70a764a6946a",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1320,
+            "y": 25
+          },
+          "nodeIndex": "AdjudicatariosAnual",
+          "nodeLineageTag": "3af51b40-b499-4396-83a8-7db67fa1b6fd",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1604,
+            "y": 25
+          },
+          "nodeIndex": "PerfilAdjudicatarios",
+          "nodeLineageTag": "88da9710-bf89-42cc-97ba-fbabc95cc608",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1888,
+            "y": 25
+          },
+          "nodeIndex": "Picos",
+          "nodeLineageTag": "f8572bff-2df5-4dc3-ad4a-1ba4f632ae36",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2122,
+            "y": 25
+          },
+          "nodeIndex": "Macro",
+          "nodeLineageTag": "dc822b19-ef90-4e53-9853-343a2048951a",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2356,
+            "y": 51
+          },
+          "nodeIndex": "Calendario",
+          "nodeLineageTag": "ead77c22-f4e1-4d17-bbb7-f7b9b6d15034",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2640,
+            "y": 25
+          },
+          "nodeIndex": "Competencia",
+          "nodeLineageTag": "fcffed5f-0e01-4e87-acdc-8e97d02f67ff",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2924,
+            "y": 25
+          },
+          "nodeIndex": "PresupuestoCierre",
+          "nodeLineageTag": "d80f61ff-bff7-4c3c-a41d-59e5afed712e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3158,
+            "y": 25
+          },
+          "nodeIndex": "LineaBase",
+          "nodeLineageTag": "4caf6384-0102-4b8b-a014-1c0708e624da",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

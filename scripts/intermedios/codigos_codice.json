@@ -1,0 +1,9 @@
+{
+  "fuente": "Listas de códigos CODICE publicadas en contrataciondelestado.es/codice/cl/ (consultadas 2026-10-22)",
+  "tipo": {"1": "Suministros", "2": "Servicios", "3": "Obras", "21": "Gestión de Servicios Públicos", "22": "Concesión de Servicios", "31": "Concesión de Obras Públicas", "32": "Concesión de Obras", "40": "Colaboración público-privada", "7": "Administrativo especial", "8": "Privado", "50": "Patrimonial"},
+  "proc": {"1": "Abierto", "2": "Restringido", "3": "Negociado sin publicidad", "4": "Negociado con publicidad", "5": "Diálogo competitivo", "6": "Contrato menor", "7": "Derivado de acuerdo marco", "8": "Concurso de proyectos", "9": "Abierto simplificado", "10": "Asociación para la innovación", "11": "Derivado de asociación para la innovación", "12": "Basado en un sistema dinámico de adquisición", "13": "Licitación con negociación", "100": "Normas internas", "999": "Otros"},
+  "urg": {"1": "Ordinaria", "2": "Urgente", "3": "Emergencia"},
+  "sist": {"0": "No aplica", "1": "Establecimiento del Acuerdo Marco", "2": "Establecimiento del Sistema Dinámico de Adquisición", "3": "Contrato basado en un Acuerdo Marco", "4": "Contrato basado en un Sistema Dinámico de Adquisición"},
+  "res": {"1": "Adjudicado provisionalmente", "2": "Adjudicado definitivamente", "3": "Desierto", "4": "Desistimiento", "5": "Renuncia", "6": "Desierto provisionalmente", "7": "Desierto definitivamente", "8": "Adjudicado", "9": "Formalizado", "10": "Licitador mejor valorado", "11": "Encargo formalizado"},
+  "estado": {"PRE": "Anuncio previo", "PUB": "En plazo", "EV": "Pendiente de adjudicación", "ADJ": "Adjudicada", "RES": "Resuelta", "ANUL": "Anulada"}
+}

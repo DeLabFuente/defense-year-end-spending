@@ -1,0 +1,121 @@
+/// Sucesos públicos que pueden explicar picos de contratación fuera de lo normal (fuente oficial en cada fila).
+table Sucesos
+	lineageTag: 03ace71c-ef60-5971-8f11-70a764a6946a
+
+	column id
+		dataType: string
+		lineageTag: 4b1b28c3-810a-5886-9af5-ee108b2aa6ef
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_inicio
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: 2663a84b-72b5-5553-959a-fbef5cdf7297
+		summarizeBy: none
+		sourceColumn: fecha_inicio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column fecha_fin
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: e90da54d-0469-5e26-b53c-9e84145422d9
+		summarizeBy: none
+		sourceColumn: fecha_fin
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	/// Presupuestario, Programa, Político, Normativo, Emergencia, Internacional o Cierre del ejercicio (orden anual de Hacienda con las fechas límite).
+	column tipo
+		dataType: string
+		lineageTag: b3e0e903-c8ed-5297-b773-add01ee93e26
+		summarizeBy: none
+		sourceColumn: tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column ambito
+		dataType: string
+		lineageTag: 88f87ac7-a34d-566c-8f5e-67543170942c
+		summarizeBy: none
+		sourceColumn: ambito
+
+		annotation SummarizationSetBy = Automatic
+
+	column suceso
+		dataType: string
+		lineageTag: 9722a8f0-aaeb-51fd-bfde-131fd97eee7f
+		summarizeBy: none
+		sourceColumn: suceso
+
+		annotation SummarizationSetBy = Automatic
+
+	column efecto_esperado
+		dataType: string
+		lineageTag: 164e48fa-063f-5e04-afaa-76374c834028
+		summarizeBy: none
+		sourceColumn: efecto_esperado
+
+		annotation SummarizationSetBy = Automatic
+
+	column senal_en_datos
+		dataType: string
+		lineageTag: bee4d453-d199-5e8c-9c47-d0c4c52cce89
+		summarizeBy: none
+		sourceColumn: senal_en_datos
+
+		annotation SummarizationSetBy = Automatic
+
+	column fuente
+		dataType: string
+		lineageTag: fe194ed5-913a-523c-8917-ec20f7eec7be
+		summarizeBy: none
+		sourceColumn: fuente
+
+		annotation SummarizationSetBy = Automatic
+
+	column url
+		dataType: string
+		lineageTag: 66744773-0a6d-56f2-b8f7-53b6af11054d
+		dataCategory: WebUrl
+		summarizeBy: none
+		sourceColumn: url
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Primer día del mes de inicio, para relacionarlo con el calendario.
+	column fecha_mes
+		dataType: dateTime
+		isHidden
+		lineageTag: 91fc9ace-0727-53e5-94b2-d0ad029405d1
+		summarizeBy: none
+		sourceColumn: fecha_mes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition Sucesos = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(RutaDatos & "sucesos_2017_2026.csv"), [Delimiter = ";", Columns = 10, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Limpio = Table.TransformColumnNames(Encabezados, each Text.Replace(_, Character.FromNumber(65279), "")),
+				    Vacios = Table.ReplaceValue(Limpio, "", null, Replacer.ReplaceValue, {"fecha_fin"}),
+				    Tipos = Table.TransformColumnTypes(Vacios, {
+				        {"id", type text}, {"fecha_inicio", type date}, {"fecha_fin", type date}, {"tipo", type text}, {"ambito", type text},
+				        {"suceso", type text}, {"efecto_esperado", type text}, {"senal_en_datos", type text}, {"fuente", type text}, {"url", type text}}, "en-US"),
+				    Mes = Table.AddColumn(Tipos, "fecha_mes", each Date.StartOfMonth([fecha_inicio]), type date)
+				in
+				    Mes
+
+	annotation PBI_ResultType = Table
+

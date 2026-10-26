@@ -1,0 +1,917 @@
+﻿fecha_mes;anio;mes;rama;en_seccion_14;tipo_contrato;procedimiento;tramitacion;sistema_contratacion;es_establecimiento_marco;n_adjudicaciones;n_expedientes;importe_sin_iva_eur;importe_con_iva_eur
+2023-01-01;2023;1;Armada;Sí;Suministros;Abierto;Ordinaria;No aplica;No;4;2;382644,63;400000,00
+2023-01-01;2023;1;Armada;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;212395,90;256999,04
+2023-01-01;2023;1;Armada;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;8;8;971417,30;1023374,94
+2023-01-01;2023;1;Armada;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;22;21;490487,98;539475,68
+2023-01-01;2023;1;Armada;Sí;Servicios;Abierto;Ordinaria;No aplica;No;2;2;120000,00;120000,00
+2023-01-01;2023;1;Armada;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;3;3;247257,02;273414,54
+2023-01-01;2023;1;Armada;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;6;6;1500587,14;1605710,44
+2023-01-01;2023;1;Armada;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;42;41;1008069,95;1167056,04
+2023-01-01;2023;1;Armada;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;1;1;207943,01;251611,04
+2023-01-01;2023;1;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;No aplica;No;4;2;1911793,64;2313270,30
+2023-01-01;2023;1;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;3305785,12;4000000,00
+2023-01-01;2023;1;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;165289,26;200000,00
+2023-01-01;2023;1;Ejército de Tierra;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;10;1;770000,00;846999,90
+2023-01-01;2023;1;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Ordinaria;No aplica;No;1;1;165289,26;200000,00
+2023-01-01;2023;1;Ejército de Tierra;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;12;12;2000277,12;2333697,16
+2023-01-01;2023;1;Ejército de Tierra;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;22;15;850880,85;1025960,82
+2023-01-01;2023;1;Ejército de Tierra;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;5;5;80,01;304,40
+2023-01-01;2023;1;Ejército de Tierra;Sí;Servicios;Abierto;Urgente;No aplica;No;1;1;13200000,00;13200000,00
+2023-01-01;2023;1;Ejército de Tierra;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;7;7;1235980,36;1382339,06
+2023-01-01;2023;1;Ejército de Tierra;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;14;11;471336,21;556165,58
+2023-01-01;2023;1;Ejército de Tierra;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;5;5;1183045,92;1220041,57
+2023-01-01;2023;1;Ejército del Aire;Sí;Suministros;Abierto;Ordinaria;No aplica;No;4;4;5161690,86;5242914,00
+2023-01-01;2023;1;Ejército del Aire;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;3240000,00;3240000,00
+2023-01-01;2023;1;Ejército del Aire;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;1;1;14999,17;18149,00
+2023-01-01;2023;1;Ejército del Aire;Sí;Concesión de Servicios;Abierto;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-01-01;2023;1;Ejército del Aire;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;2;2;9,04;9,04
+2023-01-01;2023;1;Ejército del Aire;Sí;Servicios;Abierto;Ordinaria;No aplica;No;3;3;387819,56;395341,67
+2023-01-01;2023;1;Ejército del Aire;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;16;3;2731942,13;3263467,95
+2023-01-01;2023;1;Ejército del Aire;Sí;Servicios;Abierto;Urgente;No aplica;No;2;2;692749,00;722726,29
+2023-01-01;2023;1;Ejército del Aire;Sí;Obras;Negociado sin publicidad;Urgente;No aplica;No;1;1;2148476,31;2599656,34
+2023-01-01;2023;1;Estado Mayor de la Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;1;1;6294,00;7615,74
+2023-01-01;2023;1;ISDEFE;No;Suministros;Abierto;Ordinaria;No aplica;No;1;1;38024,18;46009,26
+2023-01-01;2023;1;ISDEFE;No;Servicios;Abierto;Ordinaria;No aplica;No;14;11;1206062,63;1455706,78
+2023-01-01;2023;1;ISDEFE;No;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;79;1;2936,10;3552,67
+2023-01-01;2023;1;ISDEFE;No;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;2;2;110620,40;133860,37
+2023-01-01;2023;1;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;3;1;157511,30;190588,67
+2023-01-01;2023;1;Secretaría de Estado de Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;3;3;10760783,73;13020548,31
+2023-01-01;2023;1;Secretaría de Estado de Defensa;Sí;Suministros;Negociado con publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;22878284,00;22878284,00
+2023-01-01;2023;1;Secretaría de Estado de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;5;4;121696,07;147252,25
+2023-01-01;2023;1;Secretaría de Estado de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;6;3;2106009,57;2548271,58
+2023-01-01;2023;1;Secretaría de Estado de Defensa;Sí;Servicios;Abierto;Urgente;No aplica;No;1;1;178000,00;215380,00
+2023-01-01;2023;1;Secretaría de Estado de Defensa;Sí;Servicios;Restringido;Ordinaria;Contrato basado en un Sistema Dinámico de Adquisición;No;1;1;99001,00;119791,21
+2023-01-01;2023;1;Secretaría de Estado de Defensa;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;3;3;455100,00;550671,00
+2023-01-01;2023;1;Secretaría de Estado de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;2;2;1747933,88;2115000,00
+2023-01-01;2023;1;Secretaría de Estado de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;4;3;100318,88;121385,84
+2023-01-01;2023;1;Secretaría de Estado de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;1;1;48715,00;58945,15
+2023-01-01;2023;1;Subsecretaría de Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;19550,00;20332,00
+2023-01-01;2023;1;Subsecretaría de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;5;5;219520,33;258719,60
+2023-01-01;2023;1;Subsecretaría de Defensa;Sí;Concesión de Servicios;Abierto;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-01-01;2023;1;Subsecretaría de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;2;2;772995,00;798840,75
+2023-01-01;2023;1;Subsecretaría de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;59649,16;72175,48
+2023-01-01;2023;1;Subsecretaría de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;9;7;376975,82;381631,96
+2023-02-01;2023;2;Armada;Sí;Suministros;Abierto;Ordinaria;No aplica;No;4;4;534980,00;534980,00
+2023-02-01;2023;2;Armada;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;270158,00;270158,00
+2023-02-01;2023;2;Armada;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;2;2;636730,00;639999,00
+2023-02-01;2023;2;Armada;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;6;6;264622,90;289730,00
+2023-02-01;2023;2;Armada;Sí;Concesión de Servicios;Abierto simplificado;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-02-01;2023;2;Armada;Sí;Servicios;Abierto;Ordinaria;No aplica;No;12;12;1737585,72;1877713,00
+2023-02-01;2023;2;Armada;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;101234,63;122493,90
+2023-02-01;2023;2;Armada;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;11;11;2266070,61;2454094,23
+2023-02-01;2023;2;Armada;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;12;12;335000,84;378299,62
+2023-02-01;2023;2;Armada;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;3;3;1406464,92;1701822,55
+2023-02-01;2023;2;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;No aplica;No;7;5;1594883,15;1929808,60
+2023-02-01;2023;2;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;3;2;915663,14;1107952,40
+2023-02-01;2023;2;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Ordinaria;No aplica;No;1;1;1239669,42;1500000,00
+2023-02-01;2023;2;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;2;2;18719793,42;22650950,04
+2023-02-01;2023;2;Ejército de Tierra;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;5;5;10585562,16;12724530,21
+2023-02-01;2023;2;Ejército de Tierra;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;37;23;965058,42;1128360,79
+2023-02-01;2023;2;Ejército de Tierra;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;3;3;146,93;161,10
+2023-02-01;2023;2;Ejército de Tierra;Sí;Concesión de Servicios;Abierto simplificado;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-02-01;2023;2;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;No aplica;No;3;2;206611,57;250000,00
+2023-02-01;2023;2;Ejército de Tierra;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;1665755,37;2015564,00
+2023-02-01;2023;2;Ejército de Tierra;Sí;Servicios;Negociado con publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;2;2;35000000,00;41300000,00
+2023-02-01;2023;2;Ejército de Tierra;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;27;16;409199,53;466136,09
+2023-02-01;2023;2;Ejército de Tierra;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;4;4;555674,40;666218,76
+2023-02-01;2023;2;Ejército de Tierra;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;1;1;230000,00;246100,00
+2023-02-01;2023;2;Ejército de Tierra;Sí;Administrativo especial;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-02-01;2023;2;Ejército de Tierra;Sí;Administrativo especial;Abierto simplificado;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-02-01;2023;2;Ejército del Aire;Sí;Suministros;Abierto;Ordinaria;No aplica;No;6;3;6514324,78;6538333,48
+2023-02-01;2023;2;Ejército del Aire;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;3;2;3932625,00;4688625,00
+2023-02-01;2023;2;Ejército del Aire;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;37190,08;45000,00
+2023-02-01;2023;2;Ejército del Aire;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;2;2;2,90;2,90
+2023-02-01;2023;2;Ejército del Aire;Sí;Servicios;Abierto;Ordinaria;No aplica;No;5;5;567928,40;672552,17
+2023-02-01;2023;2;Ejército del Aire;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;38696,73;46823,04
+2023-02-01;2023;2;Ejército del Aire;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;6;3;102715,86;105386,20
+2023-02-01;2023;2;Ejército del Aire;Sí;Obras;Abierto;Ordinaria;No aplica;No;1;1;4791612,14;5797850,69
+2023-02-01;2023;2;Estado Mayor de la Defensa;Sí;Administrativo especial;Abierto simplificado;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-02-01;2023;2;ISDEFE;No;Servicios;Abierto;Ordinaria;No aplica;No;22;22;1803099,60;2185380,32
+2023-02-01;2023;2;ISDEFE;No;Servicios;Abierto;Urgente;No aplica;No;1;1;80080,00;96896,80
+2023-02-01;2023;2;ISDEFE;No;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;3;3;1105720,00;1337921,20
+2023-02-01;2023;2;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;1;1;139000,00;139000,00
+2023-02-01;2023;2;Secretaría de Estado de Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;239890396,10;239890396,10
+2023-02-01;2023;2;Secretaría de Estado de Defensa;Sí;Suministros;Negociado sin publicidad;Urgente;Establecimiento del Acuerdo Marco;Sí;1;1;106282000,00;106282000,00
+2023-02-01;2023;2;Secretaría de Estado de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;7;7;385227,64;466125,45
+2023-02-01;2023;2;Secretaría de Estado de Defensa;Sí;Concesión de Servicios;Abierto;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-02-01;2023;2;Secretaría de Estado de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;1;1;495867,76;599999,99
+2023-02-01;2023;2;Secretaría de Estado de Defensa;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;2;1;3747600,00;4534596,00
+2023-02-01;2023;2;Secretaría de Estado de Defensa;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;37298,52;45131,21
+2023-02-01;2023;2;Secretaría de Estado de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;12;8;458031,29;554217,86
+2023-02-01;2023;2;Secretaría de Estado de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;7;7;619870,56;750043,38
+2023-02-01;2023;2;Subsecretaría de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;14;4;2324512,92;2597529,84
+2023-02-01;2023;2;Subsecretaría de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;123966,94;150000,00
+2023-02-01;2023;2;Subsecretaría de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;2;2;28301,03;34237,50
+2023-02-01;2023;2;Subsecretaría de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;140382,65;169863,01
+2023-02-01;2023;2;Subsecretaría de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;5;4;184579,72;229391,46
+2023-02-01;2023;2;Subsecretaría de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;1;1;53370,41;64578,20
+2023-03-01;2023;3;Armada;Sí;Suministros;Abierto;Ordinaria;No aplica;No;1;1;337150,00;407951,50
+2023-03-01;2023;3;Armada;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;227531,73;275313,39
+2023-03-01;2023;3;Armada;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;9;9;803063,09;864000,00
+2023-03-01;2023;3;Armada;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;11;6;307785,02;327654,02
+2023-03-01;2023;3;Armada;Sí;Servicios;Abierto;Ordinaria;No aplica;No;50;25;1624447,26;1800425,37
+2023-03-01;2023;3;Armada;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;1239578,77;1499890,56
+2023-03-01;2023;3;Armada;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;4;4;948652,24;1041609,21
+2023-03-01;2023;3;Armada;Sí;Servicios;Negociado sin publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;2;2;6790000,00;6790000,00
+2023-03-01;2023;3;Armada;Sí;Servicios;Negociado con publicidad;Ordinaria;No aplica;No;3;3;142222,31;159489,00
+2023-03-01;2023;3;Armada;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;33;33;7492629,78;8214688,09
+2023-03-01;2023;3;Armada;Sí;Servicios;Derivado de acuerdo marco;Urgente;Contrato basado en un Acuerdo Marco;No;1;1;898000,00;898000,00
+2023-03-01;2023;3;Armada;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;8;8;171708,14;197666,86
+2023-03-01;2023;3;Armada;Sí;Obras;Abierto;Ordinaria;No aplica;No;1;1;1772427,00;2144636,67
+2023-03-01;2023;3;Armada;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;7;7;1310691,99;1579688,29
+2023-03-01;2023;3;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;No aplica;No;2;2;271698,53;328755,22
+2023-03-01;2023;3;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;9;5;12106152,24;14648444,24
+2023-03-01;2023;3;Ejército de Tierra;Sí;Suministros;Abierto;Urgente;No aplica;No;1;1;454126,00;549492,46
+2023-03-01;2023;3;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Ordinaria;No aplica;No;2;2;1775000,00;2147750,00
+2023-03-01;2023;3;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;4;2;3146115,00;3766280,50
+2023-03-01;2023;3;Ejército de Tierra;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;17;17;2084593,19;2461208,94
+2023-03-01;2023;3;Ejército de Tierra;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;44;24;1078754,43;1294292,70
+2023-03-01;2023;3;Ejército de Tierra;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;4;4;0,00;0,00
+2023-03-01;2023;3;Ejército de Tierra;Sí;Servicios;Licitación con negociación;Ordinaria;No aplica;No;1;1;111000,00;134310,00
+2023-03-01;2023;3;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;No aplica;No;23;4;944292,19;1052398,70
+2023-03-01;2023;3;Ejército de Tierra;Sí;Servicios;Abierto;Urgente;No aplica;No;24;1;1478289,08;1626118,00
+2023-03-01;2023;3;Ejército de Tierra;Sí;Servicios;Negociado sin publicidad;Urgente;No aplica;No;1;1;4132231,40;5000000,00
+2023-03-01;2023;3;Ejército de Tierra;Sí;Servicios;Negociado con publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;11;2;15200661,93;17925554,97
+2023-03-01;2023;3;Ejército de Tierra;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;92;92;23990238,36;27685622,96
+2023-03-01;2023;3;Ejército de Tierra;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;19;15;238320,86;283124,64
+2023-03-01;2023;3;Ejército de Tierra;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;37;37;2296018,18;2778182,59
+2023-03-01;2023;3;Ejército de Tierra;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;17;17;2591931,12;3099959,84
+2023-03-01;2023;3;Ejército de Tierra;Sí;Administrativo especial;Abierto simplificado;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-03-01;2023;3;Ejército del Aire;Sí;Suministros;Abierto;Ordinaria;No aplica;No;3;2;4911650,00;4911650,00
+2023-03-01;2023;3;Ejército del Aire;Sí;Suministros;Abierto;Urgente;Establecimiento del Acuerdo Marco;Sí;1;1;5272384,00;5272384,00
+2023-03-01;2023;3;Ejército del Aire;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;13;13;713661,88;830380,40
+2023-03-01;2023;3;Ejército del Aire;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;6;6;296290,48;317332,12
+2023-03-01;2023;3;Ejército del Aire;Sí;Concesión de Servicios;Abierto;Ordinaria;No aplica;No;1;1;4,09;4,50
+2023-03-01;2023;3;Ejército del Aire;Sí;Servicios;Abierto;Ordinaria;No aplica;No;12;3;782807,43;872438,98
+2023-03-01;2023;3;Ejército del Aire;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;727330,00;727330,00
+2023-03-01;2023;3;Ejército del Aire;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;23;23;6226458,30;6514332,36
+2023-03-01;2023;3;Ejército del Aire;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;2;2;75191,56;90981,79
+2023-03-01;2023;3;Ejército del Aire;Sí;Obras;Abierto;Ordinaria;No aplica;No;1;1;379809,99;459570,09
+2023-03-01;2023;3;Ejército del Aire;Sí;Obras;Negociado sin publicidad;Urgente;No aplica;No;4;4;8817915,78;10669678,09
+2023-03-01;2023;3;Ejército del Aire;Sí;Administrativo especial;Abierto;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-03-01;2023;3;Estado Mayor de la Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;1;1;270491,55;327294,78
+2023-03-01;2023;3;Estado Mayor de la Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;2;2;70361,70;85137,66
+2023-03-01;2023;3;Estado Mayor de la Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;1;1;80275,00;88302,50
+2023-03-01;2023;3;Estado Mayor de la Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;1;1;27000,00;32670,00
+2023-03-01;2023;3;ISDEFE;No;Suministros;Abierto;Ordinaria;No aplica;No;3;2;83782,75;101377,12
+2023-03-01;2023;3;ISDEFE;No;Suministros;Abierto simplificado;Ordinaria;No aplica;No;1;1;44093,00;53352,53
+2023-03-01;2023;3;ISDEFE;No;Servicios;Abierto;Ordinaria;No aplica;No;23;21;1944870,90;2353294,09
+2023-03-01;2023;3;ISDEFE;No;Servicios;Abierto;Urgente;No aplica;No;2;2;176705,00;213813,05
+2023-03-01;2023;3;ISDEFE;No;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;252049,60;304980,02
+2023-03-01;2023;3;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;9;6;1023213,24;1238087,31
+2023-03-01;2023;3;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;2;2;942237,22;1023475,88
+2023-03-01;2023;3;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Urgente;No aplica;No;1;1;299547,69;362452,71
+2023-03-01;2023;3;Secretaría de Estado de Defensa;Sí;Suministros;Negociado sin publicidad;Urgente;Establecimiento del Acuerdo Marco;Sí;1;1;24305785,13;29410000,00
+2023-03-01;2023;3;Secretaría de Estado de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;13;13;6081875,04;7359068,80
+2023-03-01;2023;3;Secretaría de Estado de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;11;7;191657,06;225731,05
+2023-03-01;2023;3;Secretaría de Estado de Defensa;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-03-01;2023;3;Secretaría de Estado de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;4;4;1152030,68;1393957,15
+2023-03-01;2023;3;Secretaría de Estado de Defensa;Sí;Servicios;Abierto;Urgente;No aplica;No;5;1;11358272,64;13743509,90
+2023-03-01;2023;3;Secretaría de Estado de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;11;11;38511560,11;45769487,73
+2023-03-01;2023;3;Secretaría de Estado de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;8;5;230092,70;278410,97
+2023-03-01;2023;3;Secretaría de Estado de Defensa;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;6;6;95664,11;115760,81
+2023-03-01;2023;3;Secretaría de Estado de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;2;2;471446,67;570450,46
+2023-03-01;2023;3;Sociedad Anónima de Electrónica Submarina (SAES);No;Servicios;Abierto simplificado;Ordinaria;No aplica;No;1;1;20227,18;24474,89
+2023-03-01;2023;3;Subsecretaría de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;23;4;5109033,61;6053414,81
+2023-03-01;2023;3;Subsecretaría de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;17;17;3082553,71;3393658,00
+2023-03-01;2023;3;Subsecretaría de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;7;1;17630,66;21333,11
+2023-03-01;2023;3;Subsecretaría de Defensa;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;3;3;1300000,00;1485000,00
+2023-03-01;2023;3;Subsecretaría de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;1;1;650000,00;786500,00
+2023-03-01;2023;3;Subsecretaría de Defensa;Sí;Servicios;Negociado sin publicidad;Urgente;No aplica;No;1;1;0,00;0,00
+2023-03-01;2023;3;Subsecretaría de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;15;15;7417874,20;8945736,44
+2023-03-01;2023;3;Subsecretaría de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;2;2;24378,89;29498,45
+2023-04-01;2023;4;Armada;Sí;Suministros;Abierto;Ordinaria;No aplica;No;1;1;456254,50;456254,50
+2023-04-01;2023;4;Armada;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;4;4;209006,80;227388,10
+2023-04-01;2023;4;Armada;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;9;9;1073096,74;1174373,14
+2023-04-01;2023;4;Armada;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;17;15;699408,60;730275,85
+2023-04-01;2023;4;Armada;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-04-01;2023;4;Armada;Sí;Servicios;Abierto;Ordinaria;No aplica;No;6;5;423140,49;470000,00
+2023-04-01;2023;4;Armada;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;1000000,00;1012600,00
+2023-04-01;2023;4;Armada;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;86099,00;104179,79
+2023-04-01;2023;4;Armada;Sí;Servicios;Negociado con publicidad;Ordinaria;No aplica;No;3;3;97000,00;97000,00
+2023-04-01;2023;4;Armada;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;39;39;9420195,33;11067113,39
+2023-04-01;2023;4;Armada;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;16;11;336797,23;372118,21
+2023-04-01;2023;4;Armada;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;9;9;410123,73;485276,38
+2023-04-01;2023;4;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;No aplica;No;1;1;57851,24;70000,00
+2023-04-01;2023;4;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;1116000,00;1350360,00
+2023-04-01;2023;4;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Contrato basado en un Acuerdo Marco;No;4;4;1750055,00;2033566,55
+2023-04-01;2023;4;Ejército de Tierra;Sí;Suministros;Abierto;Urgente;No aplica;No;1;1;504000,00;609840,00
+2023-04-01;2023;4;Ejército de Tierra;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;3;3;674375,76;815994,68
+2023-04-01;2023;4;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Ordinaria;No aplica;No;2;1;702792,00;850378,32
+2023-04-01;2023;4;Ejército de Tierra;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;51;51;22245701,69;26823876,12
+2023-04-01;2023;4;Ejército de Tierra;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;24;19;719663,20;857703,44
+2023-04-01;2023;4;Ejército de Tierra;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;4;4;147,70;150,00
+2023-04-01;2023;4;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;No aplica;No;1;1;2396694,22;2900000,00
+2023-04-01;2023;4;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;Contrato basado en un Acuerdo Marco;No;2;2;47107,44;57000,00
+2023-04-01;2023;4;Ejército de Tierra;Sí;Servicios;Negociado sin publicidad;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;495867,76;600000,00
+2023-04-01;2023;4;Ejército de Tierra;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;14;14;11924561,70;12660999,28
+2023-04-01;2023;4;Ejército de Tierra;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;18;17;302838,03;361169,02
+2023-04-01;2023;4;Ejército de Tierra;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;40;40;1985030,91;2403097,37
+2023-04-01;2023;4;Ejército de Tierra;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;13;13;578259,74;686201,49
+2023-04-01;2023;4;Ejército del Aire;Sí;Suministros;Abierto;Ordinaria;No aplica;No;4;1;188588,00;188588,00
+2023-04-01;2023;4;Ejército del Aire;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;7;7;453964,44;510176,02
+2023-04-01;2023;4;Ejército del Aire;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;12;9;136008,82;163322,73
+2023-04-01;2023;4;Ejército del Aire;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;1;1;90,00;90,00
+2023-04-01;2023;4;Ejército del Aire;Sí;Servicios;Abierto;Ordinaria;No aplica;No;2;2;75532,00;82209,72
+2023-04-01;2023;4;Ejército del Aire;Sí;Servicios;Abierto;Urgente;No aplica;No;1;1;190140,00;190140,00
+2023-04-01;2023;4;Ejército del Aire;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;5;5;7872382,98;8842100,00
+2023-04-01;2023;4;Ejército del Aire;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;2;2;80863,10;90767,59
+2023-04-01;2023;4;Ejército del Aire;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;1;1;69598,13;74470,00
+2023-04-01;2023;4;ISDEFE;No;Suministros;Abierto;Ordinaria;No aplica;No;1;1;20000,00;24200,00
+2023-04-01;2023;4;ISDEFE;No;Suministros;Abierto simplificado;Ordinaria;No aplica;No;1;1;84416,17;102143,56
+2023-04-01;2023;4;ISDEFE;No;Servicios;Abierto;Ordinaria;No aplica;No;18;18;1416481,53;1719992,64
+2023-04-01;2023;4;ISDEFE;No;Servicios;Abierto;Urgente;No aplica;No;2;1;1559029,68;1886425,91
+2023-04-01;2023;4;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;12;3;1262443,20;1527556,27
+2023-04-01;2023;4;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;24;1;0,00;0,00
+2023-04-01;2023;4;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Urgente;No aplica;No;7;4;112288601,89;135869208,30
+2023-04-01;2023;4;Secretaría de Estado de Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;5925,00;7169,25
+2023-04-01;2023;4;Secretaría de Estado de Defensa;Sí;Suministros;Negociado con publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;2;1;78199317,83;94110513,32
+2023-04-01;2023;4;Secretaría de Estado de Defensa;Sí;Suministros;Negociado con publicidad;Urgente;Establecimiento del Acuerdo Marco;Sí;3;1;29750676,50;35998318,56
+2023-04-01;2023;4;Secretaría de Estado de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;49783,25;60237,73
+2023-04-01;2023;4;Secretaría de Estado de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;5;5;237822,64;287765,40
+2023-04-01;2023;4;Secretaría de Estado de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;8;3;1340234,85;1621208,18
+2023-04-01;2023;4;Secretaría de Estado de Defensa;Sí;Servicios;Abierto;Urgente;No aplica;No;3;1;9959401,57;12050875,90
+2023-04-01;2023;4;Secretaría de Estado de Defensa;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;123157,00;149019,97
+2023-04-01;2023;4;Secretaría de Estado de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;4;4;3789508,67;4364805,50
+2023-04-01;2023;4;Secretaría de Estado de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;3;3;36309,50;43933,45
+2023-04-01;2023;4;Secretaría de Estado de Defensa;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;3;3;46804,83;56633,85
+2023-04-01;2023;4;Secretaría de Estado de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;1;1;51095,62;61825,70
+2023-04-01;2023;4;Subsecretaría de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;7;3;2628914,65;3083858,83
+2023-04-01;2023;4;Subsecretaría de Defensa;Sí;Suministros;Abierto;Urgente;No aplica;No;1;1;121041,32;146460,00
+2023-04-01;2023;4;Subsecretaría de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;18;18;2032951,47;2194872,00
+2023-04-01;2023;4;Subsecretaría de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;5;2;71568,79;82298,46
+2023-04-01;2023;4;Subsecretaría de Defensa;Sí;Suministros;Abierto simplificado;Urgente;No aplica;No;1;1;30262,19;36617,25
+2023-04-01;2023;4;Subsecretaría de Defensa;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;259500,00;313995,00
+2023-04-01;2023;4;Subsecretaría de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;3;3;2933884,29;3550000,00
+2023-04-01;2023;4;Subsecretaría de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;2;2;30944,17;35972,44
+2023-05-01;2023;5;Armada;Sí;Suministros;Abierto;Ordinaria;No aplica;No;2;1;332085,02;401822,87
+2023-05-01;2023;5;Armada;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;3;3;4582341,00;4800446,36
+2023-05-01;2023;5;Armada;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;17;17;5400230,49;6185041,89
+2023-05-01;2023;5;Armada;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;25;22;761953,55;835862,17
+2023-05-01;2023;5;Armada;Sí;Servicios;Abierto;Ordinaria;No aplica;No;6;6;347084,93;404222,77
+2023-05-01;2023;5;Armada;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;3;3;122081,65;147718,80
+2023-05-01;2023;5;Armada;Sí;Servicios;Negociado con publicidad;Ordinaria;No aplica;No;1;1;20000,00;20000,00
+2023-05-01;2023;5;Armada;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;42;42;24286089,58;24759472,34
+2023-05-01;2023;5;Armada;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;34;30;912420,80;1057329,90
+2023-05-01;2023;5;Armada;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;18;18;972214,95;1121022,74
+2023-05-01;2023;5;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;No aplica;No;4;4;720918,70;872202,73
+2023-05-01;2023;5;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;12;2;3038766,20;3525234,02
+2023-05-01;2023;5;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Contrato basado en un Acuerdo Marco;No;6;6;688843,79;833500,99
+2023-05-01;2023;5;Ejército de Tierra;Sí;Suministros;Abierto;Urgente;Establecimiento del Acuerdo Marco;Sí;1;1;2486069,18;2734676,12
+2023-05-01;2023;5;Ejército de Tierra;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;5217420,00;6313078,20
+2023-05-01;2023;5;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Ordinaria;No aplica;No;9;3;346856,81;420396,87
+2023-05-01;2023;5;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Ordinaria;Contrato basado en un Acuerdo Marco;No;2;2;7479021,90;8396216,50
+2023-05-01;2023;5;Ejército de Tierra;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;85;85;65018046,06;78652541,30
+2023-05-01;2023;5;Ejército de Tierra;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;31;26;882176,70;1054324,67
+2023-05-01;2023;5;Ejército de Tierra;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;7;6;19,67;23,80
+2023-05-01;2023;5;Ejército de Tierra;Sí;Concesión de Servicios;Abierto simplificado;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-05-01;2023;5;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;No aplica;No;22;4;663194,45;771942,70
+2023-05-01;2023;5;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;4;1;0,00;0,00
+2023-05-01;2023;5;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;238842,98;289000,00
+2023-05-01;2023;5;Ejército de Tierra;Sí;Servicios;Negociado con publicidad;Ordinaria;Contrato basado en un Acuerdo Marco;No;2;2;1025959,50;1241411,00
+2023-05-01;2023;5;Ejército de Tierra;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;87;87;30475969,52;33825631,39
+2023-05-01;2023;5;Ejército de Tierra;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;28;23;281678,68;335896,44
+2023-05-01;2023;5;Ejército de Tierra;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;59;59;3854074,15;4663429,74
+2023-05-01;2023;5;Ejército de Tierra;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;29;28;1365039,95;1542169,78
+2023-05-01;2023;5;Ejército de Tierra;Sí;Administrativo especial;Abierto simplificado;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-05-01;2023;5;Ejército del Aire;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;79900,00;96679,00
+2023-05-01;2023;5;Ejército del Aire;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;16;16;185698,72;216078,39
+2023-05-01;2023;5;Ejército del Aire;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;15;13;390974,07;442259,95
+2023-05-01;2023;5;Ejército del Aire;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-05-01;2023;5;Ejército del Aire;Sí;Servicios;Abierto;Ordinaria;No aplica;No;9;4;662421,68;776769,73
+2023-05-01;2023;5;Ejército del Aire;Sí;Servicios;Abierto;Urgente;No aplica;No;1;1;267140,57;285840,41
+2023-05-01;2023;5;Ejército del Aire;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;6610091,70;6942422,70
+2023-05-01;2023;5;Ejército del Aire;Sí;Servicios;Negociado con publicidad;Ordinaria;No aplica;No;1;1;49200,00;49200,00
+2023-05-01;2023;5;Ejército del Aire;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;11;11;10636733,57;10669598,75
+2023-05-01;2023;5;Ejército del Aire;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;18;17;483001,48;552752,29
+2023-05-01;2023;5;Ejército del Aire;Sí;Obras;Abierto;Ordinaria;No aplica;No;1;1;108863,98;131725,41
+2023-05-01;2023;5;Ejército del Aire;Sí;Obras;Abierto;Urgente;No aplica;No;1;1;2730650,85;3304087,53
+2023-05-01;2023;5;Ejército del Aire;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;5;5;1221928,18;1432811,51
+2023-05-01;2023;5;Estado Mayor de la Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;54002,12;54452,57
+2023-05-01;2023;5;Estado Mayor de la Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;5;4;116979,90;136646,37
+2023-05-01;2023;5;Estado Mayor de la Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;2;2;171762,27;183039,82
+2023-05-01;2023;5;Estado Mayor de la Defensa;Sí;Servicios;Restringido;Ordinaria;No aplica;No;1;1;213180,00;257947,80
+2023-05-01;2023;5;Estado Mayor de la Defensa;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;267755,54;267755,54
+2023-05-01;2023;5;Estado Mayor de la Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;5;5;2834694,07;3283820,00
+2023-05-01;2023;5;Estado Mayor de la Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;1;1;12388,15;14989,66
+2023-05-01;2023;5;ISDEFE;No;Suministros;Abierto;Ordinaria;No aplica;No;2;2;28823,23;34876,11
+2023-05-01;2023;5;ISDEFE;No;Servicios;Abierto;Ordinaria;No aplica;No;29;25;3235366,41;3910604,35
+2023-05-01;2023;5;ISDEFE;No;Servicios;Abierto;Urgente;No aplica;No;2;2;422312,00;510997,52
+2023-05-01;2023;5;ISDEFE;No;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;738295,65;893337,74
+2023-05-01;2023;5;ISDEFE;No;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;3;3;608883,34;736748,83
+2023-05-01;2023;5;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Urgente;No aplica;No;7;2;9729532,10;11772733,85
+2023-05-01;2023;5;Secretaría de Estado de Defensa;Sí;Suministros;Negociado con publicidad;Urgente;Establecimiento del Acuerdo Marco;Sí;3;1;9291023,92;11242138,94
+2023-05-01;2023;5;Secretaría de Estado de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;7;7;13816042,15;16108411,00
+2023-05-01;2023;5;Secretaría de Estado de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;12;12;625702,33;752004,06
+2023-05-01;2023;5;Secretaría de Estado de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;3;3;355678,51;427610,00
+2023-05-01;2023;5;Secretaría de Estado de Defensa;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;5;5;2411761,10;2918230,94
+2023-05-01;2023;5;Secretaría de Estado de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;3;3;1277500,00;1545775,00
+2023-05-01;2023;5;Secretaría de Estado de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;14;5;215019,00;242532,99
+2023-05-01;2023;5;Secretaría de Estado de Defensa;Sí;Obras;Negociado sin publicidad;Emergencia;No aplica;No;1;1;259441,56;313924,29
+2023-05-01;2023;5;Secretaría de Estado de Defensa;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;4;4;49071,24;59376,20
+2023-05-01;2023;5;Subsecretaría de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;2;2;2786480,36;2849438,36
+2023-05-01;2023;5;Subsecretaría de Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;234162,91;243529,60
+2023-05-01;2023;5;Subsecretaría de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;17;17;1532910,18;1752504,94
+2023-05-01;2023;5;Subsecretaría de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;5;5;163425,71;197745,11
+2023-05-01;2023;5;Subsecretaría de Defensa;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-05-01;2023;5;Subsecretaría de Defensa;Sí;Servicios;Licitación con negociación;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-05-01;2023;5;Subsecretaría de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;2;2;518298,00;588607,80
+2023-05-01;2023;5;Subsecretaría de Defensa;Sí;Servicios;Restringido;Ordinaria;Contrato basado en un Sistema Dinámico de Adquisición;No;1;1;205040,00;248098,40
+2023-05-01;2023;5;Subsecretaría de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;5;5;1284681,92;1554465,14
+2023-05-01;2023;5;Subsecretaría de Defensa;Sí;Servicios;Derivado de acuerdo marco;Urgente;Contrato basado en un Acuerdo Marco;No;1;1;474472,12;574111,26
+2023-05-01;2023;5;Subsecretaría de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;3;3;107309,73;125131,44
+2023-05-01;2023;5;Subsecretaría de Defensa;Sí;Obras;Abierto;Ordinaria;No aplica;No;1;1;39997,90;48397,46
+2023-05-01;2023;5;Subsecretaría de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;3;3;483758,68;585348,00
+2023-06-01;2023;6;Armada;Sí;Suministros;Abierto;Ordinaria;No aplica;No;5;5;662058,19;699467,44
+2023-06-01;2023;6;Armada;Sí;Suministros;Abierto;Urgente;No aplica;No;2;2;1443145,00;1443145,00
+2023-06-01;2023;6;Armada;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;8;8;1713855,15;2043445,76
+2023-06-01;2023;6;Armada;Sí;Suministros;Negociado sin publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;1150000,00;1150000,00
+2023-06-01;2023;6;Armada;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;26;25;11236668,58;12551953,23
+2023-06-01;2023;6;Armada;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;45;41;1438456,73;1613061,14
+2023-06-01;2023;6;Armada;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;1;1;18181,82;22000,00
+2023-06-01;2023;6;Armada;Sí;Servicios;Abierto;Ordinaria;No aplica;No;7;7;359973,84;401968,35
+2023-06-01;2023;6;Armada;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;102834,26;124430,26
+2023-06-01;2023;6;Armada;Sí;Servicios;Abierto;Urgente;No aplica;No;1;1;350000,00;350000,00
+2023-06-01;2023;6;Armada;Sí;Servicios;Restringido;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-06-01;2023;6;Armada;Sí;Servicios;Negociado sin publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;5658000,00;5700000,00
+2023-06-01;2023;6;Armada;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;51;51;14728979,06;16013480,75
+2023-06-01;2023;6;Armada;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;40;33;1003096,98;1123901,68
+2023-06-01;2023;6;Armada;Sí;Obras;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;154339,49;186750,78
+2023-06-01;2023;6;Armada;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;22;22;4399748,05;5199542,39
+2023-06-01;2023;6;Armada;Sí;Administrativo especial;Restringido;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-06-01;2023;6;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;No aplica;No;21;7;1837852,01;2201869,86
+2023-06-01;2023;6;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;28;3;3300632,24;3754078,37
+2023-06-01;2023;6;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Contrato basado en un Acuerdo Marco;No;5;5;1324701,01;1602888,22
+2023-06-01;2023;6;Ejército de Tierra;Sí;Suministros;Abierto;Urgente;No aplica;No;1;1;598773,17;598773,17
+2023-06-01;2023;6;Ejército de Tierra;Sí;Suministros;Abierto;Urgente;Establecimiento del Acuerdo Marco;Sí;3;1;648780,00;785023,80
+2023-06-01;2023;6;Ejército de Tierra;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;4;4;1789814,26;2165675,25
+2023-06-01;2023;6;Ejército de Tierra;Sí;Suministros;Negociado sin publicidad;Ordinaria;Contrato basado en un Acuerdo Marco;No;5;5;2217189,70;2682799,54
+2023-06-01;2023;6;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Ordinaria;No aplica;No;1;1;350500,00;424105,00
+2023-06-01;2023;6;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;379582,00;459294,22
+2023-06-01;2023;6;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Ordinaria;Contrato basado en un Acuerdo Marco;No;6;6;3148178,68;3809296,21
+2023-06-01;2023;6;Ejército de Tierra;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;83;83;35480130,85;42880571,20
+2023-06-01;2023;6;Ejército de Tierra;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;38;29;1250440,60;1499175,30
+2023-06-01;2023;6;Ejército de Tierra;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;5;5;798160,00;798160,00
+2023-06-01;2023;6;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;No aplica;No;5;5;2935884,54;3552420,29
+2023-06-01;2023;6;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;16;1;566400,00;566400,00
+2023-06-01;2023;6;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;Contrato basado en un Acuerdo Marco;No;3;3;681397,77;727708,42
+2023-06-01;2023;6;Ejército de Tierra;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;3861561,98;4672490,00
+2023-06-01;2023;6;Ejército de Tierra;Sí;Servicios;Negociado sin publicidad;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;165289,25;200000,00
+2023-06-01;2023;6;Ejército de Tierra;Sí;Servicios;Negociado con publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;350500,00;424105,00
+2023-06-01;2023;6;Ejército de Tierra;Sí;Servicios;Negociado con publicidad;Ordinaria;Contrato basado en un Acuerdo Marco;No;5;5;3101731,13;3753094,67
+2023-06-01;2023;6;Ejército de Tierra;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;62;62;27236877,02;32298056,28
+2023-06-01;2023;6;Ejército de Tierra;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;26;23;473711,66;548503,76
+2023-06-01;2023;6;Ejército de Tierra;Sí;Obras;Abierto;Ordinaria;No aplica;No;1;1;2507276,57;3033804,65
+2023-06-01;2023;6;Ejército de Tierra;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;78;78;5331513,98;6532061,43
+2023-06-01;2023;6;Ejército de Tierra;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;34;32;1898942,33;2122508,24
+2023-06-01;2023;6;Ejército del Aire;Sí;Suministros;Abierto;Ordinaria;No aplica;No;8;8;2154535,64;2368175,98
+2023-06-01;2023;6;Ejército del Aire;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;11;1;1081089,61;1189198,59
+2023-06-01;2023;6;Ejército del Aire;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;3;3;2331588,00;2646588,00
+2023-06-01;2023;6;Ejército del Aire;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;9;9;2137688,49;2577258,08
+2023-06-01;2023;6;Ejército del Aire;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;31;23;763611,07;884228,35
+2023-06-01;2023;6;Ejército del Aire;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;5;5;20,66;25,00
+2023-06-01;2023;6;Ejército del Aire;Sí;Concesión de Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-06-01;2023;6;Ejército del Aire;Sí;Concesión de Servicios;Negociado sin publicidad;Urgente;No aplica;No;1;1;1259,86;1300,85
+2023-06-01;2023;6;Ejército del Aire;Sí;Servicios;Abierto;Ordinaria;No aplica;No;3;2;474592,95;512566,50
+2023-06-01;2023;6;Ejército del Aire;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;39994000,00;39994000,00
+2023-06-01;2023;6;Ejército del Aire;Sí;Servicios;Abierto;Urgente;No aplica;No;1;1;74113,00;79300,91
+2023-06-01;2023;6;Ejército del Aire;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;450000,00;450000,00
+2023-06-01;2023;6;Ejército del Aire;Sí;Servicios;Negociado con publicidad;Ordinaria;No aplica;No;1;1;171220,00;171220,00
+2023-06-01;2023;6;Ejército del Aire;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;5;5;1110281,10;1288630,13
+2023-06-01;2023;6;Ejército del Aire;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;24;22;585624,09;683458,93
+2023-06-01;2023;6;Ejército del Aire;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;4;4;515781,71;624095,87
+2023-06-01;2023;6;Estado Mayor de la Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;4;4;919811,14;1104064,33
+2023-06-01;2023;6;Estado Mayor de la Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;2;2;52673,60;63735,06
+2023-06-01;2023;6;Estado Mayor de la Defensa;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;49586,78;60000,00
+2023-06-01;2023;6;ISDEFE;No;Suministros;Abierto;Ordinaria;No aplica;No;1;1;2645084,52;3200552,27
+2023-06-01;2023;6;ISDEFE;No;Servicios;Abierto;Ordinaria;No aplica;No;20;18;2698476,08;3256756,06
+2023-06-01;2023;6;ISDEFE;No;Servicios;Abierto;Urgente;No aplica;No;2;2;426016,00;515479,36
+2023-06-01;2023;6;ISDEFE;No;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;68400,00;68400,00
+2023-06-01;2023;6;ISDEFE;No;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;3;3;521488,00;631000,48
+2023-06-01;2023;6;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;1;1;219777,43;265930,69
+2023-06-01;2023;6;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Urgente;No aplica;No;1;1;27916720,32;33779231,59
+2023-06-01;2023;6;Secretaría de Estado de Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;4;4;468955,55;567436,22
+2023-06-01;2023;6;Secretaría de Estado de Defensa;Sí;Suministros;Negociado sin publicidad;Urgente;Establecimiento del Acuerdo Marco;Sí;1;1;63578353,90;76929807,13
+2023-06-01;2023;6;Secretaría de Estado de Defensa;Sí;Suministros;Negociado con publicidad;Urgente;Establecimiento del Acuerdo Marco;Sí;5;1;32028925,62;35023140,49
+2023-06-01;2023;6;Secretaría de Estado de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;6346956,06;7679816,83
+2023-06-01;2023;6;Secretaría de Estado de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;12;12;719944,07;871132,32
+2023-06-01;2023;6;Secretaría de Estado de Defensa;Sí;Suministros;Abierto simplificado;Urgente;No aplica;No;1;1;59000,00;71390,00
+2023-06-01;2023;6;Secretaría de Estado de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;4;3;547113,00;649605,75
+2023-06-01;2023;6;Secretaría de Estado de Defensa;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;5;5;1153345,55;1214251,54
+2023-06-01;2023;6;Secretaría de Estado de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;9;9;12564791,25;12842657,63
+2023-06-01;2023;6;Secretaría de Estado de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;4;4;208970,00;252853,70
+2023-06-01;2023;6;Secretaría de Estado de Defensa;Sí;Obras;Abierto;Ordinaria;No aplica;No;1;1;15462779,34;18709963,00
+2023-06-01;2023;6;Secretaría de Estado de Defensa;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;2;2;63754,30;77142,70
+2023-06-01;2023;6;Secretaría de Estado de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;9;9;3705486,13;4483638,22
+2023-06-01;2023;6;Sociedad Anónima de Electrónica Submarina (SAES);No;Servicios;Negociado con publicidad;Ordinaria;No aplica;No;1;1;87825,00;106268,25
+2023-06-01;2023;6;Subsecretaría de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-06-01;2023;6;Subsecretaría de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;15;15;1192869,84;1368117,49
+2023-06-01;2023;6;Subsecretaría de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;19;16;581195,76;701934,38
+2023-06-01;2023;6;Subsecretaría de Defensa;Sí;Concesión de Servicios;Abierto;Ordinaria;No aplica;No;1;1;98000,00;98000,00
+2023-06-01;2023;6;Subsecretaría de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;1;1;247933,88;299999,99
+2023-06-01;2023;6;Subsecretaría de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;11;11;877566,47;1058262,96
+2023-06-01;2023;6;Subsecretaría de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;6;6;308419,00;347986,99
+2023-06-01;2023;6;Subsecretaría de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;5;5;1329860,48;1609131,18
+2023-07-01;2023;7;Armada;Sí;Suministros;Abierto;Ordinaria;No aplica;No;7;6;1848845,29;1957097,14
+2023-07-01;2023;7;Armada;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;509523,81;535000,00
+2023-07-01;2023;7;Armada;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;5;5;1537787,00;1647787,52
+2023-07-01;2023;7;Armada;Sí;Suministros;Negociado sin publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;7114848,00;8608966,08
+2023-07-01;2023;7;Armada;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;18;18;5093422,09;5342552,23
+2023-07-01;2023;7;Armada;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;58;48;1744360,06;1958754,64
+2023-07-01;2023;7;Armada;Sí;Servicios;Abierto;Ordinaria;No aplica;No;11;11;41804428,79;41962879,83
+2023-07-01;2023;7;Armada;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;97844,13;118391,40
+2023-07-01;2023;7;Armada;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;373451,64;413848,00
+2023-07-01;2023;7;Armada;Sí;Servicios;Negociado sin publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;2;2;5300000,00;5405000,00
+2023-07-01;2023;7;Armada;Sí;Servicios;Negociado con publicidad;Ordinaria;No aplica;No;1;1;210000,00;210000,00
+2023-07-01;2023;7;Armada;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;32;32;16303172,62;16931709,05
+2023-07-01;2023;7;Armada;Sí;Servicios;Derivado de acuerdo marco;Urgente;Contrato basado en un Acuerdo Marco;No;1;1;7365,60;7365,60
+2023-07-01;2023;7;Armada;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;31;30;1397807,25;1465193,68
+2023-07-01;2023;7;Armada;Sí;Obras;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;12;1;0,00;0,00
+2023-07-01;2023;7;Armada;Sí;Obras;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;60694,21;73440,00
+2023-07-01;2023;7;Armada;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;24;24;3145058,03;3781254,38
+2023-07-01;2023;7;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;No aplica;No;8;2;865232,00;982751,31
+2023-07-01;2023;7;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;10;4;26348639,59;31845613,94
+2023-07-01;2023;7;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Contrato basado en un Acuerdo Marco;No;6;6;1454345,45;1844458,00
+2023-07-01;2023;7;Ejército de Tierra;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;3;3;1446412,00;1750158,52
+2023-07-01;2023;7;Ejército de Tierra;Sí;Suministros;Negociado sin publicidad;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;122314,05;148000,00
+2023-07-01;2023;7;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Ordinaria;No aplica;No;2;2;151584,00;183416,64
+2023-07-01;2023;7;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Urgente;No aplica;No;1;1;403200,00;487872,00
+2023-07-01;2023;7;Ejército de Tierra;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;45;45;11787597,76;14193342,07
+2023-07-01;2023;7;Ejército de Tierra;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;69;48;1812235,11;2158765,01
+2023-07-01;2023;7;Ejército de Tierra;Sí;Concesión de Servicios;Abierto;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-07-01;2023;7;Ejército de Tierra;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-07-01;2023;7;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;413223,14;500000,00
+2023-07-01;2023;7;Ejército de Tierra;Sí;Servicios;Negociado sin publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;1500000,00;1815000,00
+2023-07-01;2023;7;Ejército de Tierra;Sí;Servicios;Negociado sin publicidad;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;426446,29;516000,00
+2023-07-01;2023;7;Ejército de Tierra;Sí;Servicios;Negociado con publicidad;Ordinaria;Contrato basado en un Acuerdo Marco;No;2;2;2232938,02;2386855,00
+2023-07-01;2023;7;Ejército de Tierra;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;35;35;12049652,66;13843126,59
+2023-07-01;2023;7;Ejército de Tierra;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;33;28;826083,18;986704,65
+2023-07-01;2023;7;Ejército de Tierra;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;52;52;2799682,07;3387614,29
+2023-07-01;2023;7;Ejército de Tierra;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;28;28;1694552,59;1904444,06
+2023-07-01;2023;7;Ejército del Aire;Sí;Suministros;Abierto;Ordinaria;No aplica;No;14;12;5826712,49;6020900,33
+2023-07-01;2023;7;Ejército del Aire;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;17;1;4479942,53;6410956,79
+2023-07-01;2023;7;Ejército del Aire;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;7;5;5615082,65;6299700,00
+2023-07-01;2023;7;Ejército del Aire;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;5;5;400467,16;484565,27
+2023-07-01;2023;7;Ejército del Aire;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;57;48;1545971,00;1778426,51
+2023-07-01;2023;7;Ejército del Aire;Sí;Servicios;Abierto;Ordinaria;No aplica;No;3;2;1605000,00;1605000,00
+2023-07-01;2023;7;Ejército del Aire;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;1200000,00;1452000,00
+2023-07-01;2023;7;Ejército del Aire;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;237680,00;275673,20
+2023-07-01;2023;7;Ejército del Aire;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;14;14;13155888,00;13484276,17
+2023-07-01;2023;7;Ejército del Aire;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;13;13;340291,56;391891,85
+2023-07-01;2023;7;Ejército del Aire;Sí;Obras;Negociado sin publicidad;Urgente;No aplica;No;1;1;1369920,08;1657603,30
+2023-07-01;2023;7;Ejército del Aire;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;9;9;1478775,19;1703470,67
+2023-07-01;2023;7;Estado Mayor de la Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;1;1;384298,00;465000,58
+2023-07-01;2023;7;Estado Mayor de la Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;465125,02;551237,40
+2023-07-01;2023;7;Estado Mayor de la Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;6;5;151785,05;183659,91
+2023-07-01;2023;7;Estado Mayor de la Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;2;2;323028,00;372924,00
+2023-07-01;2023;7;Estado Mayor de la Defensa;Sí;Servicios;Restringido;Ordinaria;No aplica;No;1;1;39851,83;48220,71
+2023-07-01;2023;7;Estado Mayor de la Defensa;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;4;4;2705382,26;3239415,11
+2023-07-01;2023;7;Estado Mayor de la Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;3;3;16487903,51;16702648,25
+2023-07-01;2023;7;Estado Mayor de la Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;2;2;54313,98;65719,92
+2023-07-01;2023;7;ISDEFE;No;Suministros;Abierto;Ordinaria;No aplica;No;1;1;438777,87;530921,22
+2023-07-01;2023;7;ISDEFE;No;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;36500,00;44165,00
+2023-07-01;2023;7;ISDEFE;No;Servicios;Abierto;Ordinaria;No aplica;No;28;24;2214732,00;2679825,72
+2023-07-01;2023;7;ISDEFE;No;Servicios;Abierto;Urgente;No aplica;No;2;1;967142,40;1170242,30
+2023-07-01;2023;7;ISDEFE;No;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;1793500,00;1883175,00
+2023-07-01;2023;7;ISDEFE;No;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;2;2;817202,20;988814,66
+2023-07-01;2023;7;ISDEFE;No;Obras;Abierto;Ordinaria;No aplica;No;1;1;116760,00;141279,60
+2023-07-01;2023;7;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;14;9;2187977,55;2642248,85
+2023-07-01;2023;7;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;248455,79;273301,37
+2023-07-01;2023;7;Secretaría de Estado de Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;3;3;656475,20;769423,96
+2023-07-01;2023;7;Secretaría de Estado de Defensa;Sí;Suministros;Negociado sin publicidad;Urgente;No aplica;No;1;1;7537235,00;7537235,00
+2023-07-01;2023;7;Secretaría de Estado de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;4;4;44965091,57;46028760,80
+2023-07-01;2023;7;Secretaría de Estado de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;6;6;319592,65;386707,10
+2023-07-01;2023;7;Secretaría de Estado de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;2;2;550000,00;665500,00
+2023-07-01;2023;7;Secretaría de Estado de Defensa;Sí;Servicios;Restringido;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-07-01;2023;7;Secretaría de Estado de Defensa;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;9;9;2572773,58;3044428,25
+2023-07-01;2023;7;Secretaría de Estado de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;13;13;21311830,67;23391944,23
+2023-07-01;2023;7;Secretaría de Estado de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;19;13;423078,63;492645,46
+2023-07-01;2023;7;Secretaría de Estado de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;8;8;678287,90;820728,36
+2023-07-01;2023;7;Sociedad Anónima de Electrónica Submarina (SAES);No;Servicios;Abierto;Ordinaria;No aplica;No;1;1;20085,00;24302,85
+2023-07-01;2023;7;Subsecretaría de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;11;10;2931235,49;3546794,95
+2023-07-01;2023;7;Subsecretaría de Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;5;5;361674,73;404976,44
+2023-07-01;2023;7;Subsecretaría de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;8;8;944923,99;1047661,22
+2023-07-01;2023;7;Subsecretaría de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;19;12;601332,63;707374,69
+2023-07-01;2023;7;Subsecretaría de Defensa;Sí;Concesión de Servicios;Abierto;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-07-01;2023;7;Subsecretaría de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;2;2;86519,90;104689,08
+2023-07-01;2023;7;Subsecretaría de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;3;3;65583,35;79355,85
+2023-07-01;2023;7;Subsecretaría de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;5;5;129582,26;156794,54
+2023-07-01;2023;7;Subsecretaría de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;2;2;466091,89;563971,19
+2023-08-01;2023;8;Armada;Sí;Suministros;Abierto;Ordinaria;No aplica;No;14;12;3830409,40;4231529,35
+2023-08-01;2023;8;Armada;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;5;1;1919054,00;1941100,00
+2023-08-01;2023;8;Armada;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;9;9;18853288,38;19545878,11
+2023-08-01;2023;8;Armada;Sí;Suministros;Negociado sin publicidad;Urgente;No aplica;No;1;1;802855,40;883140,94
+2023-08-01;2023;8;Armada;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;18;18;5566253,49;6156780,09
+2023-08-01;2023;8;Armada;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;64;58;2734067,49;3091469,66
+2023-08-01;2023;8;Armada;Sí;Suministros;Abierto simplificado;Urgente;No aplica;No;1;1;46648,00;46648,00
+2023-08-01;2023;8;Armada;Sí;Servicios;Abierto;Ordinaria;No aplica;No;3;3;526446,40;557570,07
+2023-08-01;2023;8;Armada;Sí;Servicios;Restringido;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-08-01;2023;8;Armada;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;56752,07;59220,00
+2023-08-01;2023;8;Armada;Sí;Servicios;Negociado con publicidad;Ordinaria;No aplica;No;3;3;87620,00;87620,00
+2023-08-01;2023;8;Armada;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;22;22;19273327,48;19394842,47
+2023-08-01;2023;8;Armada;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;34;28;853378,56;922596,25
+2023-08-01;2023;8;Armada;Sí;Obras;Abierto;Ordinaria;No aplica;No;1;1;3663885,00;4433300,85
+2023-08-01;2023;8;Armada;Sí;Obras;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;126446,28;153000,00
+2023-08-01;2023;8;Armada;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;26;26;3629483,87;4391675,48
+2023-08-01;2023;8;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;No aplica;No;12;8;1799942,41;2177930,35
+2023-08-01;2023;8;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;2;1;507250,00;613772,50
+2023-08-01;2023;8;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Contrato basado en un Acuerdo Marco;No;6;6;1598755,00;1915593,55
+2023-08-01;2023;8;Ejército de Tierra;Sí;Suministros;Abierto;Urgente;No aplica;No;10;1;770000,00;847000,00
+2023-08-01;2023;8;Ejército de Tierra;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;4;4;3393780,00;4067161,80
+2023-08-01;2023;8;Ejército de Tierra;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;54;54;24337329,69;29300581,35
+2023-08-01;2023;8;Ejército de Tierra;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;106;66;2550589,45;3041006,66
+2023-08-01;2023;8;Ejército de Tierra;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;6;4;62,00;62,00
+2023-08-01;2023;8;Ejército de Tierra;Sí;Concesión de Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;100000,00;100000,00
+2023-08-01;2023;8;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;No aplica;No;5;5;1289256,20;1560000,00
+2023-08-01;2023;8;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;5;2;1438016,54;1740000,00
+2023-08-01;2023;8;Ejército de Tierra;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;1664980,00;2014625,80
+2023-08-01;2023;8;Ejército de Tierra;Sí;Servicios;Negociado con publicidad;Ordinaria;No aplica;No;2;2;221948,43;268557,60
+2023-08-01;2023;8;Ejército de Tierra;Sí;Servicios;Negociado con publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;2575,00;3115,75
+2023-08-01;2023;8;Ejército de Tierra;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;44;44;11297506,03;13179459,41
+2023-08-01;2023;8;Ejército de Tierra;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;59;40;1018693,43;1208102,46
+2023-08-01;2023;8;Ejército de Tierra;Sí;Obras;Abierto;Ordinaria;No aplica;No;1;1;1966218,82;2379124,77
+2023-08-01;2023;8;Ejército de Tierra;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;55;55;2475768,14;2999979,15
+2023-08-01;2023;8;Ejército de Tierra;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;22;22;1658795,98;1935973,52
+2023-08-01;2023;8;Ejército del Aire;Sí;Suministros;Abierto;Ordinaria;No aplica;No;8;6;1558094,14;1558124,11
+2023-08-01;2023;8;Ejército del Aire;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;5;5;2369013,86;2464116,53
+2023-08-01;2023;8;Ejército del Aire;Sí;Suministros;Negociado sin publicidad;Urgente;No aplica;No;1;1;99700,00;99700,00
+2023-08-01;2023;8;Ejército del Aire;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;23;23;1022163,16;1091550,86
+2023-08-01;2023;8;Ejército del Aire;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;49;39;1418376,91;1601351,86
+2023-08-01;2023;8;Ejército del Aire;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;4;4;52,81;63,90
+2023-08-01;2023;8;Ejército del Aire;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;3;3;147091,11;156826,94
+2023-08-01;2023;8;Ejército del Aire;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;5;5;355770,51;430482,33
+2023-08-01;2023;8;Ejército del Aire;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;27;19;331001,45;391467,16
+2023-08-01;2023;8;Ejército del Aire;Sí;Obras;Negociado sin publicidad;Urgente;No aplica;No;1;1;957055,48;957055,48
+2023-08-01;2023;8;Ejército del Aire;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;14;13;1692035,07;2003348,39
+2023-08-01;2023;8;Estado Mayor de la Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;3;3;4970585,77;6014408,78
+2023-08-01;2023;8;Estado Mayor de la Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;1;1;16326,25;16326,25
+2023-08-01;2023;8;Estado Mayor de la Defensa;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;225853,65;273282,92
+2023-08-01;2023;8;Estado Mayor de la Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;2;2;238760,57;288900,29
+2023-08-01;2023;8;ISDEFE;No;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;58104,00;70305,84
+2023-08-01;2023;8;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;6;5;1146183,75;1386882,33
+2023-08-01;2023;8;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;4600000,00;5566000,00
+2023-08-01;2023;8;Secretaría de Estado de Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;43000,00;52030,00
+2023-08-01;2023;8;Secretaría de Estado de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;12;12;7150140,32;7681055,23
+2023-08-01;2023;8;Secretaría de Estado de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;9;9;766111,70;906685,27
+2023-08-01;2023;8;Secretaría de Estado de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;2;2;2294570,88;2776430,77
+2023-08-01;2023;8;Secretaría de Estado de Defensa;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;4;4;2701395,60;2875988,68
+2023-08-01;2023;8;Secretaría de Estado de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;28500,00;28500,00
+2023-08-01;2023;8;Secretaría de Estado de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;8;8;357982,83;422697,35
+2023-08-01;2023;8;Secretaría de Estado de Defensa;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;3;3;66436,23;80387,84
+2023-08-01;2023;8;Secretaría de Estado de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;13;13;1580898,89;1902813,36
+2023-08-01;2023;8;Subsecretaría de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;1;1;177685,95;215000,00
+2023-08-01;2023;8;Subsecretaría de Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;88000,00;91520,00
+2023-08-01;2023;8;Subsecretaría de Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;0,00;0,00
+2023-08-01;2023;8;Subsecretaría de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;10;10;782515,98;864290,72
+2023-08-01;2023;8;Subsecretaría de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;13;13;557651,63;671271,64
+2023-08-01;2023;8;Subsecretaría de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-08-01;2023;8;Subsecretaría de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;19;19;1746202,69;1990702,55
+2023-08-01;2023;8;Subsecretaría de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;6;6;272526,15;318779,16
+2023-08-01;2023;8;Subsecretaría de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;1;1;54480,50;65921,40
+2023-09-01;2023;9;Armada;Sí;Suministros;Abierto;Ordinaria;No aplica;No;12;12;5267246,42;5707523,44
+2023-09-01;2023;9;Armada;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;8;8;13666011,24;13713304,62
+2023-09-01;2023;9;Armada;Sí;Suministros;Negociado sin publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;15516563,00;15516563,00
+2023-09-01;2023;9;Armada;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;14;14;10036971,29;10589987,68
+2023-09-01;2023;9;Armada;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;61;58;2802122,67;3159717,12
+2023-09-01;2023;9;Armada;Sí;Servicios;Abierto;Ordinaria;No aplica;No;9;6;851155,00;978877,20
+2023-09-01;2023;9;Armada;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;5;5;1022924,11;1122887,50
+2023-09-01;2023;9;Armada;Sí;Servicios;Negociado sin publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;100000,00;100000,00
+2023-09-01;2023;9;Armada;Sí;Servicios;Negociado con publicidad;Ordinaria;No aplica;No;3;3;160000,00;160000,00
+2023-09-01;2023;9;Armada;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;21;21;17954508,31;18489760,98
+2023-09-01;2023;9;Armada;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;23;23;855137,02;966848,36
+2023-09-01;2023;9;Armada;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;33;32;4439051,05;5282430,76
+2023-09-01;2023;9;Armada;Sí;Obras;Abierto simplificado;Urgente;No aplica;No;1;1;64371,96;68878,00
+2023-09-01;2023;9;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;No aplica;No;12;9;1442897,85;1745906,41
+2023-09-01;2023;9;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;5;2;574611,93;695280,43
+2023-09-01;2023;9;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Contrato basado en un Acuerdo Marco;No;3;3;2081520,00;2342575,20
+2023-09-01;2023;9;Ejército de Tierra;Sí;Suministros;Abierto;Urgente;No aplica;No;1;1;454848,60;550366,51
+2023-09-01;2023;9;Ejército de Tierra;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;11;10;7609058,84;9058659,20
+2023-09-01;2023;9;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Ordinaria;No aplica;No;16;9;2443720,44;2958585,65
+2023-09-01;2023;9;Ejército de Tierra;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;37;37;31768673,96;38095205,00
+2023-09-01;2023;9;Ejército de Tierra;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;95;66;3476144,67;4143123,09
+2023-09-01;2023;9;Ejército de Tierra;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-09-01;2023;9;Ejército de Tierra;Sí;Concesión de Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;10,01;10,01
+2023-09-01;2023;9;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;No aplica;No;9;6;1830606,31;2214973,63
+2023-09-01;2023;9;Ejército de Tierra;Sí;Servicios;Negociado con publicidad;Ordinaria;No aplica;No;4;3;801962,68;970374,84
+2023-09-01;2023;9;Ejército de Tierra;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;27;27;12198539,55;14398457,47
+2023-09-01;2023;9;Ejército de Tierra;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;61;35;1074236,74;1261100,66
+2023-09-01;2023;9;Ejército de Tierra;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;39;39;1155786,56;1398501,71
+2023-09-01;2023;9;Ejército de Tierra;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;23;23;2443644,52;2852573,44
+2023-09-01;2023;9;Ejército del Aire;Sí;Suministros;Abierto;Ordinaria;No aplica;No;28;14;4790404,42;5236724,82
+2023-09-01;2023;9;Ejército del Aire;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;4;4;982013,88;1188236,79
+2023-09-01;2023;9;Ejército del Aire;Sí;Suministros;Negociado sin publicidad;Urgente;No aplica;No;2;2;1989950,00;1989950,00
+2023-09-01;2023;9;Ejército del Aire;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;12;12;459273,14;514393,56
+2023-09-01;2023;9;Ejército del Aire;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;57;50;1951426,84;2276168,94
+2023-09-01;2023;9;Ejército del Aire;Sí;Servicios;Abierto;Ordinaria;No aplica;No;12;5;7502723,99;7617194,92
+2023-09-01;2023;9;Ejército del Aire;Sí;Servicios;Negociado sin publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;40000000,00;40000000,00
+2023-09-01;2023;9;Ejército del Aire;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;15;15;1225018,61;1417399,39
+2023-09-01;2023;9;Ejército del Aire;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;30;25;621838,07;735377,21
+2023-09-01;2023;9;Ejército del Aire;Sí;Obras;Abierto;Ordinaria;No aplica;No;2;1;1126560,40;1363138,08
+2023-09-01;2023;9;Ejército del Aire;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;17;17;2557650,33;2934162,01
+2023-09-01;2023;9;Ejército del Aire;Sí;Administrativo especial;Abierto simplificado;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-09-01;2023;9;Estado Mayor de la Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;7;7;1745605,19;2112182,27
+2023-09-01;2023;9;Estado Mayor de la Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;4;4;503586,93;609340,18
+2023-09-01;2023;9;Estado Mayor de la Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;2;2;178099,18;215500,00
+2023-09-01;2023;9;Estado Mayor de la Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;6;4;2598402,83;3089320,48
+2023-09-01;2023;9;Estado Mayor de la Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;9963000,00;9963000,00
+2023-09-01;2023;9;Estado Mayor de la Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;1;1;27926,22;33790,73
+2023-09-01;2023;9;Estado Mayor de la Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;1;1;111799,64;111799,64
+2023-09-01;2023;9;ISDEFE;No;Suministros;Abierto;Ordinaria;No aplica;No;1;1;201751,65;244119,50
+2023-09-01;2023;9;ISDEFE;No;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;39000,00;47190,00
+2023-09-01;2023;9;ISDEFE;No;Servicios;Abierto;Ordinaria;No aplica;No;50;37;4003726,33;4847508,86
+2023-09-01;2023;9;ISDEFE;No;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;31000,00;32550,00
+2023-09-01;2023;9;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;17;10;2615006,23;3023317,53
+2023-09-01;2023;9;Secretaría de Estado de Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;5;5;942761,41;1112496,68
+2023-09-01;2023;9;Secretaría de Estado de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;27;27;18678061,29;22415527,19
+2023-09-01;2023;9;Secretaría de Estado de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;22;15;735128,40;889536,41
+2023-09-01;2023;9;Secretaría de Estado de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;1;1;215982,33;261338,62
+2023-09-01;2023;9;Secretaría de Estado de Defensa;Sí;Servicios;Restringido;Ordinaria;No aplica;No;1;1;3294800,00;3986708,00
+2023-09-01;2023;9;Secretaría de Estado de Defensa;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;5;5;6329861,90;7658862,91
+2023-09-01;2023;9;Secretaría de Estado de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;5;5;1058875,00;1268659,75
+2023-09-01;2023;9;Secretaría de Estado de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;6;5;186268,00;225384,28
+2023-09-01;2023;9;Secretaría de Estado de Defensa;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;2;2;3479,60;4210,31
+2023-09-01;2023;9;Secretaría de Estado de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;14;14;2920000,38;3537485,96
+2023-09-01;2023;9;Subsecretaría de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;3;2;546472,16;661231,31
+2023-09-01;2023;9;Subsecretaría de Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;459906,42;522498,69
+2023-09-01;2023;9;Subsecretaría de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;8;8;638710,74;756394,93
+2023-09-01;2023;9;Subsecretaría de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;22;7;438774,45;521869,01
+2023-09-01;2023;9;Subsecretaría de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;10;10;5622353,65;6755746,73
+2023-09-01;2023;9;Subsecretaría de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;4;3;112063,09;130910,22
+2023-09-01;2023;9;Subsecretaría de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;1;1;395658,68;478747,00
+2023-10-01;2023;10;Armada;Sí;Suministros;Abierto;Ordinaria;No aplica;No;16;11;4253467,60;4990466,05
+2023-10-01;2023;10;Armada;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;733928,96;814180,76
+2023-10-01;2023;10;Armada;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;9;8;6226719,44;6464880,29
+2023-10-01;2023;10;Armada;Sí;Suministros;Negociado sin publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;3;1;1482208,00;1482208,00
+2023-10-01;2023;10;Armada;Sí;Suministros;Negociado con publicidad;Ordinaria;No aplica;No;1;1;192000,00;192000,00
+2023-10-01;2023;10;Armada;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;11;11;27669296,20;28138602,82
+2023-10-01;2023;10;Armada;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;73;70;2897455,31;3345621,00
+2023-10-01;2023;10;Armada;Sí;Servicios;Abierto;Ordinaria;No aplica;No;6;5;1416175,00;1462502,60
+2023-10-01;2023;10;Armada;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;336960,00;370656,00
+2023-10-01;2023;10;Armada;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;7;7;1764497,36;1797463,38
+2023-10-01;2023;10;Armada;Sí;Servicios;Negociado sin publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;600000,00;600000,00
+2023-10-01;2023;10;Armada;Sí;Servicios;Negociado con publicidad;Ordinaria;No aplica;No;4;4;587355,37;675000,00
+2023-10-01;2023;10;Armada;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;43;43;16665695,82;17368402,67
+2023-10-01;2023;10;Armada;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;19;17;700873,96;771796,69
+2023-10-01;2023;10;Armada;Sí;Obras;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;215760,00;261069,60
+2023-10-01;2023;10;Armada;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;45;45;9472718,71;11450516,37
+2023-10-01;2023;10;Ejército de Tierra;Sí;Suministros;Licitación con negociación;Ordinaria;No aplica;No;7;3;1022003,12;1236623,78
+2023-10-01;2023;10;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;No aplica;No;17;14;14589629,00;17633700,68
+2023-10-01;2023;10;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;10;3;2079701,19;2516765,14
+2023-10-01;2023;10;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Contrato basado en un Acuerdo Marco;No;2;2;95299,31;115312,17
+2023-10-01;2023;10;Ejército de Tierra;Sí;Suministros;Abierto;Urgente;No aplica;No;5;2;2207184,80;2454429,59
+2023-10-01;2023;10;Ejército de Tierra;Sí;Suministros;Restringido;Ordinaria;No aplica;No;5;1;127222,04;153909,94
+2023-10-01;2023;10;Ejército de Tierra;Sí;Suministros;Restringido;Ordinaria;Contrato basado en un Sistema Dinámico de Adquisición;No;2;2;243754,31;294942,71
+2023-10-01;2023;10;Ejército de Tierra;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;8;8;9554884,93;11547183,17
+2023-10-01;2023;10;Ejército de Tierra;Sí;Suministros;Negociado sin publicidad;Urgente;No aplica;No;1;1;831680,00;1006332,80
+2023-10-01;2023;10;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Ordinaria;No aplica;No;10;7;11565033,96;13993691,10
+2023-10-01;2023;10;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;88740,00;107375,40
+2023-10-01;2023;10;Ejército de Tierra;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;70;70;33032921,28;39815882,47
+2023-10-01;2023;10;Ejército de Tierra;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;153;91;4156940,49;4867644,15
+2023-10-01;2023;10;Ejército de Tierra;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;4;2;9,80;10,78
+2023-10-01;2023;10;Ejército de Tierra;Sí;Servicios;Licitación con negociación;Ordinaria;No aplica;No;8;3;465543,92;563308,12
+2023-10-01;2023;10;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;No aplica;No;4;4;389181,08;470909,10
+2023-10-01;2023;10;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;1239669,42;1500000,00
+2023-10-01;2023;10;Ejército de Tierra;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;5;2;52677,94;63740,31
+2023-10-01;2023;10;Ejército de Tierra;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;30;30;29387870,56;33415582,45
+2023-10-01;2023;10;Ejército de Tierra;Sí;Servicios;Derivado de acuerdo marco;Urgente;Contrato basado en un Acuerdo Marco;No;3;3;340000,00;340000,00
+2023-10-01;2023;10;Ejército de Tierra;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;40;31;791533,53;938934,27
+2023-10-01;2023;10;Ejército de Tierra;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;50;50;1921743,88;2325309,80
+2023-10-01;2023;10;Ejército de Tierra;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;22;22;10781597,10;12480759,28
+2023-10-01;2023;10;Ejército del Aire;Sí;Suministros;Abierto;Ordinaria;No aplica;No;31;15;10279123,28;10606796,30
+2023-10-01;2023;10;Ejército del Aire;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;4;1;898347,16;988181,88
+2023-10-01;2023;10;Ejército del Aire;Sí;Suministros;Abierto;Urgente;No aplica;No;1;1;402345,18;486837,67
+2023-10-01;2023;10;Ejército del Aire;Sí;Suministros;Restringido;Ordinaria;Contrato basado en un Sistema Dinámico de Adquisición;No;8;8;1093126,66;1322683,27
+2023-10-01;2023;10;Ejército del Aire;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;9;7;1891608,35;2268088,60
+2023-10-01;2023;10;Ejército del Aire;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;17;17;676584,88;747308,68
+2023-10-01;2023;10;Ejército del Aire;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;69;56;2405908,67;2787891,67
+2023-10-01;2023;10;Ejército del Aire;Sí;Suministros;Abierto simplificado;Urgente;No aplica;No;2;2;123757,99;143797,18
+2023-10-01;2023;10;Ejército del Aire;Sí;Servicios;Abierto;Ordinaria;No aplica;No;5;4;462103,53;559145,27
+2023-10-01;2023;10;Ejército del Aire;Sí;Servicios;Abierto;Urgente;No aplica;No;2;1;1655346,46;1655346,46
+2023-10-01;2023;10;Ejército del Aire;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;3;3;3831191,24;3900741,41
+2023-10-01;2023;10;Ejército del Aire;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;25;15;483646,42;584919,19
+2023-10-01;2023;10;Ejército del Aire;Sí;Obras;Abierto;Ordinaria;No aplica;No;2;2;4115000,00;4979150,00
+2023-10-01;2023;10;Ejército del Aire;Sí;Obras;Abierto;Urgente;No aplica;No;3;3;4263278,16;5158566,58
+2023-10-01;2023;10;Ejército del Aire;Sí;Obras;Negociado sin publicidad;Urgente;No aplica;No;3;3;7146323,00;8647050,84
+2023-10-01;2023;10;Ejército del Aire;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;18;18;2780892,64;3364662,31
+2023-10-01;2023;10;Estado Mayor de la Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;5;5;1432414,33;1733210,45
+2023-10-01;2023;10;Estado Mayor de la Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;16540000,00;20013400,00
+2023-10-01;2023;10;Estado Mayor de la Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;33057,85;40000,00
+2023-10-01;2023;10;Estado Mayor de la Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;4;4;225032,81;272289,69
+2023-10-01;2023;10;Estado Mayor de la Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;1;1;131850,00;131850,00
+2023-10-01;2023;10;Estado Mayor de la Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;2;2;365986,76;438478,55
+2023-10-01;2023;10;ISDEFE;No;Suministros;Abierto;Ordinaria;No aplica;No;1;1;113710,00;137589,10
+2023-10-01;2023;10;ISDEFE;No;Suministros;Abierto simplificado;Ordinaria;No aplica;No;1;1;23806,42;28805,77
+2023-10-01;2023;10;ISDEFE;No;Servicios;Abierto;Ordinaria;No aplica;No;21;18;2146232,50;2592306,12
+2023-10-01;2023;10;ISDEFE;No;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;42079,47;50916,16
+2023-10-01;2023;10;ISDEFE;No;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;2;2;653867,76;791179,98
+2023-10-01;2023;10;ISDEFE;No;Servicios;Abierto simplificado;Ordinaria;No aplica;No;1;1;31416,00;36162,00
+2023-10-01;2023;10;ISDEFE;No;Obras;Abierto;Ordinaria;No aplica;No;1;1;69562,50;84170,62
+2023-10-01;2023;10;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;6;6;1251082,32;1513809,61
+2023-10-01;2023;10;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;7;2;9739600,00;10908352,00
+2023-10-01;2023;10;Secretaría de Estado de Defensa;Sí;Suministros;Negociado sin publicidad;Urgente;No aplica;No;1;1;9466745,60;11454762,18
+2023-10-01;2023;10;Secretaría de Estado de Defensa;Sí;Suministros;Negociado con publicidad;Urgente;No aplica;No;2;1;21864535,00;24506091,18
+2023-10-01;2023;10;Secretaría de Estado de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;7;7;2424137,24;2882697,18
+2023-10-01;2023;10;Secretaría de Estado de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;23;17;530924,87;624578,05
+2023-10-01;2023;10;Secretaría de Estado de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;2;2;487762,71;590192,88
+2023-10-01;2023;10;Secretaría de Estado de Defensa;Sí;Servicios;Abierto;Urgente;No aplica;No;1;1;4536977,09;5489742,28
+2023-10-01;2023;10;Secretaría de Estado de Defensa;Sí;Servicios;Restringido;Ordinaria;No aplica;No;1;1;1462500,00;1769625,00
+2023-10-01;2023;10;Secretaría de Estado de Defensa;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;7;7;1370116,68;1653974,65
+2023-10-01;2023;10;Secretaría de Estado de Defensa;Sí;Servicios;Negociado sin publicidad;Urgente;No aplica;No;1;1;1267200,00;1533312,00
+2023-10-01;2023;10;Secretaría de Estado de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;85000,00;102850,00
+2023-10-01;2023;10;Secretaría de Estado de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;9;8;306480,69;370974,73
+2023-10-01;2023;10;Secretaría de Estado de Defensa;Sí;Obras;Abierto;Ordinaria;No aplica;No;2;2;21464642,90;25972217,90
+2023-10-01;2023;10;Secretaría de Estado de Defensa;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;5;5;130358,79;157734,15
+2023-10-01;2023;10;Secretaría de Estado de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;16;12;3806567,55;4605946,74
+2023-10-01;2023;10;Subsecretaría de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;6;6;1395866,02;1688997,89
+2023-10-01;2023;10;Subsecretaría de Defensa;Sí;Suministros;Abierto;Ordinaria;Contrato basado en un Acuerdo Marco;No;2;2;53994,21;65333,00
+2023-10-01;2023;10;Subsecretaría de Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;6;6;351342,85;412452,18
+2023-10-01;2023;10;Subsecretaría de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;14;14;684932,04;798654,38
+2023-10-01;2023;10;Subsecretaría de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;21;18;692649,10;831512,61
+2023-10-01;2023;10;Subsecretaría de Defensa;Sí;Concesión de Servicios;Abierto;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-10-01;2023;10;Subsecretaría de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;9;4;3115895,92;3641525,01
+2023-10-01;2023;10;Subsecretaría de Defensa;Sí;Servicios;Restringido;Ordinaria;Contrato basado en un Sistema Dinámico de Adquisición;No;1;1;119120,00;144135,20
+2023-10-01;2023;10;Subsecretaría de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;7;7;651942,13;788849,98
+2023-10-01;2023;10;Subsecretaría de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;5;5;226462,36;251065,19
+2023-10-01;2023;10;Subsecretaría de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;4;4;1230169,47;1488505,06
+2023-11-01;2023;11;Armada;Sí;Suministros;Abierto;Ordinaria;No aplica;No;12;7;22164253,05;22725846,19
+2023-11-01;2023;11;Armada;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;3;2;380252,78;390666,00
+2023-11-01;2023;11;Armada;Sí;Suministros;Abierto;Urgente;No aplica;No;1;1;147895,00;147895,00
+2023-11-01;2023;11;Armada;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;13;11;2021052,62;2081876,99
+2023-11-01;2023;11;Armada;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;25;25;9771897,14;11108450,23
+2023-11-01;2023;11;Armada;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;141;95;3676249,51;4175288,61
+2023-11-01;2023;11;Armada;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;2;2;0,00;0,00
+2023-11-01;2023;11;Armada;Sí;Servicios;Abierto;Ordinaria;No aplica;No;5;4;530599,84;619975,79
+2023-11-01;2023;11;Armada;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;4;4;547500,00;618375,00
+2023-11-01;2023;11;Armada;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;3;3;61424,72;74323,91
+2023-11-01;2023;11;Armada;Sí;Servicios;Negociado sin publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;2;2;2809163,00;2809163,00
+2023-11-01;2023;11;Armada;Sí;Servicios;Negociado con publicidad;Ordinaria;No aplica;No;4;4;6119184,00;6119184,00
+2023-11-01;2023;11;Armada;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;55;55;9566028,41;10276684,50
+2023-11-01;2023;11;Armada;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;43;43;1541593,08;1800859,62
+2023-11-01;2023;11;Armada;Sí;Obras;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;47988,54;58066,13
+2023-11-01;2023;11;Armada;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;26;24;9603008,52;11517936,65
+2023-11-01;2023;11;Armada;Sí;Administrativo especial;Restringido;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-11-01;2023;11;Ejército de Tierra;Sí;Suministros;Licitación con negociación;Ordinaria;No aplica;No;33;15;34556321,47;41722978,35
+2023-11-01;2023;11;Ejército de Tierra;Sí;Suministros;Licitación con negociación;Ordinaria;Establecimiento del Acuerdo Marco;Sí;2;2;1051046,00;1271765,66
+2023-11-01;2023;11;Ejército de Tierra;Sí;Suministros;Licitación con negociación;Urgente;No aplica;No;3;2;7051280,00;8532048,80
+2023-11-01;2023;11;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;No aplica;No;43;9;1959493,95;2358690,25
+2023-11-01;2023;11;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;6;2;10517892,50;10654999,92
+2023-11-01;2023;11;Ejército de Tierra;Sí;Suministros;Abierto;Urgente;No aplica;No;1;1;425619,84;515000,00
+2023-11-01;2023;11;Ejército de Tierra;Sí;Suministros;Restringido;Ordinaria;Contrato basado en un Sistema Dinámico de Adquisición;No;6;6;2554838,81;3091354,97
+2023-11-01;2023;11;Ejército de Tierra;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;6;6;10529312,96;12680276,68
+2023-11-01;2023;11;Ejército de Tierra;Sí;Suministros;Negociado sin publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;2;2;7794870,06;9431792,78
+2023-11-01;2023;11;Ejército de Tierra;Sí;Suministros;Negociado sin publicidad;Urgente;No aplica;No;3;3;1734250,00;2041029,76
+2023-11-01;2023;11;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Ordinaria;No aplica;No;12;8;7344234,35;8367523,57
+2023-11-01;2023;11;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;5;5;16864102,00;20405563,42
+2023-11-01;2023;11;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Urgente;No aplica;No;3;1;1655030,00;2002586,30
+2023-11-01;2023;11;Ejército de Tierra;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;41;41;7424276,52;8793681,70
+2023-11-01;2023;11;Ejército de Tierra;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;209;148;5687570,54;6600615,41
+2023-11-01;2023;11;Ejército de Tierra;Sí;Suministros;Abierto simplificado;Urgente;No aplica;No;3;3;179288,09;212081,14
+2023-11-01;2023;11;Ejército de Tierra;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;7;7;57,39;58,00
+2023-11-01;2023;11;Ejército de Tierra;Sí;Servicios;Licitación con negociación;Urgente;No aplica;No;1;1;400000,00;400000,00
+2023-11-01;2023;11;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;No aplica;No;6;4;653825,00;761724,55
+2023-11-01;2023;11;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;2;2;991735,52;1200000,00
+2023-11-01;2023;11;Ejército de Tierra;Sí;Servicios;Abierto;Urgente;No aplica;No;1;1;200000,00;200000,00
+2023-11-01;2023;11;Ejército de Tierra;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;4;3;6433057,75;7783999,88
+2023-11-01;2023;11;Ejército de Tierra;Sí;Servicios;Negociado con publicidad;Ordinaria;No aplica;No;1;1;136190,00;164789,90
+2023-11-01;2023;11;Ejército de Tierra;Sí;Servicios;Negociado con publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;496000,00;600160,00
+2023-11-01;2023;11;Ejército de Tierra;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;50;50;17500438,55;18805781,46
+2023-11-01;2023;11;Ejército de Tierra;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;50;37;1086088,44;1246852,73
+2023-11-01;2023;11;Ejército de Tierra;Sí;Obras;Abierto;Ordinaria;No aplica;No;3;3;16959263,08;19897520,58
+2023-11-01;2023;11;Ejército de Tierra;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;26;26;1024722,57;1240914,26
+2023-11-01;2023;11;Ejército de Tierra;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;13;13;2410965,49;2723938,33
+2023-11-01;2023;11;Ejército del Aire;Sí;Suministros;Abierto;Ordinaria;No aplica;No;14;11;3126772,77;3478899,26
+2023-11-01;2023;11;Ejército del Aire;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;27;1;3396844,02;4094254,94
+2023-11-01;2023;11;Ejército del Aire;Sí;Suministros;Abierto;Urgente;No aplica;No;7;7;1845048,00;2232508,08
+2023-11-01;2023;11;Ejército del Aire;Sí;Suministros;Restringido;Ordinaria;Contrato basado en un Sistema Dinámico de Adquisición;No;4;4;255118,07;308692,86
+2023-11-01;2023;11;Ejército del Aire;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;4;4;210171,67;254307,72
+2023-11-01;2023;11;Ejército del Aire;Sí;Suministros;Negociado sin publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;11000000,00;11000000,00
+2023-11-01;2023;11;Ejército del Aire;Sí;Suministros;Negociado sin publicidad;Urgente;No aplica;No;10;10;1784236,70;2158926,40
+2023-11-01;2023;11;Ejército del Aire;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;11;11;797263,88;956569,31
+2023-11-01;2023;11;Ejército del Aire;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;50;43;1631638,92;1916128,74
+2023-11-01;2023;11;Ejército del Aire;Sí;Suministros;Abierto simplificado;Urgente;No aplica;No;2;2;122418,00;136146,78
+2023-11-01;2023;11;Ejército del Aire;Sí;Concesión de Servicios;Abierto;Ordinaria;No aplica;No;2;2;10,21;12,35
+2023-11-01;2023;11;Ejército del Aire;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-11-01;2023;11;Ejército del Aire;Sí;Servicios;Abierto;Ordinaria;No aplica;No;4;4;1252054,46;1514985,89
+2023-11-01;2023;11;Ejército del Aire;Sí;Servicios;Abierto;Urgente;No aplica;No;2;2;724609,00;724609,00
+2023-11-01;2023;11;Ejército del Aire;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;824473,73;997613,29
+2023-11-01;2023;11;Ejército del Aire;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;12;12;1038262,84;1206738,03
+2023-11-01;2023;11;Ejército del Aire;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;7;7;214398,77;256610,38
+2023-11-01;2023;11;Ejército del Aire;Sí;Obras;Abierto;Urgente;No aplica;No;1;1;1371698,87;1659755,63
+2023-11-01;2023;11;Ejército del Aire;Sí;Obras;Negociado sin publicidad;Urgente;No aplica;No;4;4;3441971,69;4164785,75
+2023-11-01;2023;11;Ejército del Aire;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;20;19;3510452,81;4205386,11
+2023-11-01;2023;11;Estado Mayor de la Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;3;3;653140,50;766002,48
+2023-11-01;2023;11;Estado Mayor de la Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;1674,79;2026,50
+2023-11-01;2023;11;Estado Mayor de la Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;3;3;58292,68;70534,15
+2023-11-01;2023;11;Estado Mayor de la Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;1;1;139784,04;169138,69
+2023-11-01;2023;11;Estado Mayor de la Defensa;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;32268,18;35495,00
+2023-11-01;2023;11;ISDEFE;No;Suministros;Abierto;Ordinaria;No aplica;No;1;1;239000,00;289190,00
+2023-11-01;2023;11;ISDEFE;No;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;188094,00;227593,74
+2023-11-01;2023;11;ISDEFE;No;Suministros;Abierto simplificado;Ordinaria;No aplica;No;2;2;101592,90;122927,40
+2023-11-01;2023;11;ISDEFE;No;Servicios;Abierto;Ordinaria;No aplica;No;7;7;484366,00;586082,86
+2023-11-01;2023;11;ISDEFE;No;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;5;5;1341634,00;1618708,74
+2023-11-01;2023;11;ISDEFE;No;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;3;3;414096,08;501016,25
+2023-11-01;2023;11;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;5;5;13257495,55;13566719,62
+2023-11-01;2023;11;Secretaría de Estado de Defensa;Sí;Suministros;Abierto;Urgente;No aplica;No;1;1;675235,35;817034,77
+2023-11-01;2023;11;Secretaría de Estado de Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;9;9;857823104,94;929027224,29
+2023-11-01;2023;11;Secretaría de Estado de Defensa;Sí;Suministros;Negociado sin publicidad;Urgente;No aplica;No;3;3;239318628,67;289299174,60
+2023-11-01;2023;11;Secretaría de Estado de Defensa;Sí;Suministros;Negociado con publicidad;Urgente;No aplica;No;2;2;8033220,00;8033220,00
+2023-11-01;2023;11;Secretaría de Estado de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;7;7;6112837,46;7124151,05
+2023-11-01;2023;11;Secretaría de Estado de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;13;12;598774,97;717961,71
+2023-11-01;2023;11;Secretaría de Estado de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;10;4;8267271,88;8450263,14
+2023-11-01;2023;11;Secretaría de Estado de Defensa;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;3;1;17500000,00;21175000,00
+2023-11-01;2023;11;Secretaría de Estado de Defensa;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;13;13;42984607,22;50349823,90
+2023-11-01;2023;11;Secretaría de Estado de Defensa;Sí;Servicios;Negociado sin publicidad;Emergencia;No aplica;No;3;3;78878,53;95443,02
+2023-11-01;2023;11;Secretaría de Estado de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;7;7;2946711,96;3560481,46
+2023-11-01;2023;11;Secretaría de Estado de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;5;5;210604,69;254831,68
+2023-11-01;2023;11;Secretaría de Estado de Defensa;Sí;Obras;Abierto;Urgente;No aplica;No;1;1;18189152,00;22008873,92
+2023-11-01;2023;11;Secretaría de Estado de Defensa;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;3167,01;3832,08
+2023-11-01;2023;11;Secretaría de Estado de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;6;6;4747991,23;5745069,40
+2023-11-01;2023;11;Subsecretaría de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;8;6;2028343,58;2427921,31
+2023-11-01;2023;11;Subsecretaría de Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;3;3;230613,22;279042,00
+2023-11-01;2023;11;Subsecretaría de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;11;11;1631343,71;1903801,36
+2023-11-01;2023;11;Subsecretaría de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;7;7;415753,91;492139,41
+2023-11-01;2023;11;Subsecretaría de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;14;5;2987249,71;3524807,58
+2023-11-01;2023;11;Subsecretaría de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;12;12;1141338,83;1363695,09
+2023-11-01;2023;11;Subsecretaría de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;9;3;148154,33;179266,72
+2023-11-01;2023;11;Subsecretaría de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;1;1;999457,02;1209343,00
+2023-12-01;2023;12;Armada;Sí;Suministros;Abierto;Ordinaria;No aplica;No;1;1;2138072,77;2587068,06
+2023-12-01;2023;12;Armada;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;3;3;3716902,41;3724584,72
+2023-12-01;2023;12;Armada;Sí;Suministros;Negociado sin publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;1135000,00;1373350,00
+2023-12-01;2023;12;Armada;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;13;13;3808916,37;4086984,34
+2023-12-01;2023;12;Armada;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;71;58;2201155,45;2534181,01
+2023-12-01;2023;12;Armada;Sí;Servicios;Abierto;Ordinaria;No aplica;No;8;5;1945236,39;2047820,63
+2023-12-01;2023;12;Armada;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;3;3;360000,00;360000,00
+2023-12-01;2023;12;Armada;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;9;9;1565372,55;1662916,10
+2023-12-01;2023;12;Armada;Sí;Servicios;Negociado con publicidad;Ordinaria;No aplica;No;2;2;80000,00;80000,00
+2023-12-01;2023;12;Armada;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;23;23;4334384,21;4737417,93
+2023-12-01;2023;12;Armada;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;30;28;786008,92;858636,53
+2023-12-01;2023;12;Armada;Sí;Obras;Negociado sin publicidad;Ordinaria;No aplica;No;3;3;582970,00;705393,70
+2023-12-01;2023;12;Armada;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;6;6;819631,69;978076,40
+2023-12-01;2023;12;Armada;Sí;Administrativo especial;Abierto simplificado;Ordinaria;No aplica;No;1;1;1061,22;1282,90
+2023-12-01;2023;12;Ejército de Tierra;Sí;Suministros;Licitación con negociación;Ordinaria;No aplica;No;4;4;1369757,12;1657406,12
+2023-12-01;2023;12;Ejército de Tierra;Sí;Suministros;Licitación con negociación;Ordinaria;Establecimiento del Acuerdo Marco;Sí;6;2;20707185,44;25055694,38
+2023-12-01;2023;12;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;No aplica;No;13;4;1688400,00;1895077,00
+2023-12-01;2023;12;Ejército de Tierra;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;143;2;1615132,25;1950126,87
+2023-12-01;2023;12;Ejército de Tierra;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;99998,35;120998,00
+2023-12-01;2023;12;Ejército de Tierra;Sí;Suministros;Negociado sin publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;3;2;15078000,00;15288000,00
+2023-12-01;2023;12;Ejército de Tierra;Sí;Suministros;Negociado sin publicidad;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;285123,96;344999,99
+2023-12-01;2023;12;Ejército de Tierra;Sí;Suministros;Negociado con publicidad;Ordinaria;No aplica;No;1;1;119820,83;144983,20
+2023-12-01;2023;12;Ejército de Tierra;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;26;26;8299542,19;9977495,94
+2023-12-01;2023;12;Ejército de Tierra;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;51;45;1754279,56;2000924,41
+2023-12-01;2023;12;Ejército de Tierra;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;4;4;0,00;0,00
+2023-12-01;2023;12;Ejército de Tierra;Sí;Servicios;Licitación con negociación;Ordinaria;No aplica;No;3;1;416069,20;503443,74
+2023-12-01;2023;12;Ejército de Tierra;Sí;Servicios;Licitación con negociación;Ordinaria;Establecimiento del Acuerdo Marco;Sí;5;2;42900000,00;42900000,00
+2023-12-01;2023;12;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;No aplica;No;6;3;389762,27;455005,33
+2023-12-01;2023;12;Ejército de Tierra;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;2574247,50;3114839,47
+2023-12-01;2023;12;Ejército de Tierra;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;100000,00;121000,00
+2023-12-01;2023;12;Ejército de Tierra;Sí;Servicios;Negociado sin publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;2;2;12449998,00;15064497,58
+2023-12-01;2023;12;Ejército de Tierra;Sí;Servicios;Negociado con publicidad;Ordinaria;Establecimiento del Acuerdo Marco;Sí;3;2;106611570,24;129000000,00
+2023-12-01;2023;12;Ejército de Tierra;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;12;12;1549251,90;1823095,66
+2023-12-01;2023;12;Ejército de Tierra;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;18;16;335485,52;398657,33
+2023-12-01;2023;12;Ejército de Tierra;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;2;2;54505,48;65951,63
+2023-12-01;2023;12;Ejército de Tierra;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;3;3;590669,96;657085,17
+2023-12-01;2023;12;Ejército del Aire;Sí;Suministros;Abierto;Ordinaria;No aplica;No;4;4;410938,01;497235,00
+2023-12-01;2023;12;Ejército del Aire;Sí;Suministros;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;2000000,00;2000000,00
+2023-12-01;2023;12;Ejército del Aire;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;3;3;33142,67;40102,64
+2023-12-01;2023;12;Ejército del Aire;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;17;16;844279,66;1021578,65
+2023-12-01;2023;12;Ejército del Aire;Sí;Suministros;Abierto simplificado;Urgente;No aplica;No;2;2;82965,97;100388,85
+2023-12-01;2023;12;Ejército del Aire;Sí;Concesión de Servicios;Abierto;Ordinaria;No aplica;No;1;1;2,06;2,50
+2023-12-01;2023;12;Ejército del Aire;Sí;Concesión de Servicios;Restringido;Ordinaria;No aplica;No;2;2;0,00;0,00
+2023-12-01;2023;12;Ejército del Aire;Sí;Servicios;Abierto;Ordinaria;No aplica;No;3;2;359420,47;432596,46
+2023-12-01;2023;12;Ejército del Aire;Sí;Servicios;Abierto;Ordinaria;Establecimiento del Acuerdo Marco;Sí;1;1;47500000,00;47500000,00
+2023-12-01;2023;12;Ejército del Aire;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;136363,23;164999,51
+2023-12-01;2023;12;Ejército del Aire;Sí;Servicios;Negociado sin publicidad;Urgente;No aplica;No;1;1;341340,00;413021,40
+2023-12-01;2023;12;Ejército del Aire;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;8;8;205109,40;243932,38
+2023-12-01;2023;12;Ejército del Aire;Sí;Obras;Abierto;Urgente;No aplica;No;1;1;2765953,12;3346803,28
+2023-12-01;2023;12;Ejército del Aire;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;4;4;134614,90;162884,02
+2023-12-01;2023;12;Estado Mayor de la Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;1;1;19000,00;22990,00
+2023-12-01;2023;12;Estado Mayor de la Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;1;1;210080,64;254197,57
+2023-12-01;2023;12;Estado Mayor de la Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;2;2;2700000,00;2700000,00
+2023-12-01;2023;12;Estado Mayor de la Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-12-01;2023;12;ISDEFE;No;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;384942,41;465780,32
+2023-12-01;2023;12;ISDEFE;No;Suministros;Abierto simplificado;Ordinaria;No aplica;No;1;1;76930,00;93085,30
+2023-12-01;2023;12;ISDEFE;No;Servicios;Abierto;Ordinaria;No aplica;No;11;9;1824752,00;2207949,93
+2023-12-01;2023;12;ISDEFE;No;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;1;1;16191,00;19591,11
+2023-12-01;2023;12;ISDEFE;No;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;1;1;161566,70;195495,71
+2023-12-01;2023;12;ISDEFE;No;Servicios;Abierto simplificado;Ordinaria;No aplica;No;2;2;72783,87;88068,49
+2023-12-01;2023;12;Secretaría de Estado de Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;3;3;2232021424,94;2353208524,17
+2023-12-01;2023;12;Secretaría de Estado de Defensa;Sí;Suministros;Negociado sin publicidad;Urgente;No aplica;No;2;2;10243630,40;12394792,78
+2023-12-01;2023;12;Secretaría de Estado de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;4;4;2271032,00;2747318,73
+2023-12-01;2023;12;Secretaría de Estado de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;6;6;164819,00;199430,99
+2023-12-01;2023;12;Secretaría de Estado de Defensa;Sí;Servicios;Licitación con negociación;Urgente;No aplica;No;1;1;80000,00;96800,00
+2023-12-01;2023;12;Secretaría de Estado de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;1;1;1404793,39;1699800,00
+2023-12-01;2023;12;Secretaría de Estado de Defensa;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;8;8;623041,14;690879,77
+2023-12-01;2023;12;Secretaría de Estado de Defensa;Sí;Servicios;Negociado sin publicidad;Urgente;No aplica;No;1;1;3886400,00;4702544,00
+2023-12-01;2023;12;Secretaría de Estado de Defensa;Sí;Servicios;Negociado sin publicidad;Urgente;Establecimiento del Acuerdo Marco;Sí;1;1;3801600,00;4599936,00
+2023-12-01;2023;12;Secretaría de Estado de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;5;5;1161843,75;1405830,94
+2023-12-01;2023;12;Secretaría de Estado de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;5;4;169694,39;191680,20
+2023-12-01;2023;12;Secretaría de Estado de Defensa;Sí;Obras;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;4;4;61337,51;74218,39
+2023-12-01;2023;12;Secretaría de Estado de Defensa;Sí;Obras;Abierto simplificado;Ordinaria;No aplica;No;7;5;2401622,61;2905963,37
+2023-12-01;2023;12;Subsecretaría de Defensa;Sí;Suministros;Abierto;Ordinaria;No aplica;No;1;1;0,00;0,00
+2023-12-01;2023;12;Subsecretaría de Defensa;Sí;Suministros;Negociado sin publicidad;Ordinaria;No aplica;No;2;2;143201,25;154814,50
+2023-12-01;2023;12;Subsecretaría de Defensa;Sí;Suministros;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;4;4;599437,57;707502,15
+2023-12-01;2023;12;Subsecretaría de Defensa;Sí;Suministros;Abierto simplificado;Ordinaria;No aplica;No;6;4;158898,09;186089,09
+2023-12-01;2023;12;Subsecretaría de Defensa;Sí;Servicios;Abierto;Ordinaria;No aplica;No;5;3;1028712,05;1204836,66
+2023-12-01;2023;12;Subsecretaría de Defensa;Sí;Servicios;Negociado sin publicidad;Ordinaria;No aplica;No;2;1;54307,16;54307,16
+2023-12-01;2023;12;Subsecretaría de Defensa;Sí;Servicios;Derivado de acuerdo marco;Ordinaria;Contrato basado en un Acuerdo Marco;No;5;5;322350,48;388868,22
+2023-12-01;2023;12;Subsecretaría de Defensa;Sí;Servicios;Abierto simplificado;Ordinaria;No aplica;No;5;5;195024,43;221782,96

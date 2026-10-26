@@ -1,0 +1,528 @@
+{
+ "control": {
+  "licitaciones_unicas": 1140333,
+  "retiradas": 15312,
+  "defensa_fuera_de_la_seccion_14": 14838,
+  "defensa_licitaciones_en_sector_publico": 67994,
+  "defensa_licitaciones_en_serie": 67994,
+  "menores_unicas": 3567887,
+  "defensa_menores_en_sector_publico": 103678,
+  "defensa_menores_en_serie": 103678
+ },
+ "clasificacion_por_anio": {
+  "2017": {
+   "catálogo": 24619,
+   "defensa (paso 3)": 3922,
+   "jerarquía": 6793,
+   "prefijo DIR3": 1406
+  },
+  "2018": {
+   "catálogo": 202249,
+   "defensa (paso 3)": 18112,
+   "jerarquía": 73661,
+   "prefijo DIR3": 5728
+  },
+  "2019": {
+   "catálogo": 289336,
+   "defensa (paso 3)": 15122,
+   "jerarquía": 99002,
+   "prefijo DIR3": 4544
+  },
+  "2020": {
+   "catálogo": 293896,
+   "jerarquía": 99220,
+   "defensa (paso 3)": 17021,
+   "prefijo DIR3": 904
+  },
+  "2021": {
+   "jerarquía": 128211,
+   "catálogo": 369575,
+   "defensa (paso 3)": 18601,
+   "prefijo DIR3": 1426
+  },
+  "2022": {
+   "jerarquía": 330121,
+   "catálogo": 253600,
+   "prefijo DIR3": 63,
+   "defensa (paso 3)": 21823,
+   "sin clasificar": 2
+  },
+  "2023": {
+   "jerarquía": 609859,
+   "defensa (paso 3)": 22677
+  },
+  "2024": {
+   "jerarquía": 656969,
+   "defensa (paso 3)": 22122
+  },
+  "2025": {
+   "jerarquía": 691397,
+   "defensa (paso 3)": 20243
+  },
+  "2026": {
+   "jerarquía": 442439,
+   "defensa (paso 3)": 14431
+  }
+ },
+ "resto_age_sin_ministerio_cuota": {
+  "2017": 0.182,
+  "2018": 0.02,
+  "2019": 0.01,
+  "2020": 0.008,
+  "2021": 0.001,
+  "2022": 0.0,
+  "2023": 0.0,
+  "2024": 0.0,
+  "2025": 0.0,
+  "2026": 0.0
+ },
+ "catalogo": {
+  "idp": 15447,
+  "dir3": 7091,
+  "nombre": 16376
+ },
+ "cuotas_licitaciones_ordinario": {
+  "Comunidades autónomas": {
+   "2017": {
+    "ordinario_MEUR": 1096.1,
+    "cuota_nd_importe": 0.346,
+    "n": 3295,
+    "cuota_nd_n": 0.355
+   },
+   "2018": {
+    "ordinario_MEUR": 2590.1,
+    "cuota_nd_importe": 0.266,
+    "n": 8733,
+    "cuota_nd_n": 0.317
+   },
+   "2019": {
+    "ordinario_MEUR": 3726.7,
+    "cuota_nd_importe": 0.187,
+    "n": 14144,
+    "cuota_nd_n": 0.195
+   },
+   "2020": {
+    "ordinario_MEUR": 4663.5,
+    "cuota_nd_importe": 0.224,
+    "n": 22710,
+    "cuota_nd_n": 0.223
+   },
+   "2021": {
+    "ordinario_MEUR": 5881.8,
+    "cuota_nd_importe": 0.208,
+    "n": 22599,
+    "cuota_nd_n": 0.226
+   },
+   "2022": {
+    "ordinario_MEUR": 7479.9,
+    "cuota_nd_importe": 0.236,
+    "n": 22201,
+    "cuota_nd_n": 0.214
+   },
+   "2023": {
+    "ordinario_MEUR": 7487.2,
+    "cuota_nd_importe": 0.186,
+    "n": 23927,
+    "cuota_nd_n": 0.211
+   },
+   "2024": {
+    "ordinario_MEUR": 6931.3,
+    "cuota_nd_importe": 0.263,
+    "n": 24137,
+    "cuota_nd_n": 0.24
+   },
+   "2025": {
+    "ordinario_MEUR": 8957.4,
+    "cuota_nd_importe": 0.21,
+    "n": 26966,
+    "cuota_nd_n": 0.205
+   },
+   "2026": {
+    "ordinario_MEUR": 5583.4,
+    "cuota_nd_importe": 0.0,
+    "n": 17777,
+    "cuota_nd_n": 0.0
+   }
+  },
+  "Entidades locales": {
+   "2017": {
+    "ordinario_MEUR": 1176.1,
+    "cuota_nd_importe": 0.25,
+    "n": 7651,
+    "cuota_nd_n": 0.257
+   },
+   "2018": {
+    "ordinario_MEUR": 3737.7,
+    "cuota_nd_importe": 0.327,
+    "n": 24814,
+    "cuota_nd_n": 0.319
+   },
+   "2019": {
+    "ordinario_MEUR": 5498.2,
+    "cuota_nd_importe": 0.184,
+    "n": 41117,
+    "cuota_nd_n": 0.19
+   },
+   "2020": {
+    "ordinario_MEUR": 6142.6,
+    "cuota_nd_importe": 0.242,
+    "n": 39958,
+    "cuota_nd_n": 0.219
+   },
+   "2021": {
+    "ordinario_MEUR": 8946.0,
+    "cuota_nd_importe": 0.228,
+    "n": 51677,
+    "cuota_nd_n": 0.223
+   },
+   "2022": {
+    "ordinario_MEUR": 11315.8,
+    "cuota_nd_importe": 0.211,
+    "n": 58813,
+    "cuota_nd_n": 0.208
+   },
+   "2023": {
+    "ordinario_MEUR": 9822.2,
+    "cuota_nd_importe": 0.203,
+    "n": 55883,
+    "cuota_nd_n": 0.191
+   },
+   "2024": {
+    "ordinario_MEUR": 12330.2,
+    "cuota_nd_importe": 0.226,
+    "n": 64810,
+    "cuota_nd_n": 0.198
+   },
+   "2025": {
+    "ordinario_MEUR": 14162.8,
+    "cuota_nd_importe": 0.208,
+    "n": 70127,
+    "cuota_nd_n": 0.187
+   },
+   "2026": {
+    "ordinario_MEUR": 11276.4,
+    "cuota_nd_importe": 0.0,
+    "n": 52819,
+    "cuota_nd_n": 0.0
+   }
+  },
+  "Ministerio de Defensa": {
+   "2017": {
+    "ordinario_MEUR": 805.0,
+    "cuota_nd_importe": 0.256,
+    "n": 3922,
+    "cuota_nd_n": 0.272
+   },
+   "2018": {
+    "ordinario_MEUR": 990.9,
+    "cuota_nd_importe": 0.304,
+    "n": 5294,
+    "cuota_nd_n": 0.316
+   },
+   "2019": {
+    "ordinario_MEUR": 1170.7,
+    "cuota_nd_importe": 0.254,
+    "n": 6082,
+    "cuota_nd_n": 0.235
+   },
+   "2020": {
+    "ordinario_MEUR": 1045.1,
+    "cuota_nd_importe": 0.31,
+    "n": 6114,
+    "cuota_nd_n": 0.266
+   },
+   "2021": {
+    "ordinario_MEUR": 1447.3,
+    "cuota_nd_importe": 0.223,
+    "n": 7456,
+    "cuota_nd_n": 0.226
+   },
+   "2022": {
+    "ordinario_MEUR": 1910.9,
+    "cuota_nd_importe": 0.302,
+    "n": 8259,
+    "cuota_nd_n": 0.243
+   },
+   "2023": {
+    "ordinario_MEUR": 2756.4,
+    "cuota_nd_importe": 0.259,
+    "n": 9025,
+    "cuota_nd_n": 0.216
+   },
+   "2024": {
+    "ordinario_MEUR": 2509.2,
+    "cuota_nd_importe": 0.222,
+    "n": 8770,
+    "cuota_nd_n": 0.23
+   },
+   "2025": {
+    "ordinario_MEUR": 2886.4,
+    "cuota_nd_importe": 0.323,
+    "n": 9242,
+    "cuota_nd_n": 0.229
+   },
+   "2026": {
+    "ordinario_MEUR": 2531.6,
+    "cuota_nd_importe": 0.0,
+    "n": 7997,
+    "cuota_nd_n": 0.0
+   }
+  },
+  "Mutuas e instituciones independientes": {
+   "2017": {
+    "ordinario_MEUR": 289.6,
+    "cuota_nd_importe": 0.227,
+    "n": 2718,
+    "cuota_nd_n": 0.189
+   },
+   "2018": {
+    "ordinario_MEUR": 422.0,
+    "cuota_nd_importe": 0.327,
+    "n": 3172,
+    "cuota_nd_n": 0.267
+   },
+   "2019": {
+    "ordinario_MEUR": 539.2,
+    "cuota_nd_importe": 0.311,
+    "n": 4586,
+    "cuota_nd_n": 0.197
+   },
+   "2020": {
+    "ordinario_MEUR": 552.6,
+    "cuota_nd_importe": 0.309,
+    "n": 4921,
+    "cuota_nd_n": 0.224
+   },
+   "2021": {
+    "ordinario_MEUR": 733.9,
+    "cuota_nd_importe": 0.157,
+    "n": 6100,
+    "cuota_nd_n": 0.174
+   },
+   "2022": {
+    "ordinario_MEUR": 856.6,
+    "cuota_nd_importe": 0.217,
+    "n": 6051,
+    "cuota_nd_n": 0.198
+   },
+   "2023": {
+    "ordinario_MEUR": 927.1,
+    "cuota_nd_importe": 0.223,
+    "n": 6384,
+    "cuota_nd_n": 0.183
+   },
+   "2024": {
+    "ordinario_MEUR": 974.8,
+    "cuota_nd_importe": 0.21,
+    "n": 7008,
+    "cuota_nd_n": 0.165
+   },
+   "2025": {
+    "ordinario_MEUR": 1012.4,
+    "cuota_nd_importe": 0.167,
+    "n": 6532,
+    "cuota_nd_n": 0.176
+   },
+   "2026": {
+    "ordinario_MEUR": 798.5,
+    "cuota_nd_importe": 0.0,
+    "n": 5256,
+    "cuota_nd_n": 0.0
+   }
+  },
+  "Resto de la AGE": {
+   "2017": {
+    "ordinario_MEUR": 2886.1,
+    "cuota_nd_importe": 0.232,
+    "n": 6940,
+    "cuota_nd_n": 0.265
+   },
+   "2018": {
+    "ordinario_MEUR": 2779.7,
+    "cuota_nd_importe": 0.166,
+    "n": 5865,
+    "cuota_nd_n": 0.284
+   },
+   "2019": {
+    "ordinario_MEUR": 4064.9,
+    "cuota_nd_importe": 0.221,
+    "n": 9314,
+    "cuota_nd_n": 0.281
+   },
+   "2020": {
+    "ordinario_MEUR": 3824.3,
+    "cuota_nd_importe": 0.168,
+    "n": 9509,
+    "cuota_nd_n": 0.244
+   },
+   "2021": {
+    "ordinario_MEUR": 5039.2,
+    "cuota_nd_importe": 0.31,
+    "n": 12064,
+    "cuota_nd_n": 0.276
+   },
+   "2022": {
+    "ordinario_MEUR": 6873.8,
+    "cuota_nd_importe": 0.256,
+    "n": 14151,
+    "cuota_nd_n": 0.237
+   },
+   "2023": {
+    "ordinario_MEUR": 7931.2,
+    "cuota_nd_importe": 0.199,
+    "n": 14272,
+    "cuota_nd_n": 0.228
+   },
+   "2024": {
+    "ordinario_MEUR": 7858.7,
+    "cuota_nd_importe": 0.196,
+    "n": 15710,
+    "cuota_nd_n": 0.209
+   },
+   "2025": {
+    "ordinario_MEUR": 7742.4,
+    "cuota_nd_importe": 0.219,
+    "n": 16144,
+    "cuota_nd_n": 0.199
+   },
+   "2026": {
+    "ordinario_MEUR": 5598.8,
+    "cuota_nd_importe": 0.0,
+    "n": 11411,
+    "cuota_nd_n": 0.0
+   }
+  },
+  "Sociedades y fundaciones públicas": {
+   "2017": {
+    "ordinario_MEUR": 3389.7,
+    "cuota_nd_importe": 0.257,
+    "n": 10563,
+    "cuota_nd_n": 0.216
+   },
+   "2018": {
+    "ordinario_MEUR": 5533.2,
+    "cuota_nd_importe": 0.243,
+    "n": 16239,
+    "cuota_nd_n": 0.227
+   },
+   "2019": {
+    "ordinario_MEUR": 8364.5,
+    "cuota_nd_importe": 0.183,
+    "n": 24446,
+    "cuota_nd_n": 0.181
+   },
+   "2020": {
+    "ordinario_MEUR": 6423.4,
+    "cuota_nd_importe": 0.211,
+    "n": 23494,
+    "cuota_nd_n": 0.194
+   },
+   "2021": {
+    "ordinario_MEUR": 8501.7,
+    "cuota_nd_importe": 0.195,
+    "n": 25339,
+    "cuota_nd_n": 0.194
+   },
+   "2022": {
+    "ordinario_MEUR": 12034.1,
+    "cuota_nd_importe": 0.196,
+    "n": 31098,
+    "cuota_nd_n": 0.199
+   },
+   "2023": {
+    "ordinario_MEUR": 13560.4,
+    "cuota_nd_importe": 0.216,
+    "n": 38727,
+    "cuota_nd_n": 0.191
+   },
+   "2024": {
+    "ordinario_MEUR": 15179.3,
+    "cuota_nd_importe": 0.201,
+    "n": 45985,
+    "cuota_nd_n": 0.167
+   },
+   "2025": {
+    "ordinario_MEUR": 14978.3,
+    "cuota_nd_importe": 0.168,
+    "n": 49263,
+    "cuota_nd_n": 0.173
+   },
+   "2026": {
+    "ordinario_MEUR": 11367.0,
+    "cuota_nd_importe": 0.0,
+    "n": 38333,
+    "cuota_nd_n": 0.0
+   }
+  },
+  "Universidades": {
+   "2017": {
+    "ordinario_MEUR": 324.7,
+    "cuota_nd_importe": 0.168,
+    "n": 1549,
+    "cuota_nd_n": 0.181
+   },
+   "2018": {
+    "ordinario_MEUR": 421.4,
+    "cuota_nd_importe": 0.305,
+    "n": 2201,
+    "cuota_nd_n": 0.267
+   },
+   "2019": {
+    "ordinario_MEUR": 643.5,
+    "cuota_nd_importe": 0.174,
+    "n": 3298,
+    "cuota_nd_n": 0.238
+   },
+   "2020": {
+    "ordinario_MEUR": 509.6,
+    "cuota_nd_importe": 0.271,
+    "n": 3504,
+    "cuota_nd_n": 0.24
+   },
+   "2021": {
+    "ordinario_MEUR": 851.5,
+    "cuota_nd_importe": 0.161,
+    "n": 3998,
+    "cuota_nd_n": 0.214
+   },
+   "2022": {
+    "ordinario_MEUR": 773.6,
+    "cuota_nd_importe": 0.25,
+    "n": 3475,
+    "cuota_nd_n": 0.199
+   },
+   "2023": {
+    "ordinario_MEUR": 896.3,
+    "cuota_nd_importe": 0.317,
+    "n": 4207,
+    "cuota_nd_n": 0.163
+   },
+   "2024": {
+    "ordinario_MEUR": 813.2,
+    "cuota_nd_importe": 0.168,
+    "n": 3639,
+    "cuota_nd_n": 0.201
+   },
+   "2025": {
+    "ordinario_MEUR": 873.2,
+    "cuota_nd_importe": 0.217,
+    "n": 3399,
+    "cuota_nd_n": 0.205
+   },
+   "2026": {
+    "ordinario_MEUR": 650.3,
+    "cuota_nd_importe": 0.0,
+    "n": 2568,
+    "cuota_nd_n": 0.0
+   }
+  },
+  "Sin clasificar": {
+   "2022": {
+    "ordinario_MEUR": 5.5,
+    "cuota_nd_importe": 0.0,
+    "n": 1,
+    "cuota_nd_n": 0.0
+   }
+  }
+ }
+}

@@ -1,0 +1,161 @@
+{
+  "name": "Defensa sobrio",
+  "dataColors": [
+    "#1F3A5F",
+    "#2A7F8F",
+    "#C98B2B",
+    "#B5473A",
+    "#5E8C61",
+    "#6B7280",
+    "#8FA9C4",
+    "#7D6B91",
+    "#A3B18A",
+    "#D9A066"
+  ],
+  "foreground": "#1F2937",
+  "foregroundNeutralSecondary": "#4B5563",
+  "background": "#FFFFFF",
+  "backgroundLight": "#F3F5F8",
+  "backgroundNeutral": "#DDE3EA",
+  "tableAccent": "#1F3A5F",
+  "good": "#5E8C61",
+  "neutral": "#C98B2B",
+  "bad": "#B5473A",
+  "maximum": "#1F3A5F",
+  "center": "#8FA9C4",
+  "minimum": "#EEF2F7",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#DDE3EA"
+              }
+            },
+            "radius": 8
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": false
+          }
+        ],
+        "title": [
+          {
+            "fontColor": {
+              "solid": {
+                "color": "#1F3A5F"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "textbox": {
+      "*": {
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "border": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#F3F5F8"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "outspace": [
+          {
+            "color": {
+              "solid": {
+                "color": "#E9EDF2"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    },
+    "tableEx": {
+      "*": {
+        "columnHeaders": [
+          {
+            "backColor": {
+              "solid": {
+                "color": "#1F3A5F"
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          }
+        ],
+        "values": [
+          {
+            "backColorSecondary": {
+              "solid": {
+                "color": "#F5F7FA"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "pivotTable": {
+      "*": {
+        "columnHeaders": [
+          {
+            "backColor": {
+              "solid": {
+                "color": "#1F3A5F"
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          }
+        ],
+        "rowHeaders": [
+          {
+            "fontColor": {
+              "solid": {
+                "color": "#1F2937"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

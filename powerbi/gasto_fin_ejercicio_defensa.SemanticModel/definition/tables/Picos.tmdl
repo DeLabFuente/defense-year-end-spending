@@ -1,0 +1,190 @@
+/// Picos de cierre (nov-dic ≥ 33,3 % del importe del año y ≥ 1 M€) por rama y órgano, clasificados con reglas fijas.
+table Picos
+	lineageTag: f8572bff-2df5-4dc3-ad4a-1ba4f632ae36
+
+	column nivel
+		dataType: string
+		lineageTag: ff0946e5-8185-4231-8283-da12125076ea
+		summarizeBy: none
+		sourceColumn: nivel
+
+		annotation SummarizationSetBy = Automatic
+
+	column anio
+		dataType: int64
+		formatString: 0
+		lineageTag: 0eb21a73-619f-423a-a023-71bb10a72bf3
+		summarizeBy: none
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column rama
+		dataType: string
+		lineageTag: 740e286c-fe94-4ede-bf26-36aa0b158f69
+		summarizeBy: none
+		sourceColumn: rama
+
+		annotation SummarizationSetBy = Automatic
+
+	column organo
+		dataType: string
+		lineageTag: 0c8f3ec4-3bf8-4372-a71f-e07a36d06e7f
+		summarizeBy: none
+		sourceColumn: organo
+
+		annotation SummarizationSetBy = Automatic
+
+	column importe_anio_eur
+		dataType: double
+		isHidden
+		formatString: #,0
+		lineageTag: d6f4c787-8fd4-4dc7-afbe-a9e2b3639b36
+		summarizeBy: none
+		sourceColumn: importe_anio_eur
+
+		annotation SummarizationSetBy = Automatic
+
+	column importe_nov_dic_eur
+		dataType: double
+		isHidden
+		formatString: #,0
+		lineageTag: 72a3686d-750b-45ac-b546-160e7fab64d9
+		summarizeBy: none
+		sourceColumn: importe_nov_dic_eur
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_nov_dic
+		dataType: double
+		formatString: 0.0%
+		lineageTag: ab4862fd-5e84-4d2b-b30c-50c199d5a8a6
+		summarizeBy: none
+		sourceColumn: cuota_nov_dic
+
+		annotation SummarizationSetBy = Automatic
+
+	column importe_ordinario_anio_eur
+		dataType: double
+		isHidden
+		formatString: #,0
+		lineageTag: 7f28e850-7418-4ea7-9d7a-3ca0411889f1
+		summarizeBy: none
+		sourceColumn: importe_ordinario_anio_eur
+
+		annotation SummarizationSetBy = Automatic
+
+	column importe_ordinario_nov_dic_eur
+		dataType: double
+		isHidden
+		formatString: #,0
+		lineageTag: 32e63a6b-5d93-4ee2-9e0e-cfef7ea4c9bf
+		summarizeBy: none
+		sourceColumn: importe_ordinario_nov_dic_eur
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Cuota de nov-dic sin programas especiales.
+	column cuota_nov_dic_ordinaria
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 70d8d7bc-6ae9-4e16-8dc4-405b72adca62
+		summarizeBy: none
+		sourceColumn: cuota_nov_dic_ordinaria
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_emergencia_nov_dic
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 51e1aa75-9d5d-4632-8544-24b91e649cd3
+		summarizeBy: none
+		sourceColumn: cuota_emergencia_nov_dic
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_mayor_expediente_nov_dic
+		dataType: double
+		formatString: 0.0%
+		lineageTag: f0703c6d-7a9d-419c-8bc6-3f08306ebede
+		summarizeBy: none
+		sourceColumn: cuota_mayor_expediente_nov_dic
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_negociado_sp_nov_dic
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 2c9f6cea-f36c-4ab8-bf9b-9d19fd927b6f
+		summarizeBy: none
+		sourceColumn: cuota_negociado_sp_nov_dic
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_renovacion_anual_nov_dic
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 7c6fd596-dbf8-497d-b7e8-bcebc03115e6
+		summarizeBy: none
+		sourceColumn: cuota_renovacion_anual_nov_dic
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Explicable, A vigilar o Sin explicar (reglas en scripts/06_picos.py y en la página).
+	column clasificacion
+		dataType: string
+		lineageTag: 91a4cc96-821f-4a34-bf30-ac0c2fab4a95
+		summarizeBy: none
+		sourceColumn: clasificacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column motivo
+		dataType: string
+		lineageTag: 38aa5e8d-4648-4f2b-ade0-73fce62cb7e1
+		summarizeBy: none
+		sourceColumn: motivo
+
+		annotation SummarizationSetBy = Automatic
+
+	column notas
+		dataType: string
+		lineageTag: 8f72602f-ae1a-43f0-8236-62a3be43a753
+		summarizeBy: none
+		sourceColumn: notas
+
+		annotation SummarizationSetBy = Automatic
+
+	column sucesos_del_ultimo_cuatrimestre
+		dataType: string
+		lineageTag: ba170bc7-28de-4bdf-937c-fe7f95341b98
+		summarizeBy: none
+		sourceColumn: sucesos_del_ultimo_cuatrimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Importe de nov-dic con IVA, en millones de euros.
+	column importe_nov_dic_meur
+		dataType: double
+		formatString: #,0.0
+		lineageTag: 61a612bc-bc1e-444b-b73a-3a92f8df89c5
+		summarizeBy: none
+		sourceColumn: importe_nov_dic_meur
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Picos = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(RutaDatos & "picos_cierre.csv"), [Delimiter = ";", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Limpio = Table.TransformColumnNames(Encabezados, each Text.Replace(_, Character.FromNumber(65279), "")),
+				    Vacios = Table.ReplaceValue(Limpio, "", null, Replacer.ReplaceValue, Table.ColumnNames(Limpio)),
+				    Tipos = Table.TransformColumnTypes(Vacios, {{"nivel", type text}, {"anio", Int64.Type}, {"rama", type text}, {"organo", type text}, {"importe_anio_eur", type number}, {"importe_nov_dic_eur", type number}, {"cuota_nov_dic", type number}, {"importe_ordinario_anio_eur", type number}, {"importe_ordinario_nov_dic_eur", type number}, {"cuota_nov_dic_ordinaria", type number}, {"cuota_emergencia_nov_dic", type number}, {"cuota_mayor_expediente_nov_dic", type number}, {"cuota_negociado_sp_nov_dic", type number}, {"cuota_renovacion_anual_nov_dic", type number}, {"clasificacion", type text}, {"motivo", type text}, {"notas", type text}, {"sucesos_del_ultimo_cuatrimestre", type text}}, "es-ES"),
+				    Final = Table.AddColumn(Tipos, "importe_nov_dic_meur", each [importe_nov_dic_eur] / 1000000, type number)
+				in
+				    Final
+
+	annotation PBI_ResultType = Table
+

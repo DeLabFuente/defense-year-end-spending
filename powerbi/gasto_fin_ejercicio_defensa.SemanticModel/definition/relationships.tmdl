@@ -1,0 +1,8 @@
+relationship 20a9dcd3-3caf-5d78-8205-65e70bc97577
+	fromColumn: Adjudicaciones.fecha_mes
+	toColumn: Meses.fecha_mes
+
+relationship ee0f1e1a-aa2a-5169-a418-23d440e63500
+	fromColumn: Sucesos.fecha_mes
+	toColumn: Meses.fecha_mes
+

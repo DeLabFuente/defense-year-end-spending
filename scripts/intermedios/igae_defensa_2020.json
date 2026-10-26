@@ -1,0 +1,35 @@
+{
+ "fuente": "IGAE, Estadísticas mensuales de ejecución del Presupuesto del Estado, hasta el 31 de diciembre de 2020 (MENSUAL 12-20.pdf)",
+ "url": "https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/Contabilidad/ContabilidadPublica/CPE/EjecucionPresupuestaria/Documents/MENSUAL%2012-20.pdf",
+ "unidad": "miles de euros, acumulado enero-diciembre",
+ "capitulo_2_secciones_p103": {
+  "seccion": "DEFENSA",
+  "creditos_definitivos_2020": 1318430,
+  "obligaciones_reconocidas_netas_2020": 1268873,
+  "pagos_2020": 1211046,
+  "creditos_definitivos_2019": 1266969,
+  "obligaciones_reconocidas_netas_2019": 1229067,
+  "pagos_2019": 1195474
+ },
+ "capitulo_6_secciones_p118": {
+  "seccion": "DEFENSA",
+  "creditos_definitivos_2020": 2913467,
+  "gastos_comprometidos_2020": 2897801,
+  "obligaciones_reconocidas_netas_2020": 2885906,
+  "pagos_2020": 2772188,
+  "creditos_definitivos_2019": 3174121,
+  "gastos_comprometidos_2019": 3110081,
+  "obligaciones_reconocidas_netas_2019": 3098117,
+  "pagos_2019": 2969681
+ },
+ "orn_politica_defensa_por_programas_y_capitulos_p85": {
+  "DEFENSA_total": {
+   "cap2": 1268873,
+   "cap6": 2885906
+  },
+  "122B Programas especiales de modernizacion": {
+   "cap6": 1869196,
+   "total": 1869196
+  }
+ }
+}

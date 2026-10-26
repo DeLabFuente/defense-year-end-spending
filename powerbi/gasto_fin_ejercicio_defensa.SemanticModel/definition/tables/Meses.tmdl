@@ -1,0 +1,91 @@
+/// Calendario mensual 2017-2026, con el estado de procesamiento de cada año.
+table Meses
+	lineageTag: a754e2ef-bc4c-5ed0-b219-036820b8c7db
+
+	column fecha_mes
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d962f83b-d5b1-5d93-b839-975f5fccb3d6
+		summarizeBy: none
+		sourceColumn: fecha_mes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column anio
+		dataType: int64
+		lineageTag: db55c0b8-77a2-5a9d-a5db-0c609f9d04a3
+		summarizeBy: none
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes
+		dataType: int64
+		isHidden
+		lineageTag: d5d544bc-9b60-5c0f-8676-231875e43c4d
+		summarizeBy: none
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes_nombre
+		dataType: string
+		lineageTag: 971b18d0-568a-510a-b211-0ae3d58c4a54
+		summarizeBy: none
+		sourceColumn: mes_nombre
+		sortByColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Noviembre-diciembre frente al resto del año.
+	column periodo
+		dataType: string
+		lineageTag: 983ab0c5-6f0d-5903-ac31-830397db375a
+		summarizeBy: none
+		sourceColumn: periodo
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Completo, diciembre incompleto (falta procesar el fichero del año siguiente), prueba de 2023 o pendiente.
+	column estado_anio
+		dataType: string
+		lineageTag: ae9157ce-742f-5815-9d03-d1b34853fc64
+		summarizeBy: none
+		sourceColumn: estado_anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column nota_anio
+		dataType: string
+		lineageTag: 966b44f7-58c0-5f55-9d2f-e5d77c9db88d
+		summarizeBy: none
+		sourceColumn: nota_anio
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Meses = m
+		mode: import
+		source =
+				let
+				    Lista = List.Generate(() => #date(2017, 1, 1), each _ <= #date(2026, 12, 1), each Date.AddMonths(_, 1)),
+				    Tabla = Table.FromList(Lista, Splitter.SplitByNothing(), {"fecha_mes"}),
+				    Tipada = Table.TransformColumnTypes(Tabla, {{"fecha_mes", type date}}),
+				    Anio = Table.AddColumn(Tipada, "anio", each Date.Year([fecha_mes]), Int64.Type),
+				    Mes = Table.AddColumn(Anio, "mes", each Date.Month([fecha_mes]), Int64.Type),
+				    Corto = Table.AddColumn(Mes, "mes_nombre", each {"Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"}{[mes] - 1}, type text),
+				    Periodo = Table.AddColumn(Corto, "periodo", each if [mes] >= 11 then "Noviembre-diciembre" else "Resto del año", type text),
+				    OrigenAnios = Csv.Document(File.Contents(RutaDatos & "placsp_anios.csv"), [Delimiter = ";", Columns = 3, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Anios = Table.TransformColumnTypes(
+				        Table.TransformColumnNames(Table.PromoteHeaders(OrigenAnios, [PromoteAllScalars = true]), each Text.Replace(_, Character.FromNumber(65279), "")),
+				        {{"anio", Int64.Type}, {"estado", type text}, {"nota", type text}}, "es-ES"),
+				    Unido = Table.NestedJoin(Periodo, {"anio"}, Anios, {"anio"}, "A", JoinKind.LeftOuter),
+				    Estado = Table.ExpandTableColumn(Unido, "A", {"estado", "nota"}, {"estado_anio", "nota_anio"}),
+				    SinNulos = Table.ReplaceValue(Estado, null, "Pendiente", Replacer.ReplaceValue, {"estado_anio"}),
+				    Tipada2 = Table.TransformColumnTypes(SinNulos, {{"estado_anio", type text}, {"nota_anio", type text}})
+				in
+				    Tipada2
+
+	annotation PBI_ResultType = Table
+

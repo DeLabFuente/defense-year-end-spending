@@ -1,0 +1,215 @@
+{
+ "total_todo_MEUR": 7551.7,
+ "fuera_seccion_14_MEUR": 48.7,
+ "s14_MEUR": 7502.9,
+ "s14_establecimiento_marco_MEUR": 1124.4,
+ "s14_sin_marco_MEUR": 6378.5,
+ "s14_sin_marco_adjudicaciones": 8203,
+ "denominador_cap2_6_MEUR": 8574.464,
+ "denominador_cap2_6_sin_122B_MEUR": 4985.063,
+ "ratio_s14_sin_marco_vs_cap2_6": 0.744,
+ "ratio_s14_sin_marco_vs_cap2_6_sin_122B": 1.28,
+ "ejercitos_EMAD_SUBDEF_sin_marco_MEUR": 1823.3,
+ "ratio_ejercitos_vs_cap2_6_sin_122B": 0.366,
+ "cuota_nov_dic_s14_sin_marco": {
+  "importe": 0.633,
+  "numero": 0.197
+ },
+ "cuota_nov_dic_sin_SEDEF": {
+  "importe": 0.173,
+  "numero": 0.2
+ },
+ "mensual_s14_sin_marco_MEUR_y_n": {
+  "1": [
+   58.5,
+   234
+  ],
+  "2": [
+   287.8,
+   223
+  ],
+  "3": [
+   184.1,
+   626
+  ],
+  "4": [
+   242.6,
+   408
+  ],
+  "5": [
+   251.0,
+   725
+  ],
+  "6": [
+   258.2,
+   815
+  ],
+  "7": [
+   268.7,
+   763
+  ],
+  "8": [
+   170.6,
+   848
+  ],
+  "9": [
+   237.8,
+   887
+  ],
+  "10": [
+   383.8,
+   1054
+  ],
+  "11": [
+   1598.5,
+   1174
+  ],
+  "12": [
+   2436.8,
+   446
+  ]
+ },
+ "mensual_sin_SEDEF_MEUR_y_n": {
+  "1": [
+   39.4,
+   205
+  ],
+  "2": [
+   45.4,
+   192
+  ],
+  "3": [
+   113.0,
+   555
+  ],
+  "4": [
+   86.5,
+   358
+  ],
+  "5": [
+   216.8,
+   669
+  ],
+  "6": [
+   176.8,
+   761
+  ],
+  "7": [
+   183.0,
+   683
+  ],
+  "8": [
+   152.5,
+   789
+  ],
+  "9": [
+   193.5,
+   782
+  ],
+  "10": [
+   300.6,
+   970
+  ],
+  "11": [
+   259.4,
+   1088
+  ],
+  "12": [
+   56.5,
+   399
+  ]
+ },
+ "s14_sin_marco_por_rama": [
+  [
+   "Secretaría de Estado de Defensa",
+   4555.2
+  ],
+  [
+   "Ejército de Tierra",
+   908.0
+  ],
+  [
+   "Armada",
+   499.7
+  ],
+  [
+   "Ejército del Aire",
+   244.4
+  ],
+  [
+   "Subsecretaría de Defensa",
+   94.3
+  ],
+  [
+   "Estado Mayor de la Defensa",
+   77.0
+  ]
+ ],
+ "s14_sin_marco_por_procedimiento": [
+  [
+   "Negociado sin publicidad",
+   4172.4
+  ],
+  [
+   "Derivado de acuerdo marco",
+   1128.1
+  ],
+  [
+   "Abierto",
+   679.3
+  ],
+  [
+   "Abierto simplificado",
+   234.6
+  ],
+  [
+   "Negociado con publicidad",
+   95.2
+  ],
+  [
+   "Licitación con negociación",
+   54.8
+  ],
+  [
+   "Restringido",
+   14.1
+  ]
+ ],
+ "s14_sin_marco_por_tipo": [
+  [
+   "Suministros",
+   5156.4
+  ],
+  [
+   "Servicios",
+   907.9
+  ],
+  [
+   "Obras",
+   311.8
+  ],
+  [
+   "Concesión de Servicios",
+   2.5
+  ],
+  [
+   "Administrativo especial",
+   0.0
+  ]
+ ],
+ "s14_sin_marco_por_tramitacion": [
+  [
+   "Ordinaria",
+   5683.0
+  ],
+  [
+   "Urgente",
+   695.1
+  ],
+  [
+   "Emergencia",
+   0.4
+  ]
+ ],
+ "filas_csv": 916
+}

@@ -1,0 +1,27 @@
+{
+  "fuente": "IGAE, Estadísticas mensuales de ejecución del Presupuesto del Estado, hasta el 31 de diciembre de 2023 (MENSUAL 12-23.pdf, 1.131 págs.)",
+  "url": "https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/Contabilidad/ContabilidadPublica/CPE/EjecucionPresupuestaria/Documents/MENSUAL%2012-23.pdf",
+  "unidad": "miles de euros, acumulado enero-diciembre",
+  "capitulo_2_secciones_p125": {
+    "seccion": "DEFENSA",
+    "creditos_definitivos_2023": 1879416, "obligaciones_reconocidas_netas_2023": 1830706, "pagos_2023": 1724278,
+    "creditos_definitivos_2022": 1751518, "obligaciones_reconocidas_netas_2022": 1660971, "pagos_2022": 1637706
+  },
+  "capitulo_6_secciones_p144": {
+    "seccion": "DEFENSA",
+    "creditos_definitivos_2023": 7092712, "gastos_comprometidos_2023": 6905843, "obligaciones_reconocidas_netas_2023": 6743758, "pagos_2023": 6026761,
+    "creditos_definitivos_2022": 6104873, "gastos_comprometidos_2022": 5822124, "obligaciones_reconocidas_netas_2022": 5730608, "pagos_2022": 5374771
+  },
+  "orn_por_programas_y_capitulos_p97": {
+    "DEFENSA_total": {"cap1": 5349444, "cap2": 1830706, "cap4": 562116, "cap6": 6743758, "cap7": 200913, "cap8": 13239, "total": 14700176},
+    "121M Administracion y Servicios Generales de Defensa": {"cap1": 1672452, "cap2": 656748, "cap4": 161301, "cap6": 143478, "cap8": 13239, "total": 2647218},
+    "122A Modernizacion de las Fuerzas Armadas": {"cap6": 1119678, "total": 1119678},
+    "122B Programas especiales de modernizacion": {"cap6": 3589401, "total": 3589401},
+    "C19.I03 Competencias digitales para el empleo. Defensa": {"cap2": 500, "cap4": 5500, "cap6": 447, "total": 6447}
+  },
+  "pagos_presupuesto_corriente_seccion_defensa_p30": 13791581,
+  "denominadores": {
+    "cap2_mas_cap6": 8574464,
+    "cap2_mas_cap6_sin_122B": 4985063
+  }
+}

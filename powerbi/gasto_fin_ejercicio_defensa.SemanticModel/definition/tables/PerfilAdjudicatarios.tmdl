@@ -1,0 +1,146 @@
+/// Perfil de especialización de los adjudicatarios con adjudicaciones en 3 años o más (2017-2025), solo agregado por perfil y tramo de importe; sin huellas.
+table PerfilAdjudicatarios
+	lineageTag: 0b14aa78-d508-4115-8c0a-9b6e972ea84c
+
+	/// Especialista (≥80 % en una división CPV), Intermedia o Dispersa (<40 % en la principal y ≥6 divisiones).
+	column perfil
+		dataType: string
+		lineageTag: 9b37b60a-b75b-48a8-8851-94c429e9c370
+		summarizeBy: none
+		sourceColumn: perfil
+		sortByColumn: orden_perfil
+
+		annotation SummarizationSetBy = Automatic
+
+	column orden_perfil
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 4cd8df3e-1a9f-49cd-ac51-fde65c4ec43e
+		summarizeBy: none
+		sourceColumn: orden_perfil
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Importe con IVA 2017-2025 del adjudicatario, en tramos. «0. Todos» es el total del perfil.
+	column tramo_importe
+		dataType: string
+		lineageTag: d8d15da4-17b5-4e86-af34-8aa074777b64
+		summarizeBy: none
+		sourceColumn: tramo_importe
+
+		annotation SummarizationSetBy = Automatic
+
+	/// En blanco si el grupo tiene menos de 5 adjudicatarios (supresión para evitar reidentificar empresas).
+	column adjudicatarios
+		dataType: int64
+		formatString: #,0
+		lineageTag: adf491fd-68a1-44e7-89a0-6c21b8656c5c
+		summarizeBy: none
+		sourceColumn: adjudicatarios
+
+		annotation SummarizationSetBy = Automatic
+
+	column suprimido
+		dataType: string
+		lineageTag: 887b7515-bd3d-4410-8998-490a34021a2a
+		summarizeBy: none
+		sourceColumn: suprimido
+
+		annotation SummarizationSetBy = Automatic
+
+	column mediana_anios
+		dataType: double
+		formatString: 0.0
+		lineageTag: 72aee708-6f65-4df1-bdb0-7877e823f39f
+		summarizeBy: none
+		sourceColumn: mediana_anios
+
+		annotation SummarizationSetBy = Automatic
+
+	column mediana_adjudicaciones
+		dataType: double
+		formatString: #,0
+		lineageTag: f9981c6b-9ba8-46ca-b513-802cee00d81d
+		summarizeBy: none
+		sourceColumn: mediana_adjudicaciones
+
+		annotation SummarizationSetBy = Automatic
+
+	column mediana_divisiones_cpv
+		dataType: double
+		formatString: 0.0
+		lineageTag: 3e577d05-3633-4e02-928f-d6b78f2fa598
+		summarizeBy: none
+		sourceColumn: mediana_divisiones_cpv
+
+		annotation SummarizationSetBy = Automatic
+
+	column mediana_cuota_division_principal
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 1b1eb2d4-efec-4cc5-9b84-caa84f98eab1
+		summarizeBy: none
+		sourceColumn: mediana_cuota_division_principal
+
+		annotation SummarizationSetBy = Automatic
+
+	column mediana_cuota_nov_dic_n
+		dataType: double
+		formatString: 0.0%
+		lineageTag: a79ce5e5-4cad-4b79-a3f0-ddbe78ded99b
+		summarizeBy: none
+		sourceColumn: mediana_cuota_nov_dic_n
+
+		annotation SummarizationSetBy = Automatic
+
+	column mediana_cuota_oferta_unica
+		dataType: double
+		formatString: 0.0%
+		lineageTag: d3cc1081-e5c4-4a97-aa83-e562975723a1
+		summarizeBy: none
+		sourceColumn: mediana_cuota_oferta_unica
+
+		annotation SummarizationSetBy = Automatic
+
+	column mediana_cuota_negociado_sin_publicidad
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 214be55b-3a03-4617-933c-ed11af5fbb46
+		summarizeBy: none
+		sourceColumn: mediana_cuota_negociado_sin_publicidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column mediana_organos
+		dataType: double
+		formatString: 0.0
+		lineageTag: 1c49be85-aae0-4e0e-b277-a9dc1ecf7a0a
+		summarizeBy: none
+		sourceColumn: mediana_organos
+
+		annotation SummarizationSetBy = Automatic
+
+	column con_alguna_senal
+		dataType: int64
+		formatString: #,0
+		lineageTag: 9c9efc60-3cda-4755-9cd1-37eee40ae3e7
+		summarizeBy: none
+		sourceColumn: con_alguna_senal
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PerfilAdjudicatarios = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(RutaDatos & "adjudicatarios_perfil.csv"), [Delimiter = ";", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Limpio = Table.TransformColumnNames(Encabezados, each Text.Replace(_, Character.FromNumber(65279), "")),
+				    Vacios = Table.ReplaceValue(Limpio, "", null, Replacer.ReplaceValue, Table.ColumnNames(Limpio)),
+				    Tipos = Table.TransformColumnTypes(Vacios, {{"perfil", type text}, {"orden_perfil", Int64.Type}, {"tramo_importe", type text}, {"adjudicatarios", Int64.Type}, {"suprimido", type text}, {"mediana_anios", type number}, {"mediana_adjudicaciones", type number}, {"mediana_divisiones_cpv", type number}, {"mediana_cuota_division_principal", type number}, {"mediana_cuota_nov_dic_n", type number}, {"mediana_cuota_oferta_unica", type number}, {"mediana_cuota_negociado_sin_publicidad", type number}, {"mediana_organos", type number}, {"con_alguna_senal", Int64.Type}}, "es-ES")
+				in
+				    Tipos
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,538 @@
+/// Tabla de medidas del informe.
+table Medidas
+	lineageTag: 2b3762b6-b248-5f8f-9c1c-7b4d0a89047b
+
+	/// Importe adjudicado con IVA por órganos de la sección 14, sin establecimiento de acuerdos marco, en millones de euros.
+	measure 'Importe analizado (M€)' =
+			DIVIDE (
+			    CALCULATE (
+			        SUM ( Adjudicaciones[importe_con_iva_eur] ),
+			        Adjudicaciones[en_seccion_14] = "Sí",
+			        Adjudicaciones[es_contrato_menor] = "No",
+			        Adjudicaciones[es_establecimiento_marco] = "No"
+			    ),
+			    1000000
+			)
+		formatString: #,0.0
+		displayFolder: 1. Contratación
+		lineageTag: 97be415f-1186-541e-9e26-830bae55785e
+
+	/// Número de adjudicaciones (lotes y adjudicatarios) con el mismo alcance que el importe analizado.
+	measure 'Adjudicaciones analizadas' =
+			CALCULATE (
+			    SUM ( Adjudicaciones[n_adjudicaciones] ),
+			    Adjudicaciones[en_seccion_14] = "Sí",
+			    Adjudicaciones[es_contrato_menor] = "No",
+			    Adjudicaciones[es_establecimiento_marco] = "No"
+			)
+		formatString: #,0
+		displayFolder: 1. Contratación
+		lineageTag: 5e1d4a8e-17a6-5790-9f7d-40caeb0ebee1
+
+	/// Establecimiento de acuerdos marco y sistemas dinámicos: techos de gasto, excluidos del análisis.
+	measure 'Importe acuerdos marco (M€)' =
+			DIVIDE (
+			    CALCULATE (
+			        SUM ( Adjudicaciones[importe_con_iva_eur] ),
+			        Adjudicaciones[en_seccion_14] = "Sí",
+			        Adjudicaciones[es_contrato_menor] = "No",
+			        Adjudicaciones[es_establecimiento_marco] = "Sí"
+			    ),
+			    1000000
+			)
+		formatString: #,0.0
+		displayFolder: 1. Contratación
+		lineageTag: c47d3640-4ab8-5889-8cfd-c16a008c4f98
+
+	/// ISDEFE y SAES: empresas públicas que no forman parte del presupuesto de la sección 14.
+	measure 'Importe fuera de la sección 14 (M€)' =
+			DIVIDE (
+			    CALCULATE ( SUM ( Adjudicaciones[importe_con_iva_eur] ), Adjudicaciones[en_seccion_14] = "No" ),
+			    1000000
+			)
+		formatString: #,0.0
+		displayFolder: 1. Contratación
+		lineageTag: 90fa1568-e7f0-5f73-812c-622f58275c8c
+
+	/// Todo lo adjudicado por órganos del Ministerio de Defensa en el fichero, sin exclusiones.
+	measure 'Importe publicado total (M€)' = DIVIDE ( SUM ( Adjudicaciones[importe_con_iva_eur] ), 1000000 )
+		formatString: #,0.0
+		displayFolder: 1. Contratación
+		lineageTag: c4864329-6e17-5ce9-9f5e-58e6586083fc
+
+	measure 'Importe nov-dic (M€)' =
+			CALCULATE (
+			    [Importe analizado (M€)],
+			    REMOVEFILTERS ( Meses[mes], Meses[mes_nombre], Meses[periodo], Meses[fecha_mes] ),
+			    Meses[mes] IN { 11, 12 }
+			)
+		formatString: #,0.0
+		displayFolder: 2. Cierre de ejercicio
+		lineageTag: f9a1b4ff-0512-5e0d-95e4-2895cf9808e4
+
+	/// Parte del importe anual que se adjudica en noviembre y diciembre.
+	measure 'Cuota nov-dic (importe)' =
+			VAR _anual =
+			    CALCULATE ( [Importe analizado (M€)], REMOVEFILTERS ( Meses[mes], Meses[mes_nombre], Meses[periodo], Meses[fecha_mes] ) )
+			RETURN
+			    DIVIDE ( [Importe nov-dic (M€)], _anual )
+		formatString: 0.0%
+		displayFolder: 2. Cierre de ejercicio
+		lineageTag: f2ec2c10-5862-59f2-b12e-6b13c5926d30
+
+	/// Parte de las adjudicaciones del año que se producen en noviembre y diciembre.
+	measure 'Cuota nov-dic (n.º)' =
+			VAR _cierre =
+			    CALCULATE ( [Adjudicaciones analizadas], REMOVEFILTERS ( Meses[mes], Meses[mes_nombre], Meses[periodo], Meses[fecha_mes] ), Meses[mes] IN { 11, 12 } )
+			VAR _anual =
+			    CALCULATE ( [Adjudicaciones analizadas], REMOVEFILTERS ( Meses[mes], Meses[mes_nombre], Meses[periodo], Meses[fecha_mes] ) )
+			RETURN
+			    DIVIDE ( _cierre, _anual )
+		formatString: 0.0%
+		displayFolder: 2. Cierre de ejercicio
+		lineageTag: 69e6ae32-e27f-575f-8614-9f203944e56f
+
+	/// Cuota de noviembre y diciembre si la contratación se repartiera por igual entre los 12 meses.
+	measure 'Línea base nov-dic' = DIVIDE ( 2, 12 )
+		formatString: 0.0%
+		displayFolder: 2. Cierre de ejercicio
+		lineageTag: 6ff9ce80-203a-5095-92a7-fa198ab61815
+
+	/// Diferencia en puntos porcentuales entre la cuota de noviembre-diciembre y la línea base.
+	measure 'Exceso sobre línea base (pp)' = ( [Cuota nov-dic (importe)] - [Línea base nov-dic] ) * 100
+		formatString: +0.0;-0.0;0.0
+		displayFolder: 2. Cierre de ejercicio
+		lineageTag: 54efd25f-7f4e-50ba-976e-74a46b03a018
+
+	/// Obligaciones reconocidas netas de la sección 14 en los capítulos 2 y 6 (IGAE).
+	measure 'Obligaciones IGAE caps. 2 y 6 (M€)' =
+			VAR _anio = SELECTEDVALUE ( Meses[anio], 2023 )
+			RETURN
+			    DIVIDE (
+			        CALCULATE (
+			            SUM ( IGAE[importe_eur] ),
+			            IGAE[programa] = "Total sección",
+			            IGAE[medida] = "obligaciones_reconocidas_netas",
+			            IGAE[anio] = _anio
+			        ),
+			        1000000
+			    )
+		formatString: #,0.0
+		displayFolder: 3. Cobertura
+		lineageTag: 371fd662-9310-5bfd-8494-3b4515a8c93d
+
+	/// Obligaciones de los capítulos 2 y 6 sin los programas especiales de modernización (122B). En blanco si falta el dato del programa ese año.
+	measure 'Obligaciones IGAE sin 122B (M€)' =
+			VAR _anio = SELECTEDVALUE ( Meses[anio], 2023 )
+			VAR _pem =
+			    CALCULATE (
+			        SUM ( IGAE[importe_eur] ),
+			        LEFT ( IGAE[programa], 4 ) = "122B",
+			        IGAE[medida] = "obligaciones_reconocidas_netas",
+			        IGAE[anio] = _anio
+			    )
+			RETURN
+			    IF ( ISBLANK ( _pem ), BLANK (), [Obligaciones IGAE caps. 2 y 6 (M€)] - DIVIDE ( _pem, 1000000 ) )
+		formatString: #,0.0
+		displayFolder: 3. Cobertura
+		lineageTag: bc670e07-87cc-5e26-8160-8e8f6b38e9d5
+
+	/// Importe analizado del año frente a las obligaciones de los capítulos 2 y 6. Ignora los filtros de rama, grupo, tipo y mes, pero respeta el año. Orden de magnitud, no cuadre contable.
+	measure 'Cobertura PLACSP / IGAE' =
+			DIVIDE (
+			    CALCULATE (
+				    [Importe analizado (M€)],
+				    REMOVEFILTERS ( Adjudicaciones[grupo], Adjudicaciones[rama], Adjudicaciones[tipo_contrato], Adjudicaciones[procedimiento], Adjudicaciones[tramitacion], Adjudicaciones[sistema_contratacion] ),
+				    REMOVEFILTERS ( Meses[mes], Meses[mes_nombre], Meses[periodo], Meses[fecha_mes] )
+				),
+			    [Obligaciones IGAE caps. 2 y 6 (M€)]
+			)
+		formatString: 0.0%
+		displayFolder: 3. Cobertura
+		lineageTag: dfff849f-c9fc-5ee9-846c-7c15e22b4262
+
+	/// Número de sucesos públicos anotados que empiezan en el periodo filtrado.
+	measure 'Sucesos anotados' = COUNTROWS ( Sucesos ) + 0
+		formatString: #,0
+		displayFolder: 4. Contexto
+		lineageTag: e3252bf6-1490-5825-9941-7f3dc4ac5220
+
+	/// Estado de procesamiento del año seleccionado.
+	measure 'Estado del año' = SELECTEDVALUE ( Meses[estado_anio], "Varios años" )
+		displayFolder: 4. Contexto
+		lineageTag: f6da9737-4e9c-57da-ac28-5716f113dcf1
+
+	/// Importe analizado sin programas especiales (expedientes de 100 M€ o más en el año).
+	measure 'Importe ordinario (M€)' = CALCULATE ( [Importe analizado (M€)], Adjudicaciones[es_programa_especial] = "No" )
+		formatString: #,0.0
+		displayFolder: 5. Gasto ordinario
+		lineageTag: 95a04a3f-e042-4321-bcbb-753971732c9c
+
+	/// Importe de los expedientes de 100 M€ o más con IVA en el año, que se cuentan enteros el año de adjudicación.
+	measure 'Importe programas especiales (M€)' = CALCULATE ( [Importe analizado (M€)], Adjudicaciones[es_programa_especial] = "Sí" )
+		formatString: #,0.0
+		displayFolder: 5. Gasto ordinario
+		lineageTag: 27fdcb6f-a351-4bce-9c8b-c60a0d1897a7
+
+	/// Número de adjudicaciones sin programas especiales.
+	measure 'Adjudicaciones ordinarias' = CALCULATE ( [Adjudicaciones analizadas], Adjudicaciones[es_programa_especial] = "No" )
+		formatString: #,0
+		displayFolder: 5. Gasto ordinario
+		lineageTag: b620450e-ce2a-4eeb-9953-b4e75a258f22
+
+	/// Parte del importe ordinario anual adjudicada en noviembre y diciembre.
+	measure 'Cuota nov-dic ordinaria (importe)' =
+			VAR _anual =
+			    CALCULATE ( [Importe ordinario (M€)], REMOVEFILTERS ( Meses[mes], Meses[mes_nombre], Meses[periodo], Meses[fecha_mes] ) )
+			VAR _cierre =
+			    CALCULATE ( [Importe ordinario (M€)], REMOVEFILTERS ( Meses[mes], Meses[mes_nombre], Meses[periodo], Meses[fecha_mes] ), Meses[mes] IN { 11, 12 } )
+			RETURN
+			    DIVIDE ( _cierre, _anual )
+		formatString: 0.0%
+		displayFolder: 5. Gasto ordinario
+		lineageTag: 40e37818-1fd1-4c94-8f95-c7da3d87dffb
+
+	/// Importe ordinario del año frente a las obligaciones de los capítulos 2 y 6 sin el programa 122B, para que numerador y denominador midan lo mismo. En blanco si falta el dato del programa.
+	measure 'Cobertura ordinaria / IGAE sin 122B' =
+			DIVIDE (
+			    CALCULATE (
+			        [Importe ordinario (M€)],
+			        REMOVEFILTERS ( Adjudicaciones[grupo], Adjudicaciones[rama], Adjudicaciones[tipo_contrato], Adjudicaciones[procedimiento], Adjudicaciones[tramitacion], Adjudicaciones[sistema_contratacion] ),
+			        REMOVEFILTERS ( Meses[mes], Meses[mes_nombre], Meses[periodo], Meses[fecha_mes] )
+			    ),
+			    [Obligaciones IGAE sin 122B (M€)]
+			)
+		formatString: 0.0%
+		displayFolder: 5. Gasto ordinario
+		lineageTag: dfcbec62-dd62-4fcb-ac63-9b94a2c12cc8
+
+	/// Adjudicatarios distintos con adjudicación en el año.
+	measure 'Adjudicatarios activos' = SUM ( AdjudicatariosAnual[adjudicatarios_activos] )
+		formatString: #,0
+		displayFolder: 6. Adjudicatarios
+		lineageTag: e18479ee-0da8-4b24-bfd9-d59d181733ea
+
+	/// Adjudicatarios que también ganaron el año anterior.
+	measure 'Repiten del año anterior' = SUM ( AdjudicatariosAnual[repiten_del_anio_anterior] )
+		formatString: #,0
+		displayFolder: 6. Adjudicatarios
+		lineageTag: c2002751-8eb8-4bcc-ad10-e4435679f91d
+
+	/// Primera adjudicación de la serie.
+	measure Nuevos = SUM ( AdjudicatariosAnual[nuevos] )
+		formatString: #,0
+		displayFolder: 6. Adjudicatarios
+		lineageTag: dc137ef9-c72e-4703-a787-a3a994cdd2e7
+
+	/// Ganaban antes, no el año anterior, y vuelven.
+	measure 'Vuelven tras un hueco' = SUM ( AdjudicatariosAnual[vuelven_tras_hueco] )
+		formatString: #,0
+		displayFolder: 6. Adjudicatarios
+		lineageTag: a1e04d6f-7052-4537-a48f-1c6d175e82be
+
+	/// Ganaron el año anterior y no este.
+	measure 'Se van' = SUM ( AdjudicatariosAnual[se_van] )
+		formatString: #,0
+		displayFolder: 6. Adjudicatarios
+		lineageTag: 5f4aafc2-f603-42f7-9b29-e0be11f8a937
+
+	/// Concentración del importe ordinario de nov-dic entre adjudicatarios (Herfindahl-Hirschman, 0-10.000).
+	measure 'HHI nov-dic' = SUM ( AdjudicatariosAnual[hhi_ordinario_nov_dic] )
+		formatString: #,0
+		displayFolder: 6. Adjudicatarios
+		lineageTag: fa14318b-9bb4-4f21-b4a8-28139019db5a
+
+	/// Concentración del importe ordinario de enero a octubre.
+	measure 'HHI ene-oct' = SUM ( AdjudicatariosAnual[hhi_ordinario_ene_oct] )
+		formatString: #,0
+		displayFolder: 6. Adjudicatarios
+		lineageTag: 9925a2f4-d630-463c-9274-c53703bde6de
+
+	/// Parte del importe ordinario de nov-dic de los 10 mayores adjudicatarios.
+	measure 'Top 10 nov-dic' = SUM ( AdjudicatariosAnual[cuota_top10_ordinario_nov_dic] )
+		formatString: 0.0%
+		displayFolder: 6. Adjudicatarios
+		lineageTag: 5837f49b-5f23-4617-a6c5-cffa6187c322
+
+	/// Parte del importe ordinario de enero a octubre de los 10 mayores adjudicatarios.
+	measure 'Top 10 ene-oct' = SUM ( AdjudicatariosAnual[cuota_top10_ordinario_ene_oct] )
+		formatString: 0.0%
+		displayFolder: 6. Adjudicatarios
+		lineageTag: 3d019385-b622-4e28-b76f-52c7d22d0279
+
+	/// Parte del importe ordinario de nov-dic ganada por adjudicatarios habituales (ganaron en alguno de los dos años anteriores).
+	measure 'Habituales nov-dic' = SUM ( AdjudicatariosAnual[cuota_habituales_importe_nov_dic] )
+		formatString: 0.0%
+		displayFolder: 6. Adjudicatarios
+		lineageTag: cef76e0e-25ca-4578-98c6-30cc4c5c7102
+
+	/// Lo mismo de enero a octubre.
+	measure 'Habituales ene-oct' = SUM ( AdjudicatariosAnual[cuota_habituales_importe_ene_oct] )
+		formatString: 0.0%
+		displayFolder: 6. Adjudicatarios
+		lineageTag: a05a4928-1605-4153-8cd6-4882b1fb9d80
+
+	/// Adjudicatarios con adjudicaciones en 3 años o más.
+	measure 'Adjudicatarios con perfil' = CALCULATE ( SUM ( PerfilAdjudicatarios[adjudicatarios] ), PerfilAdjudicatarios[tramo_importe] = "0. Todos" )
+		formatString: #,0
+		displayFolder: 6. Adjudicatarios
+		lineageTag: 607d1918-5b1e-4a10-9b22-8c2b6cee99ad
+
+	/// Número de picos de cierre (por rama u órgano y año).
+	measure Picos = COUNTROWS ( Picos ) + 0
+		formatString: #,0
+		displayFolder: 7. Picos
+		lineageTag: 9576fc84-fc4c-4893-9f21-fde0b83b581a
+
+	/// Contratos menores de la sección 14 (sindicación 1143), con IVA, en millones de euros. En blanco hasta procesar sus ficheros.
+	measure 'Importe contratos menores (M€)' = DIVIDE ( CALCULATE ( SUM ( Adjudicaciones[importe_con_iva_eur] ), Adjudicaciones[en_seccion_14] = "Sí", Adjudicaciones[es_contrato_menor] = "Sí" ), 1000000 )
+		formatString: #,0.0
+		displayFolder: 1. Contratación
+		lineageTag: 330e2e42-c7f8-4408-9386-103eff0e2795
+
+	/// Número de contratos menores de la sección 14.
+	measure 'Contratos menores' = CALCULATE ( SUM ( Adjudicaciones[n_adjudicaciones] ), Adjudicaciones[en_seccion_14] = "Sí", Adjudicaciones[es_contrato_menor] = "Sí" )
+		formatString: #,0
+		displayFolder: 1. Contratación
+		lineageTag: 182f8463-c985-4e61-8afd-2d7de2b76f1e
+
+	/// Parte de los contratos menores del año adjudicados en noviembre y diciembre.
+	measure 'Cuota nov-dic menores (n.º)' =
+			VAR _cierre = CALCULATE ( [Contratos menores], REMOVEFILTERS ( Meses[mes], Meses[mes_nombre], Meses[periodo], Meses[fecha_mes] ), Meses[mes] IN { 11, 12 } )
+			VAR _anual = CALCULATE ( [Contratos menores], REMOVEFILTERS ( Meses[mes], Meses[mes_nombre], Meses[periodo], Meses[fecha_mes] ) )
+			RETURN
+			    DIVIDE ( _cierre, _anual )
+		formatString: 0.0%
+		displayFolder: 1. Contratación
+		lineageTag: 39e9a580-898e-4124-88dc-ba75d50722a2
+
+	/// Parte del importe de contratos menores del año adjudicado en noviembre y diciembre.
+	measure 'Cuota nov-dic menores (importe)' =
+			VAR _cierre = CALCULATE ( [Importe contratos menores (M€)], REMOVEFILTERS ( Meses[mes], Meses[mes_nombre], Meses[periodo], Meses[fecha_mes] ), Meses[mes] IN { 11, 12 } )
+			VAR _anual = CALCULATE ( [Importe contratos menores (M€)], REMOVEFILTERS ( Meses[mes], Meses[mes_nombre], Meses[periodo], Meses[fecha_mes] ) )
+			RETURN
+			    DIVIDE ( _cierre, _anual )
+		formatString: 0.0%
+		displayFolder: 1. Contratación
+		lineageTag: 75001973-ac74-4f47-8a1c-e66cc2edd9d7
+
+	/// Importe analizado en euros constantes de 2025 (deflactor del PIB). 2026 en euros corrientes.
+	measure 'Importe analizado (M€ de 2025)' =
+			SUMX (
+			    VALUES ( Meses[anio] ),
+			    [Importe analizado (M€)] * COALESCE ( LOOKUPVALUE ( Macro[factor_euros_2025], Macro[anio], Meses[anio] ), 1 )
+			)
+		formatString: #,0.0
+		displayFolder: 8. Contexto económico
+		lineageTag: 55ff3cc8-8c98-45c9-b402-86c54ef4e4f7
+
+	/// Importe ordinario en euros constantes de 2025.
+	measure 'Importe ordinario (M€ de 2025)' =
+			SUMX (
+			    VALUES ( Meses[anio] ),
+			    [Importe ordinario (M€)] * COALESCE ( LOOKUPVALUE ( Macro[factor_euros_2025], Macro[anio], Meses[anio] ), 1 )
+			)
+		formatString: #,0.0
+		displayFolder: 8. Contexto económico
+		lineageTag: bda5f92b-9e91-45d3-83b6-47295f3588f6
+
+	/// Contratos menores en euros constantes de 2025.
+	measure 'Importe contratos menores (M€ de 2025)' =
+			SUMX (
+			    VALUES ( Meses[anio] ),
+			    [Importe contratos menores (M€)] * COALESCE ( LOOKUPVALUE ( Macro[factor_euros_2025], Macro[anio], Meses[anio] ), 1 )
+			)
+		formatString: #,0.0
+		displayFolder: 8. Contexto económico
+		lineageTag: ef620238-33cc-4a45-aea3-fd971f17dadd
+
+	/// Tasa media anual del IPC del año.
+	measure 'IPC (variación media)' = CALCULATE ( AVERAGE ( Macro[ipc_variacion_media] ), TREATAS ( VALUES ( Meses[anio] ), Macro[anio] ) )
+		formatString: 0.0%
+		displayFolder: 8. Contexto económico
+		lineageTag: 0435c108-da4b-4ecb-9e0b-f10a7c591c24
+
+	/// Variación anual del deflactor del PIB.
+	measure 'Deflactor del PIB (variación)' = CALCULATE ( AVERAGE ( Macro[deflactor_variacion] ), TREATAS ( VALUES ( Meses[anio] ), Macro[anio] ) )
+		formatString: 0.0%
+		displayFolder: 8. Contexto económico
+		lineageTag: ce83ab5a-bbd3-43ad-a8e2-dfb8ebf08f9d
+
+	/// Gasto en defensa según la OTAN sobre el PIB corriente.
+	measure 'Gasto en defensa OTAN (% PIB)' = CALCULATE ( AVERAGE ( Macro[gasto_defensa_otan_pct_pib] ), TREATAS ( VALUES ( Meses[anio] ), Macro[anio] ) )
+		formatString: 0.00%
+		displayFolder: 8. Contexto económico
+		lineageTag: 98632aba-cd7e-4a3b-adc1-6c49ac37ac1f
+
+	/// Obligaciones de la sección 14 (capítulos 2 y 6) sobre el PIB.
+	measure 'Obligaciones IGAE (% PIB)' = CALCULATE ( AVERAGE ( Macro[obligaciones_igae_caps26_pct_pib] ), TREATAS ( VALUES ( Meses[anio] ), Macro[anio] ) )
+		formatString: 0.00%
+		displayFolder: 8. Contexto económico
+		lineageTag: 14a2ee18-5487-40ca-8cb9-a51e509ccd85
+
+	/// PIB a precios corrientes del año seleccionado (en blanco si hay varios años: sumar el PIB de varios años no tiene sentido).
+	measure 'PIB (M€)' = IF ( HASONEVALUE ( Meses[anio] ), CALCULATE ( SUM ( Macro[pib_corriente_meur] ), TREATAS ( VALUES ( Meses[anio] ), Macro[anio] ) ) )
+		formatString: #,0
+		displayFolder: 8. Contexto económico
+		lineageTag: 5850e3e8-5007-4667-9997-273c3b4cbc76
+
+	/// Oferta única en Nov-dic (licitaciones ordinarias de la sección 14).
+	measure 'Oferta única nov-dic' = CALCULATE ( AVERAGE ( Competencia[cuota_oferta_unica] ), Competencia[periodo] = "Nov-dic" )
+		formatString: 0.0%
+		displayFolder: 9. Cómo se adjudica en el cierre
+		lineageTag: 9498c64a-030f-4f57-888c-fcaef736a4a4
+
+	/// Oferta única en Ene-oct (licitaciones ordinarias de la sección 14).
+	measure 'Oferta única ene-oct' = CALCULATE ( AVERAGE ( Competencia[cuota_oferta_unica] ), Competencia[periodo] = "Ene-oct" )
+		formatString: 0.0%
+		displayFolder: 9. Cómo se adjudica en el cierre
+		lineageTag: 673e977f-6a82-4e81-bbb0-1b3e3df927ea
+
+	/// Negociado sin publicidad en Nov-dic (licitaciones ordinarias de la sección 14).
+	measure 'Negociado sin publicidad nov-dic' = CALCULATE ( AVERAGE ( Competencia[cuota_negociado_sin_publicidad] ), Competencia[periodo] = "Nov-dic" )
+		formatString: 0.0%
+		displayFolder: 9. Cómo se adjudica en el cierre
+		lineageTag: f55ef600-17d1-4db3-90e3-15458ec87d57
+
+	/// Negociado sin publicidad en Ene-oct (licitaciones ordinarias de la sección 14).
+	measure 'Negociado sin publicidad ene-oct' = CALCULATE ( AVERAGE ( Competencia[cuota_negociado_sin_publicidad] ), Competencia[periodo] = "Ene-oct" )
+		formatString: 0.0%
+		displayFolder: 9. Cómo se adjudica en el cierre
+		lineageTag: f42eb2cd-a592-4ab7-a2ae-766c7a447851
+
+	/// Baja media en Nov-dic (licitaciones ordinarias de la sección 14).
+	measure 'Baja media nov-dic' = CALCULATE ( AVERAGE ( Competencia[baja_media] ), Competencia[periodo] = "Nov-dic" )
+		formatString: 0.0%
+		displayFolder: 9. Cómo se adjudica en el cierre
+		lineageTag: f94415e5-7ece-4d56-8df8-303ef644ef7f
+
+	/// Baja media en Ene-oct (licitaciones ordinarias de la sección 14).
+	measure 'Baja media ene-oct' = CALCULATE ( AVERAGE ( Competencia[baja_media] ), Competencia[periodo] = "Ene-oct" )
+		formatString: 0.0%
+		displayFolder: 9. Cómo se adjudica en el cierre
+		lineageTag: 61fb344d-37a0-4e9e-bf0b-297cb4dbfb94
+
+	/// Ofertas por adjudicación en Nov-dic (licitaciones ordinarias de la sección 14).
+	measure 'Ofertas por adjudicación nov-dic' = CALCULATE ( AVERAGE ( Competencia[ofertas_media] ), Competencia[periodo] = "Nov-dic" )
+		formatString: 0.00
+		displayFolder: 9. Cómo se adjudica en el cierre
+		lineageTag: fa3f581c-9604-4bf9-b0b1-4d1e7deb0387
+
+	/// Ofertas por adjudicación en Ene-oct (licitaciones ordinarias de la sección 14).
+	measure 'Ofertas por adjudicación ene-oct' = CALCULATE ( AVERAGE ( Competencia[ofertas_media] ), Competencia[periodo] = "Ene-oct" )
+		formatString: 0.00
+		displayFolder: 9. Cómo se adjudica en el cierre
+		lineageTag: bf80f8f6-6484-4bb3-a137-978814ae4520
+
+	/// Desiertos en Nov-dic (licitaciones ordinarias de la sección 14).
+	measure 'Desiertos nov-dic' = CALCULATE ( AVERAGE ( Competencia[cuota_desiertos] ), Competencia[periodo] = "Nov-dic" )
+		formatString: 0.0%
+		displayFolder: 9. Cómo se adjudica en el cierre
+		lineageTag: 6e43d7db-8715-47b5-baf1-652597cd221a
+
+	/// Desiertos en Ene-oct (licitaciones ordinarias de la sección 14).
+	measure 'Desiertos ene-oct' = CALCULATE ( AVERAGE ( Competencia[cuota_desiertos] ), Competencia[periodo] = "Ene-oct" )
+		formatString: 0.0%
+		displayFolder: 9. Cómo se adjudica en el cierre
+		lineageTag: 3e565b10-1cdb-4e17-ae2c-a94c13a2c073
+
+	/// Parte de las adjudicaciones del año en cada quincena, media de 2017 a 2025.
+	measure 'Peso de la quincena (n.º)' = CALCULATE ( AVERAGE ( Calendario[cuota_n] ), Calendario[anio] <= 2025 )
+		formatString: 0.0%
+		displayFolder: 9. Cómo se adjudica en el cierre
+		lineageTag: 20aa3baf-f288-4c55-96c8-173bd42f8936
+
+	/// Parte del importe ordinario del año en cada quincena, media de 2017 a 2025.
+	measure 'Peso de la quincena (importe)' = CALCULATE ( AVERAGE ( Calendario[cuota_importe] ), Calendario[anio] <= 2025 )
+		formatString: 0.0%
+		displayFolder: 9. Cómo se adjudica en el cierre
+		lineageTag: 34753a0d-19e0-480a-be25-a7ad58c3b1eb
+
+	/// 1 de 24 quincenas.
+	measure 'Reparto uniforme por quincena' = DIVIDE ( 1, 24 )
+		formatString: 0.0%
+		displayFolder: 9. Cómo se adjudica en el cierre
+		lineageTag: f6dedb79-3c66-4a45-baef-78419b70305e
+
+	/// Licitaciones sin acuerdos marco ni programas especiales, 2017-2025, en millones de euros con IVA.
+	measure 'Importe ordinario línea base (M€)' = DIVIDE ( CALCULATE ( SUM ( LineaBase[importe_ordinario_eur] ), LineaBase[es_contrato_menor] = "No", KEEPFILTERS ( LineaBase[anio] <= 2025 ) ), 1000000 )
+		formatString: #,0
+		displayFolder: 10. Defensa frente al resto
+		lineageTag: 034ec232-9af1-4edf-99a7-023db84ca028
+
+	/// Parte del importe ordinario adjudicada en noviembre y diciembre (2017-2025).
+	measure 'Cuota nov-dic línea base (importe)' = DIVIDE ( CALCULATE ( SUM ( LineaBase[importe_ordinario_eur] ), LineaBase[es_contrato_menor] = "No", KEEPFILTERS ( LineaBase[anio] <= 2025 ), KEEPFILTERS ( LineaBase[mes] >= 11 ) ), CALCULATE ( SUM ( LineaBase[importe_ordinario_eur] ), LineaBase[es_contrato_menor] = "No", KEEPFILTERS ( LineaBase[anio] <= 2025 ) ) )
+		formatString: 0.0%
+		displayFolder: 10. Defensa frente al resto
+		lineageTag: 49826e16-4746-4d75-9265-6dbae91022a5
+
+	/// Parte de las adjudicaciones ordinarias hechas en noviembre y diciembre (2017-2025).
+	measure 'Cuota nov-dic línea base (n.º)' = DIVIDE ( CALCULATE ( SUM ( LineaBase[n_ordinario] ), LineaBase[es_contrato_menor] = "No", KEEPFILTERS ( LineaBase[anio] <= 2025 ), KEEPFILTERS ( LineaBase[mes] >= 11 ) ), CALCULATE ( SUM ( LineaBase[n_ordinario] ), LineaBase[es_contrato_menor] = "No", KEEPFILTERS ( LineaBase[anio] <= 2025 ) ) )
+		formatString: 0.0%
+		displayFolder: 10. Defensa frente al resto
+		lineageTag: 802a2e0e-2104-424c-83ba-d07262927682
+
+	/// Parte de los contratos menores adjudicados en noviembre y diciembre (2018-2025).
+	measure 'Cuota nov-dic línea base menores (n.º)' = DIVIDE ( CALCULATE ( SUM ( LineaBase[n_adjudicaciones] ), LineaBase[es_contrato_menor] = "Sí", KEEPFILTERS ( LineaBase[anio] <= 2025 ), KEEPFILTERS ( LineaBase[mes] >= 11 ) ), CALCULATE ( SUM ( LineaBase[n_adjudicaciones] ), LineaBase[es_contrato_menor] = "Sí", KEEPFILTERS ( LineaBase[anio] <= 2025 ) ) )
+		formatString: 0.0%
+		displayFolder: 10. Defensa frente al resto
+		lineageTag: 5649418e-1c6d-4d3f-ac88-1d56bb78a276
+
+	measure 'Oferta única nov-dic línea base' = DIVIDE ( CALCULATE ( SUM ( LineaBase[n_oferta_unica] ), LineaBase[es_contrato_menor] = "No", KEEPFILTERS ( LineaBase[anio] <= 2025 ), KEEPFILTERS ( LineaBase[mes] >= 11 ) ), CALCULATE ( SUM ( LineaBase[n_con_ofertas] ), LineaBase[es_contrato_menor] = "No", KEEPFILTERS ( LineaBase[anio] <= 2025 ), KEEPFILTERS ( LineaBase[mes] >= 11 ) ) )
+		formatString: 0.0%
+		displayFolder: 10. Defensa frente al resto
+		lineageTag: 89b9c23d-706c-4bd2-a435-64c39cc1475d
+
+	measure 'Oferta única ene-oct línea base' = DIVIDE ( CALCULATE ( SUM ( LineaBase[n_oferta_unica] ), LineaBase[es_contrato_menor] = "No", KEEPFILTERS ( LineaBase[anio] <= 2025 ), KEEPFILTERS ( LineaBase[mes] <= 10 ) ), CALCULATE ( SUM ( LineaBase[n_con_ofertas] ), LineaBase[es_contrato_menor] = "No", KEEPFILTERS ( LineaBase[anio] <= 2025 ), KEEPFILTERS ( LineaBase[mes] <= 10 ) ) )
+		formatString: 0.0%
+		displayFolder: 10. Defensa frente al resto
+		lineageTag: 97af3c3f-13df-4c28-aed4-fd9a492cfd72
+
+	measure 'Negociado sin publicidad nov-dic línea base' = DIVIDE ( CALCULATE ( SUM ( LineaBase[n_negociado_sin_publicidad] ), LineaBase[es_contrato_menor] = "No", KEEPFILTERS ( LineaBase[anio] <= 2025 ), KEEPFILTERS ( LineaBase[mes] >= 11 ) ), CALCULATE ( SUM ( LineaBase[n_ordinario] ), LineaBase[es_contrato_menor] = "No", KEEPFILTERS ( LineaBase[anio] <= 2025 ), KEEPFILTERS ( LineaBase[mes] >= 11 ) ) )
+		formatString: 0.0%
+		displayFolder: 10. Defensa frente al resto
+		lineageTag: d36159ce-58ea-4062-b853-fb270a79a6c2
+
+	measure 'Negociado sin publicidad ene-oct línea base' = DIVIDE ( CALCULATE ( SUM ( LineaBase[n_negociado_sin_publicidad] ), LineaBase[es_contrato_menor] = "No", KEEPFILTERS ( LineaBase[anio] <= 2025 ), KEEPFILTERS ( LineaBase[mes] <= 10 ) ), CALCULATE ( SUM ( LineaBase[n_ordinario] ), LineaBase[es_contrato_menor] = "No", KEEPFILTERS ( LineaBase[anio] <= 2025 ), KEEPFILTERS ( LineaBase[mes] <= 10 ) ) )
+		formatString: 0.0%
+		displayFolder: 10. Defensa frente al resto
+		lineageTag: d26daf5f-deee-4c12-b458-3263306cb554
+
+	/// Diferencia en puntos entre noviembre-diciembre y enero-octubre. Positivo: menos competencia en el cierre.
+	measure 'Cambio en el cierre: oferta única' = [Oferta única nov-dic línea base] - [Oferta única ene-oct línea base]
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: 10. Defensa frente al resto
+		lineageTag: e3a0ed6b-b7c7-4934-b397-cd18e65f22f2
+
+	/// Diferencia en puntos entre noviembre-diciembre y enero-octubre. Positivo: más adjudicación directa en el cierre.
+	measure 'Cambio en el cierre: negociado sin publicidad' = [Negociado sin publicidad nov-dic línea base] - [Negociado sin publicidad ene-oct línea base]
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: 10. Defensa frente al resto
+		lineageTag: 3a274637-d248-4adc-8b4a-a669358da9c1
+
+	/// 2 de 12 meses.
+	measure 'Reparto uniforme nov-dic' = DIVIDE ( 2, 12 )
+		formatString: 0.0%
+		displayFolder: 10. Defensa frente al resto
+		lineageTag: 7332cec8-b087-4760-89cc-cc6e5003bdbf
+
+	/// Parte del importe ordinario del bloque o comparador que corresponde a cada tipo de contrato (2017-2025).
+	measure 'Peso del tipo en el importe ordinario' = DIVIDE ( [Importe ordinario línea base (M€)], CALCULATE ( [Importe ordinario línea base (M€)], REMOVEFILTERS ( LineaBase[tipo_contrato], LineaBase[orden_tipo] ) ) )
+		formatString: 0.0%
+		displayFolder: 10. Defensa frente al resto
+		lineageTag: f4b1db32-5d8d-4299-852c-d8d6c3421e2f
+
+	column Medidas
+		dataType: int64
+		isHidden
+		lineageTag: 6e69bce9-e996-55b8-9aa8-6afdafaf71d8
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Medidas]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Medidas = calculated
+		mode: import
+		source = SELECTCOLUMNS ( { 1 }, "Medidas", ''[Value] )
+

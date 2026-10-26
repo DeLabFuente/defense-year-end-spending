@@ -1,0 +1,139 @@
+/// Competencia en el cierre: indicadores por año y periodo (licitaciones ordinarias de la sección 14).
+table Competencia
+	lineageTag: fcffed5f-0e01-4e87-acdc-8e97d02f67ff
+
+	column anio
+		dataType: int64
+		formatString: 0
+		lineageTag: 2fbf814f-1311-4417-bc5f-48c181cb6841
+		summarizeBy: none
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Ene-oct o Nov-dic.
+	column periodo
+		dataType: string
+		lineageTag: c72bea5e-e341-4d4b-960e-a4741c63b452
+		summarizeBy: none
+		sourceColumn: periodo
+
+		annotation SummarizationSetBy = Automatic
+
+	column orden_periodo
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: ed61096c-60b8-4e7c-9e81-c0cc92c8e91d
+		summarizeBy: none
+		sourceColumn: orden_periodo
+
+		annotation SummarizationSetBy = Automatic
+
+	column adjudicaciones
+		dataType: int64
+		formatString: #,0
+		lineageTag: 737bd9f2-9336-45a9-b50f-0f2e632d9f21
+		summarizeBy: none
+		sourceColumn: adjudicaciones
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Número medio de ofertas recibidas.
+	column ofertas_media
+		dataType: double
+		formatString: 0.00
+		lineageTag: c699db01-4d7f-45db-8d28-a1f597b5708a
+		summarizeBy: none
+		sourceColumn: ofertas_media
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_oferta_unica
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 67cd4e10-9b49-4f95-bbcc-8ff39e76c1d4
+		summarizeBy: none
+		sourceColumn: cuota_oferta_unica
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_negociado_sin_publicidad
+		dataType: double
+		formatString: 0.0%
+		lineageTag: ef2625ba-e787-4fa4-b2ed-8d83726cf845
+		summarizeBy: none
+		sourceColumn: cuota_negociado_sin_publicidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_urgente_o_emergencia
+		dataType: double
+		formatString: 0.0%
+		lineageTag: b9eb4f71-1f55-4c49-9ba8-e76be35f9e20
+		summarizeBy: none
+		sourceColumn: cuota_urgente_o_emergencia
+
+		annotation SummarizationSetBy = Automatic
+
+	/// 1 - adjudicado / presupuesto de licitación, sin IVA, en licitaciones de un solo resultado.
+	column baja_media
+		dataType: double
+		formatString: 0.0%
+		lineageTag: fbb79d24-dcaf-468a-aaa6-3bbfa0bac62d
+		summarizeBy: none
+		sourceColumn: baja_media
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Parte adjudicada al precio de licitación (sin baja).
+	column cuota_sin_baja
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 0282f838-7686-4e40-9ad7-9d6338d4cde2
+		summarizeBy: none
+		sourceColumn: cuota_sin_baja
+
+		annotation SummarizationSetBy = Automatic
+
+	column licitaciones_con_baja
+		dataType: int64
+		formatString: #,0
+		lineageTag: 104009c6-e608-4fd3-94b7-fb20ef05a085
+		summarizeBy: none
+		sourceColumn: licitaciones_con_baja
+
+		annotation SummarizationSetBy = Automatic
+
+	column desiertos
+		dataType: int64
+		formatString: #,0
+		lineageTag: 9af17d5c-4cdb-4cef-99d9-6713881ccdbe
+		summarizeBy: none
+		sourceColumn: desiertos
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_desiertos
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 8e984c5d-7dc3-421e-b704-e5abb2b94fac
+		summarizeBy: none
+		sourceColumn: cuota_desiertos
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Competencia = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(RutaDatos & "cierre_competencia.csv"), [Delimiter = ";", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Limpio = Table.TransformColumnNames(Encabezados, each Text.Replace(_, Character.FromNumber(65279), "")),
+				    Vacios = Table.ReplaceValue(Limpio, "", null, Replacer.ReplaceValue, Table.ColumnNames(Limpio)),
+				    Tipos = Table.TransformColumnTypes(Vacios, {{"anio", Int64.Type}, {"periodo", type text}, {"orden_periodo", Int64.Type}, {"adjudicaciones", Int64.Type}, {"ofertas_media", type number}, {"cuota_oferta_unica", type number}, {"cuota_negociado_sin_publicidad", type number}, {"cuota_urgente_o_emergencia", type number}, {"baja_media", type number}, {"cuota_sin_baja", type number}, {"licitaciones_con_baja", Int64.Type}, {"desiertos", Int64.Type}, {"cuota_desiertos", type number}}, "es-ES")
+				in
+				    Tipos
+
+	annotation PBI_ResultType = Table
+

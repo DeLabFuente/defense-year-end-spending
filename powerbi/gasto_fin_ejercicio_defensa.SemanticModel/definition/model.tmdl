@@ -1,0 +1,32 @@
+model Model
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: es-ES
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["RutaDatos","Adjudicaciones","Meses","IGAE","Sucesos","AdjudicatariosAnual","PerfilAdjudicatarios","Picos","Macro","Competencia","Calendario","PresupuestoCierre","LineaBase"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Medidas
+ref table Adjudicaciones
+ref table Meses
+ref table IGAE
+ref table Sucesos
+ref table AdjudicatariosAnual
+ref table PerfilAdjudicatarios
+ref table Picos
+ref table Macro
+ref table Competencia
+ref table Calendario
+ref table PresupuestoCierre
+ref table LineaBase
+
+ref cultureInfo es-ES
+

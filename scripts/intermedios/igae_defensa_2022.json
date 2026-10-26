@@ -1,0 +1,24 @@
+{
+ "fuente": "IGAE, Estadísticas mensuales de ejecución del Presupuesto del Estado, hasta el 31 de diciembre de 2022 (12-MENSUAL 12-22.pdf, 1117 págs.)",
+ "url": "https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/Contabilidad/ContabilidadPublica/CPE/EjecucionPresupuestaria/Documents/12-MENSUAL%2012-22.pdf",
+ "unidad": "miles de euros, acumulado enero-diciembre",
+ "capitulo_2_secciones_p123": {
+  "seccion": "DEFENSA",
+  "creditos_definitivos_2022": 1751518,
+  "obligaciones_reconocidas_netas_2022": 1660971,
+  "pagos_2022": 1637706,
+  "creditos_definitivos_2021": 1303587,
+  "obligaciones_reconocidas_netas_2021": 1256400,
+  "pagos_2021": 1211241
+ },
+ "orn_politica_defensa_por_programas_y_capitulos_p96": {
+  "DEFENSA_total": {
+   "cap2": 1660971,
+   "cap6": 5730608
+  },
+  "122B Programas especiales de modernizacion": {
+   "cap6": 2421212,
+   "total": 2421212
+  }
+ }
+}

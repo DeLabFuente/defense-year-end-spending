@@ -1,0 +1,169 @@
+/// Contexto macroeconómico 2017-2026: IPC, PIB, deflactor y gasto en defensa sobre PIB (OTAN e IGAE), con fuente.
+table Macro
+	lineageTag: dc822b19-ef90-4e53-9853-343a2048951a
+
+	column anio
+		dataType: int64
+		formatString: 0
+		lineageTag: 989751b8-d989-44f8-b922-7506784afda6
+		summarizeBy: none
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	/// IPC general nacional, media anual (base 2021).
+	column ipc_indice_medio_base2021
+		dataType: double
+		formatString: 0.000
+		lineageTag: 9502a4b4-5db4-4081-965d-c90522491634
+		summarizeBy: none
+		sourceColumn: ipc_indice_medio_base2021
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Tasa media anual del IPC.
+	column ipc_variacion_media
+		dataType: double
+		formatString: 0.0%
+		lineageTag: aa7e592b-6500-4de5-9dda-e33d46614032
+		summarizeBy: none
+		sourceColumn: ipc_variacion_media
+
+		annotation SummarizationSetBy = Automatic
+
+	/// PIB a precios corrientes, millones de euros.
+	column pib_corriente_meur
+		dataType: double
+		formatString: #,0
+		lineageTag: 06eb30fb-2f47-47e1-9b2d-0f178b5f9ceb
+		summarizeBy: none
+		sourceColumn: pib_corriente_meur
+
+		annotation SummarizationSetBy = Automatic
+
+	column pib_crecimiento_nominal
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 54f830ea-02cb-45bd-8e3f-5154a6021685
+		summarizeBy: none
+		sourceColumn: pib_crecimiento_nominal
+
+		annotation SummarizationSetBy = Automatic
+
+	column deflactor_pib_2015_100
+		dataType: double
+		formatString: 0.000
+		lineageTag: 47a59e8e-a10e-4dc3-bc65-fbbf3b2559fc
+		summarizeBy: none
+		sourceColumn: deflactor_pib_2015_100
+
+		annotation SummarizationSetBy = Automatic
+
+	column deflactor_variacion
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 19adf85b-c663-4827-bb28-9318e05c0c1f
+		summarizeBy: none
+		sourceColumn: deflactor_variacion
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Multiplicador para pasar euros corrientes del año a euros de 2025 (deflactor del PIB). 2026 = 1.
+	column factor_euros_2025
+		dataType: double
+		formatString: 0.000
+		lineageTag: d2df462e-3380-47ad-8865-4756d349fdfc
+		summarizeBy: none
+		sourceColumn: factor_euros_2025
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Lo mismo con el IPC, como referencia.
+	column factor_euros_2025_ipc
+		dataType: double
+		formatString: 0.000
+		lineageTag: c1cb007a-cd21-4f0f-beb7-a31ccf37b1c8
+		summarizeBy: none
+		sourceColumn: factor_euros_2025_ipc
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Gasto en defensa según la OTAN (definición OTAN, incluye pensiones y otros ministerios), millones de euros.
+	column gasto_defensa_otan_meur
+		dataType: double
+		formatString: #,0
+		lineageTag: 4ff3b333-42a9-4fb1-b353-806f9500f27b
+		summarizeBy: none
+		sourceColumn: gasto_defensa_otan_meur
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Gasto en defensa OTAN sobre PIB corriente.
+	column gasto_defensa_otan_pct_pib
+		dataType: double
+		formatString: 0.00%
+		lineageTag: 3fe3d8f2-e8f8-430f-a6d6-c8e05ffdbcd6
+		summarizeBy: none
+		sourceColumn: gasto_defensa_otan_pct_pib
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Cuadro 3 de la OTAN (precios de 2021).
+	column gasto_defensa_otan_pct_pib_real2021
+		dataType: double
+		formatString: 0.00%
+		lineageTag: 64b7afcb-a733-4390-aecc-c75abc0f70dd
+		summarizeBy: none
+		sourceColumn: gasto_defensa_otan_pct_pib_real2021
+
+		annotation SummarizationSetBy = Automatic
+
+	column obligaciones_igae_caps26_meur
+		dataType: double
+		formatString: #,0.0
+		lineageTag: 6d1a85e4-bc18-4cfb-a1ce-b112fbca16a9
+		summarizeBy: none
+		sourceColumn: obligaciones_igae_caps26_meur
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Obligaciones de la sección 14, capítulos 2 y 6, sobre PIB.
+	column obligaciones_igae_caps26_pct_pib
+		dataType: double
+		formatString: 0.00%
+		lineageTag: b14cc3c4-306b-409b-9d26-66e472c1c860
+		summarizeBy: none
+		sourceColumn: obligaciones_igae_caps26_pct_pib
+
+		annotation SummarizationSetBy = Automatic
+
+	column nota
+		dataType: string
+		lineageTag: 132cb181-53c6-49e4-9166-602ce77d0b1a
+		summarizeBy: none
+		sourceColumn: nota
+
+		annotation SummarizationSetBy = Automatic
+
+	column fuentes
+		dataType: string
+		lineageTag: a2b6f731-53b0-4085-9838-1b8a5ecc24ab
+		summarizeBy: none
+		sourceColumn: fuentes
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Macro = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(RutaDatos & "macro_2017_2026.csv"), [Delimiter = ";", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Limpio = Table.TransformColumnNames(Encabezados, each Text.Replace(_, Character.FromNumber(65279), "")),
+				    Vacios = Table.ReplaceValue(Limpio, "", null, Replacer.ReplaceValue, Table.ColumnNames(Limpio)),
+				    Tipos = Table.TransformColumnTypes(Vacios, {{"anio", Int64.Type}, {"ipc_indice_medio_base2021", type number}, {"ipc_variacion_media", type number}, {"pib_corriente_meur", type number}, {"gasto_defensa_otan_meur", type number}, {"obligaciones_igae_caps26_meur", type number}, {"pib_crecimiento_nominal", type number}, {"deflactor_pib_2015_100", type number}, {"deflactor_variacion", type number}, {"factor_euros_2025", type number}, {"factor_euros_2025_ipc", type number}, {"gasto_defensa_otan_pct_pib", type number}, {"gasto_defensa_otan_pct_pib_real2021", type number}, {"obligaciones_igae_caps26_pct_pib", type number}, {"nota", type text}, {"fuentes", type text}}, "es-ES")
+				in
+				    Tipos
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,83 @@
+/// Calendario del cierre: peso de cada quincena en el año (licitaciones ordinarias de la sección 14).
+table Calendario
+	lineageTag: ead77c22-f4e1-4d17-bbb7-f7b9b6d15034
+
+	column anio
+		dataType: int64
+		formatString: 0
+		lineageTag: 1843e6ac-fef4-4247-a8ca-458e27c97ae1
+		summarizeBy: none
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column quincena
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e77858ad-8084-4f00-863f-5e3736adb4a4
+		summarizeBy: none
+		sourceColumn: quincena
+
+		annotation SummarizationSetBy = Automatic
+
+	column etiqueta
+		dataType: string
+		lineageTag: 5462e8d8-dc36-4caa-8fa8-be27463d6ad0
+		summarizeBy: none
+		sourceColumn: etiqueta
+		sortByColumn: quincena
+
+		annotation SummarizationSetBy = Automatic
+
+	column adjudicaciones
+		dataType: int64
+		formatString: #,0
+		lineageTag: 57099717-bff6-4e9b-8916-cc5ad93df0d1
+		summarizeBy: none
+		sourceColumn: adjudicaciones
+
+		annotation SummarizationSetBy = Automatic
+
+	column importe_eur
+		dataType: double
+		isHidden
+		formatString: #,0
+		lineageTag: 6ee7e9f6-80fc-44b0-b094-828f6876987d
+		summarizeBy: none
+		sourceColumn: importe_eur
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_n
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 602ee6e9-b785-483a-8aad-ac0ac95f61ab
+		summarizeBy: none
+		sourceColumn: cuota_n
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_importe
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 36fc63ce-df06-49f7-8a5a-101292d4de36
+		summarizeBy: none
+		sourceColumn: cuota_importe
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Calendario = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(RutaDatos & "calendario_cierre.csv"), [Delimiter = ";", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Limpio = Table.TransformColumnNames(Encabezados, each Text.Replace(_, Character.FromNumber(65279), "")),
+				    Vacios = Table.ReplaceValue(Limpio, "", null, Replacer.ReplaceValue, Table.ColumnNames(Limpio)),
+				    Tipos = Table.TransformColumnTypes(Vacios, {{"anio", Int64.Type}, {"quincena", Int64.Type}, {"etiqueta", type text}, {"adjudicaciones", Int64.Type}, {"importe_eur", type number}, {"cuota_n", type number}, {"cuota_importe", type number}}, "es-ES")
+				in
+				    Tipos
+
+	annotation PBI_ResultType = Table
+
