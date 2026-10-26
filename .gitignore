@@ -1,0 +1,18 @@
+# Caché y ajustes locales de Power BI
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+# Datos internos: extracciones con huellas anónimas y detalle por huella
+registros/
+privado/
+
+# Copia antigua del PBIP (la viva está en powerbi/) y documentos de trabajo
+/gasto_fin_ejercicio_defensa.pbip
+/gasto_fin_ejercicio_defensa.Report/
+/gasto_fin_ejercicio_defensa.SemanticModel/
+/entrega_powerbi_scripts.zip
+/Gasto_Defensa_estado_y_plan_*.pdf
+
+# Python
+__pycache__/
+*.pyc
