@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "lectura",
   "position": {
-    "x": 976,
-    "y": 644,
+    "x": 975.83983431135664,
+    "y": 701.45944080082847,
     "z": 4,
-    "height": 424,
-    "width": 920,
+    "height": 367.43113565757682,
+    "width": 920.963755609251,
     "tabOrder": 4
   },
   "visual": {
@@ -22,7 +22,7 @@
                     "value": "Lectura",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontSize": "16pt",
+                      "fontSize": "14pt",
                       "color": "#2a7f8f"
                     }
                   }
@@ -33,7 +33,7 @@
                   {
                     "value": "• El cierre pesa más en Defensa en las 12 variantes, de +2,0 a +38,1 puntos. La diferencia más pequeña sale al quitar las 10 mayores adjudicaciones de cada año (24,5 % frente a 22,5 %, 7 de 9 años); la que menos años gana, con el umbral de 50 M€ (6 de 9).",
                     "textStyle": {
-                      "fontSize": "16pt",
+                      "fontSize": "12pt",
                       "color": "#374151"
                     }
                   }
@@ -44,7 +44,7 @@
                   {
                     "value": "• La competencia es lo más sólido: la oferta única sube en el cierre de Defensa en todas las variantes (+2,9 a +4,8 puntos) y baja en el resto de la AGE en todas; igual el negociado sin publicidad. No lo explican las emergencias: sin tramitación urgente ni de emergencia, +3,4 y +2,8.",
                     "textStyle": {
-                      "fontSize": "16pt",
+                      "fontSize": "12pt",
                       "color": "#374151"
                     }
                   }
@@ -55,7 +55,7 @@
                   {
                     "value": "• Los servicios pesan más en el cierre de Defensa en todas (24,5 % a 38,1 % frente a 17,7 % a 20,1 %).",
                     "textStyle": {
-                      "fontSize": "16pt",
+                      "fontSize": "12pt",
                       "color": "#374151"
                     }
                   }
@@ -66,7 +66,7 @@
                   {
                     "value": "• Calendario: Defensa cae tras el plazo con cualquier ventana (−15 % a −46 %, 8 o 9 de 9 años). El resto de la AGE no cae en la semana siguiente, pero con 7 o 10 días también cae (−11 % y −15 %) por el final de diciembre: la diferencia es de grado.",
                     "textStyle": {
-                      "fontSize": "16pt",
+                      "fontSize": "12pt",
                       "color": "#374151"
                     }
                   }
@@ -77,7 +77,7 @@
                   {
                     "value": "Subir el umbral o no excluir los programas agranda la diferencia, porque los grandes programas se adjudican en diciembre.",
                     "textStyle": {
-                      "fontSize": "16pt",
+                      "fontSize": "12pt",
                       "color": "#6b7280"
                     }
                   }

@@ -2195,7 +2195,7 @@ cultureInfo es-ES
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Peso en Defensa": {
+			          "Peso": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -2300,7 +2300,7 @@ cultureInfo es-ES
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Oferta única en el cierre, Defensa": {
+			          "Oferta única en el cierre": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",

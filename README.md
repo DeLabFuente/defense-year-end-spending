@@ -12,8 +12,10 @@
 |---|---|
 | ![Serie 2017-2026](capturas/02_serie_2017_2026.png) | ![Cómo se adjudica en el cierre](capturas/03_como_se_adjudica.png) |
 | Serie 2017-2026 y sucesos | Cómo se adjudica en el cierre |
-| ![Defensa frente al resto del sector público](capturas/04_frente_sector_publico.png) | El informe completo, con sus 14 páginas, está en [`informe_gasto_fin_ejercicio_defensa.pdf`](informe_gasto_fin_ejercicio_defensa.pdf). |
-| Defensa frente al resto del sector público | |
+| ![Defensa frente al resto del sector público](capturas/04_frente_sector_publico.png) | ![Qué servicios se contratan en el cierre](capturas/05_que_servicios.png) |
+| Defensa frente al resto del sector público | Qué servicios se contratan en el cierre |
+| ![¿Se sostiene? Las conclusiones con otras reglas](capturas/06_se_sostiene.png) | El informe completo, con sus 14 páginas, está en [`informe_gasto_fin_ejercicio_defensa.pdf`](informe_gasto_fin_ejercicio_defensa.pdf). |
+| ¿Se sostiene? Las conclusiones con otras reglas | |
 
 ## Principios
 

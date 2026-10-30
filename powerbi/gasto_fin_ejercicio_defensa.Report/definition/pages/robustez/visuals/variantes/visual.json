@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "variantes",
   "position": {
-    "x": 24,
-    "y": 128,
+    "x": 23.859164653089405,
+    "y": 128.83948912668279,
     "z": 2,
-    "height": 500,
-    "width": 1872,
+    "height": 529.67345529858483,
+    "width": 1872.9444252675182,
     "tabOrder": 2
   },
   "visual": {
@@ -283,7 +283,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "230D"
+                  "Value": "210D"
                 }
               }
             }
@@ -297,13 +297,153 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "420D"
+                  "Value": "400D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "Robustez.descripcion"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Robustez.cuota_nov_dic_defensa"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "110D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Robustez.cuota_nov_dic_resto_age"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "105D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Robustez.diferencia_puntos"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "90D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Robustez.anios_defensa_por_encima"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "110D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Robustez.salto_oferta_unica_defensa_puntos"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "120D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Robustez.salto_oferta_unica_resto_age_puntos"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "110D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Robustez.salto_negociado_defensa_puntos"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "120D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Robustez.salto_negociado_resto_age_puntos"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "105D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Robustez.cuota_servicios_defensa"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "115D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Robustez.cuota_servicios_resto_age"
           }
         }
       ]

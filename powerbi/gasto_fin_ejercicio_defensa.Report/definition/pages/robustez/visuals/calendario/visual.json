@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "calendario",
   "position": {
-    "x": 24,
-    "y": 644,
+    "x": 23.859164653089405,
+    "y": 701.45944080082847,
     "z": 3,
-    "height": 424,
-    "width": 920,
+    "height": 367.43113565757682,
+    "width": 920.963755609251,
     "tabOrder": 3
   },
   "visual": {

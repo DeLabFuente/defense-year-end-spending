@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "tabla_divisiones",
   "position": {
-    "x": 976,
-    "y": 128,
+    "x": 959.13841905419406,
+    "y": 107.36624093890232,
     "z": 3,
-    "height": 450,
-    "width": 920,
+    "height": 672.82844321712116,
+    "width": 920.963755609251,
     "tabOrder": 3
   },
   "visual": {
@@ -58,7 +58,7 @@
               },
               "queryRef": "ServiciosDivision.peso_en_servicios_defensa",
               "nativeQueryRef": "peso_en_servicios_defensa",
-              "displayName": "Peso en Defensa"
+              "displayName": "Peso"
             },
             {
               "field": {
@@ -133,7 +133,7 @@
               },
               "queryRef": "ServiciosDivision.salto_oferta_unica_defensa_puntos",
               "nativeQueryRef": "salto_oferta_unica_defensa_puntos",
-              "displayName": "Oferta única en el cierre, Defensa"
+              "displayName": "Oferta única en el cierre"
             }
           ]
         }
@@ -223,13 +223,111 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "290D"
+                  "Value": "340D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "ServiciosDivision.division"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "80D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ServiciosDivision.importe_defensa_meur"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "60D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ServiciosDivision.peso_en_servicios_defensa"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "85D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ServiciosDivision.cuota_nov_dic_defensa"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "85D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ServiciosDivision.cuota_nov_dic_resto_age"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "65D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ServiciosDivision.aportacion_a_la_diferencia_puntos"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "60D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ServiciosDivision.anios_defensa_por_encima"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "85D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ServiciosDivision.salto_oferta_unica_defensa_puntos"
           }
         }
       ]

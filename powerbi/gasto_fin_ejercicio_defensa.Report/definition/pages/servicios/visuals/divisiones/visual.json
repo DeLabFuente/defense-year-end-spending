@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "divisiones",
   "position": {
-    "x": 24,
-    "y": 128,
+    "x": 23.859164653089405,
+    "y": 107.36624093890232,
     "z": 2,
-    "height": 740,
-    "width": 920,
+    "height": 484.34104245771488,
+    "width": 920.963755609251,
     "tabOrder": 2
   },
   "visual": {
@@ -28,8 +28,8 @@
               },
               "queryRef": "ServiciosDivision.division",
               "nativeQueryRef": "division",
-              "displayName": "División CPV",
-              "active": true
+              "active": true,
+              "displayName": "División CPV"
             }
           ]
         },

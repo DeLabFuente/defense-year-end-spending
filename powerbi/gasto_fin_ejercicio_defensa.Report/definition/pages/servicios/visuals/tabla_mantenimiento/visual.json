@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "tabla_mantenimiento",
   "position": {
-    "x": 976,
-    "y": 592,
+    "x": 23.859164653089405,
+    "y": 615.56644804970665,
     "z": 4,
-    "height": 276,
-    "width": 920,
+    "height": 453.3241284086987,
+    "width": 920.963755609251,
     "tabOrder": 4
   },
   "visual": {
@@ -208,13 +208,97 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "300D"
+                  "Value": "360D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "ServiciosMantenimiento.grupo"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "75D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ServiciosMantenimiento.importe_defensa_meur"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "80D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ServiciosMantenimiento.cuota_nov_dic_defensa"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "80D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ServiciosMantenimiento.cuota_nov_dic_resto_age"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "60D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ServiciosMantenimiento.anios_defensa_por_encima"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "85D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ServiciosMantenimiento.salto_oferta_unica_defensa_puntos"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "85D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ServiciosMantenimiento.salto_oferta_unica_resto_age_puntos"
           }
         }
       ]
