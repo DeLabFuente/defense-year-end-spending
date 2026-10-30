@@ -1,0 +1,288 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "tabla_divisiones",
+  "position": {
+    "x": 976,
+    "y": 128,
+    "z": 3,
+    "height": 450,
+    "width": 920,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ServiciosDivision"
+                    }
+                  },
+                  "Property": "division"
+                }
+              },
+              "queryRef": "ServiciosDivision.division",
+              "nativeQueryRef": "division",
+              "displayName": "División CPV"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ServiciosDivision"
+                    }
+                  },
+                  "Property": "importe_defensa_meur"
+                }
+              },
+              "queryRef": "ServiciosDivision.importe_defensa_meur",
+              "nativeQueryRef": "importe_defensa_meur",
+              "displayName": "Defensa (M€)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ServiciosDivision"
+                    }
+                  },
+                  "Property": "peso_en_servicios_defensa"
+                }
+              },
+              "queryRef": "ServiciosDivision.peso_en_servicios_defensa",
+              "nativeQueryRef": "peso_en_servicios_defensa",
+              "displayName": "Peso en Defensa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ServiciosDivision"
+                    }
+                  },
+                  "Property": "cuota_nov_dic_defensa"
+                }
+              },
+              "queryRef": "ServiciosDivision.cuota_nov_dic_defensa",
+              "nativeQueryRef": "cuota_nov_dic_defensa",
+              "displayName": "Nov-dic Defensa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ServiciosDivision"
+                    }
+                  },
+                  "Property": "cuota_nov_dic_resto_age"
+                }
+              },
+              "queryRef": "ServiciosDivision.cuota_nov_dic_resto_age",
+              "nativeQueryRef": "cuota_nov_dic_resto_age",
+              "displayName": "Nov-dic resto AGE"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ServiciosDivision"
+                    }
+                  },
+                  "Property": "aportacion_a_la_diferencia_puntos"
+                }
+              },
+              "queryRef": "ServiciosDivision.aportacion_a_la_diferencia_puntos",
+              "nativeQueryRef": "aportacion_a_la_diferencia_puntos",
+              "displayName": "Aporta (puntos)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ServiciosDivision"
+                    }
+                  },
+                  "Property": "anios_defensa_por_encima"
+                }
+              },
+              "queryRef": "ServiciosDivision.anios_defensa_por_encima",
+              "nativeQueryRef": "anios_defensa_por_encima",
+              "displayName": "Años por encima"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ServiciosDivision"
+                    }
+                  },
+                  "Property": "salto_oferta_unica_defensa_puntos"
+                }
+              },
+              "queryRef": "ServiciosDivision.salto_oferta_unica_defensa_puntos",
+              "nativeQueryRef": "salto_oferta_unica_defensa_puntos",
+              "displayName": "Oferta única en el cierre, Defensa"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "ServiciosDivision"
+                  }
+                },
+                "Property": "division"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "290D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ServiciosDivision.division"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Divisiones: peso, cierre y aportación a la diferencia'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

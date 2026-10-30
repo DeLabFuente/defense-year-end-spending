@@ -1,0 +1,273 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "tabla_mantenimiento",
+  "position": {
+    "x": 976,
+    "y": 592,
+    "z": 4,
+    "height": 276,
+    "width": 920,
+    "tabOrder": 4
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ServiciosMantenimiento"
+                    }
+                  },
+                  "Property": "grupo"
+                }
+              },
+              "queryRef": "ServiciosMantenimiento.grupo",
+              "nativeQueryRef": "grupo",
+              "displayName": "Reparación y mantenimiento"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ServiciosMantenimiento"
+                    }
+                  },
+                  "Property": "importe_defensa_meur"
+                }
+              },
+              "queryRef": "ServiciosMantenimiento.importe_defensa_meur",
+              "nativeQueryRef": "importe_defensa_meur",
+              "displayName": "Defensa (M€)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ServiciosMantenimiento"
+                    }
+                  },
+                  "Property": "cuota_nov_dic_defensa"
+                }
+              },
+              "queryRef": "ServiciosMantenimiento.cuota_nov_dic_defensa",
+              "nativeQueryRef": "cuota_nov_dic_defensa",
+              "displayName": "Nov-dic Defensa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ServiciosMantenimiento"
+                    }
+                  },
+                  "Property": "cuota_nov_dic_resto_age"
+                }
+              },
+              "queryRef": "ServiciosMantenimiento.cuota_nov_dic_resto_age",
+              "nativeQueryRef": "cuota_nov_dic_resto_age",
+              "displayName": "Nov-dic resto AGE"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ServiciosMantenimiento"
+                    }
+                  },
+                  "Property": "anios_defensa_por_encima"
+                }
+              },
+              "queryRef": "ServiciosMantenimiento.anios_defensa_por_encima",
+              "nativeQueryRef": "anios_defensa_por_encima",
+              "displayName": "Años por encima"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ServiciosMantenimiento"
+                    }
+                  },
+                  "Property": "salto_oferta_unica_defensa_puntos"
+                }
+              },
+              "queryRef": "ServiciosMantenimiento.salto_oferta_unica_defensa_puntos",
+              "nativeQueryRef": "salto_oferta_unica_defensa_puntos",
+              "displayName": "Oferta única, Defensa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ServiciosMantenimiento"
+                    }
+                  },
+                  "Property": "salto_oferta_unica_resto_age_puntos"
+                }
+              },
+              "queryRef": "ServiciosMantenimiento.salto_oferta_unica_resto_age_puntos",
+              "nativeQueryRef": "salto_oferta_unica_resto_age_puntos",
+              "displayName": "Oferta única, resto AGE"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "ServiciosMantenimiento"
+                  }
+                },
+                "Property": "grupo"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "300D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ServiciosMantenimiento.grupo"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dentro de reparación y mantenimiento (CPV 50)'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

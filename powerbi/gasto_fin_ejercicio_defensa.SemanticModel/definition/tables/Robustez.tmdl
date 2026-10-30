@@ -1,0 +1,144 @@
+/// Las cifras del resumen con 12 variantes de las reglas (scripts/11).
+table Robustez
+	lineageTag: ac3f9291-0a41-4aa2-a4b3-ade94d58a1d4
+
+	column orden
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 82641fdd-f8e9-4054-9e5d-3ee994e45d70
+		summarizeBy: none
+		sourceColumn: orden
+
+		annotation SummarizationSetBy = Automatic
+
+	column variante
+		dataType: string
+		lineageTag: 59201db6-4570-487a-9c42-02b0460ad1e6
+		summarizeBy: none
+		sourceColumn: variante
+		sortByColumn: orden
+
+		annotation SummarizationSetBy = Automatic
+
+	column descripcion
+		dataType: string
+		lineageTag: 33d361e7-8900-464d-a976-12ee408b0f77
+		summarizeBy: none
+		sourceColumn: descripcion
+
+		annotation SummarizationSetBy = Automatic
+
+	column adjudicaciones_defensa
+		dataType: int64
+		formatString: #,0
+		lineageTag: 4e608d3e-74bf-47a9-9850-3a8662a5ee62
+		summarizeBy: none
+		sourceColumn: adjudicaciones_defensa
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_nov_dic_defensa
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 8276673f-2bd0-4345-8747-b13840da009c
+		summarizeBy: none
+		sourceColumn: cuota_nov_dic_defensa
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_nov_dic_resto_age
+		dataType: double
+		formatString: 0.0%
+		lineageTag: ea0c3b84-8f7a-4934-b230-552c8a1865af
+		summarizeBy: none
+		sourceColumn: cuota_nov_dic_resto_age
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Defensa menos resto de la AGE, en puntos.
+	column diferencia_puntos
+		dataType: double
+		formatString: +0.0;-0.0;0.0
+		lineageTag: 9a1d2f98-ab71-44d1-8332-3e460441656d
+		summarizeBy: none
+		sourceColumn: diferencia_puntos
+
+		annotation SummarizationSetBy = Automatic
+
+	column anios_defensa_por_encima
+		dataType: string
+		lineageTag: f2ea3155-1246-488c-80c6-20d6868fdc8b
+		summarizeBy: none
+		sourceColumn: anios_defensa_por_encima
+
+		annotation SummarizationSetBy = Automatic
+
+	column salto_oferta_unica_defensa_puntos
+		dataType: double
+		formatString: +0.0;-0.0;0.0
+		lineageTag: 192fd0c1-f599-4f06-841e-dd8afc27b147
+		summarizeBy: none
+		sourceColumn: salto_oferta_unica_defensa_puntos
+
+		annotation SummarizationSetBy = Automatic
+
+	column salto_oferta_unica_resto_age_puntos
+		dataType: double
+		formatString: +0.0;-0.0;0.0
+		lineageTag: d72c7b3e-62c6-4ec9-8756-499d4eeee31b
+		summarizeBy: none
+		sourceColumn: salto_oferta_unica_resto_age_puntos
+
+		annotation SummarizationSetBy = Automatic
+
+	column salto_negociado_defensa_puntos
+		dataType: double
+		formatString: +0.0;-0.0;0.0
+		lineageTag: be2ad6f1-7ad3-4257-8384-7adb87c4bfc4
+		summarizeBy: none
+		sourceColumn: salto_negociado_defensa_puntos
+
+		annotation SummarizationSetBy = Automatic
+
+	column salto_negociado_resto_age_puntos
+		dataType: double
+		formatString: +0.0;-0.0;0.0
+		lineageTag: f6df3fee-b1f4-4558-9ead-49141a6c67cb
+		summarizeBy: none
+		sourceColumn: salto_negociado_resto_age_puntos
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_servicios_defensa
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 634ebef4-31b8-4603-a7df-ca2a34e6919c
+		summarizeBy: none
+		sourceColumn: cuota_servicios_defensa
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuota_servicios_resto_age
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 9bb937d0-274f-47e1-a2eb-aa798865dbf1
+		summarizeBy: none
+		sourceColumn: cuota_servicios_resto_age
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Robustez = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(RutaDatos & "robustez.csv"), [Delimiter = ";", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Limpio = Table.TransformColumnNames(Encabezados, each Text.Replace(_, Character.FromNumber(65279), "")),
+				    Vacios = Table.ReplaceValue(Limpio, "", null, Replacer.ReplaceValue, Table.ColumnNames(Limpio)),
+				    Tipos = Table.TransformColumnTypes(Vacios, {{"orden", Int64.Type}, {"variante", type text}, {"descripcion", type text}, {"adjudicaciones_defensa", Int64.Type}, {"cuota_nov_dic_defensa", type number}, {"cuota_nov_dic_resto_age", type number}, {"diferencia_puntos", type number}, {"anios_defensa_por_encima", type text}, {"salto_oferta_unica_defensa_puntos", type number}, {"salto_oferta_unica_resto_age_puntos", type number}, {"salto_negociado_defensa_puntos", type number}, {"salto_negociado_resto_age_puntos", type number}, {"cuota_servicios_defensa", type number}, {"cuota_servicios_resto_age", type number}}, "es-ES")
+				in
+				    Tipos
+
+	annotation PBI_ResultType = Table
+

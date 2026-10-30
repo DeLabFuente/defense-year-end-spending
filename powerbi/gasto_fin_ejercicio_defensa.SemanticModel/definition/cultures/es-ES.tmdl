@@ -2100,6 +2100,741 @@ cultureInfo es-ES
 			          }
 			        }
 			      ]
+			    },
+			    "medidas.novdic_servicios_defensa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Nov-dic servicios Defensa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Defensa": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medidas.novdic_servicios_resto_age": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Nov-dic servicios resto AGE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Resto de la AGE": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "serviciosdivision.division": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ServiciosDivision",
+			          "ConceptualProperty": "division"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "División CPV": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "serviciosdivision.importe_defensa_meur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ServiciosDivision",
+			          "ConceptualProperty": "importe_defensa_meur"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Defensa (M€)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "serviciosdivision.peso_en_servicios_defensa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ServiciosDivision",
+			          "ConceptualProperty": "peso_en_servicios_defensa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Peso en Defensa": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "serviciosdivision.cuota_nov_dic_defensa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ServiciosDivision",
+			          "ConceptualProperty": "cuota_nov_dic_defensa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nov-dic Defensa": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "serviciosdivision.cuota_nov_dic_resto_age": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ServiciosDivision",
+			          "ConceptualProperty": "cuota_nov_dic_resto_age"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nov-dic resto AGE": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "serviciosdivision.aportacion_a_la_diferencia_puntos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ServiciosDivision",
+			          "ConceptualProperty": "aportacion_a_la_diferencia_puntos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Aporta (puntos)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "serviciosdivision.anios_defensa_por_encima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ServiciosDivision",
+			          "ConceptualProperty": "anios_defensa_por_encima"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Años por encima": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "serviciosdivision.salto_oferta_unica_defensa_puntos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ServiciosDivision",
+			          "ConceptualProperty": "salto_oferta_unica_defensa_puntos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Oferta única en el cierre, Defensa": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "serviciosmantenimiento.grupo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ServiciosMantenimiento",
+			          "ConceptualProperty": "grupo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Reparación y mantenimiento": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "serviciosmantenimiento.importe_defensa_meur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ServiciosMantenimiento",
+			          "ConceptualProperty": "importe_defensa_meur"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Defensa (M€)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "serviciosmantenimiento.cuota_nov_dic_defensa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ServiciosMantenimiento",
+			          "ConceptualProperty": "cuota_nov_dic_defensa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nov-dic Defensa": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "serviciosmantenimiento.cuota_nov_dic_resto_age": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ServiciosMantenimiento",
+			          "ConceptualProperty": "cuota_nov_dic_resto_age"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nov-dic resto AGE": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "serviciosmantenimiento.anios_defensa_por_encima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ServiciosMantenimiento",
+			          "ConceptualProperty": "anios_defensa_por_encima"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Años por encima": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "serviciosmantenimiento.salto_oferta_unica_defensa_puntos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ServiciosMantenimiento",
+			          "ConceptualProperty": "salto_oferta_unica_defensa_puntos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Oferta única, Defensa": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "serviciosmantenimiento.salto_oferta_unica_resto_age_puntos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ServiciosMantenimiento",
+			          "ConceptualProperty": "salto_oferta_unica_resto_age_puntos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Oferta única, resto AGE": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "robustezcalendario.ventana_dias_habiles": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RobustezCalendario",
+			          "ConceptualProperty": "ventana_dias_habiles"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Días hábiles a cada lado": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "robustezcalendario.medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RobustezCalendario",
+			          "ConceptualProperty": "medida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Medida": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "robustezcalendario.cambio_mediano_defensa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RobustezCalendario",
+			          "ConceptualProperty": "cambio_mediano_defensa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Defensa, cambio tras el plazo": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "robustezcalendario.anios_que_cae_defensa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RobustezCalendario",
+			          "ConceptualProperty": "anios_que_cae_defensa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Defensa, años que cae": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "robustezcalendario.cambio_mediano_resto_age": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RobustezCalendario",
+			          "ConceptualProperty": "cambio_mediano_resto_age"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Resto AGE, cambio": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "robustezcalendario.anios_que_cae_resto_age": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RobustezCalendario",
+			          "ConceptualProperty": "anios_que_cae_resto_age"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Resto AGE, años que cae": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "robustez.variante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Robustez",
+			          "ConceptualProperty": "variante"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Variante": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "robustez.descripcion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Robustez",
+			          "ConceptualProperty": "descripcion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Qué cambia": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "robustez.cuota_nov_dic_defensa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Robustez",
+			          "ConceptualProperty": "cuota_nov_dic_defensa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nov-dic Defensa": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "robustez.cuota_nov_dic_resto_age": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Robustez",
+			          "ConceptualProperty": "cuota_nov_dic_resto_age"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Nov-dic resto AGE": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "robustez.diferencia_puntos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Robustez",
+			          "ConceptualProperty": "diferencia_puntos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Diferencia (puntos)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "robustez.anios_defensa_por_encima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Robustez",
+			          "ConceptualProperty": "anios_defensa_por_encima"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Años por encima": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "robustez.salto_oferta_unica_defensa_puntos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Robustez",
+			          "ConceptualProperty": "salto_oferta_unica_defensa_puntos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Oferta única, Defensa": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "robustez.salto_oferta_unica_resto_age_puntos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Robustez",
+			          "ConceptualProperty": "salto_oferta_unica_resto_age_puntos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Oferta única, resto AGE": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "robustez.salto_negociado_defensa_puntos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Robustez",
+			          "ConceptualProperty": "salto_negociado_defensa_puntos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Negociado, Defensa": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "robustez.salto_negociado_resto_age_puntos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Robustez",
+			          "ConceptualProperty": "salto_negociado_resto_age_puntos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Negociado, resto AGE": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "robustez.cuota_servicios_defensa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Robustez",
+			          "ConceptualProperty": "cuota_servicios_defensa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Servicios, Defensa": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "robustez.cuota_servicios_resto_age": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Robustez",
+			          "ConceptualProperty": "cuota_servicios_resto_age"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Servicios, resto AGE": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  }
 			}

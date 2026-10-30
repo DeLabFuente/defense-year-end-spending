@@ -1,0 +1,79 @@
+/// Cambio mediano de las adjudicaciones tras el plazo de fiscalización del compromiso con distintas ventanas (scripts/11).
+table RobustezCalendario
+	lineageTag: 7ca6f3ed-24ba-414a-9442-cc0a9e26b5f9
+
+	column orden
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 517086e6-e796-4b8b-b21c-15b5fd7c09ed
+		summarizeBy: none
+		sourceColumn: orden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ventana_dias_habiles
+		dataType: int64
+		formatString: 0
+		lineageTag: 922969dc-8da4-43fa-ad2a-c2a82c7f5f19
+		summarizeBy: none
+		sourceColumn: ventana_dias_habiles
+
+		annotation SummarizationSetBy = Automatic
+
+	column medida
+		dataType: string
+		lineageTag: e788eb99-514d-4f03-9afc-0a85cee65d55
+		summarizeBy: none
+		sourceColumn: medida
+
+		annotation SummarizationSetBy = Automatic
+
+	column cambio_mediano_defensa
+		dataType: double
+		formatString: +0%;-0%;0%
+		lineageTag: 4f5e5f44-34d0-4134-858a-61fbf4e06117
+		summarizeBy: none
+		sourceColumn: cambio_mediano_defensa
+
+		annotation SummarizationSetBy = Automatic
+
+	column anios_que_cae_defensa
+		dataType: string
+		lineageTag: 08f14edc-2cfe-410a-b3fc-fb9e4900013b
+		summarizeBy: none
+		sourceColumn: anios_que_cae_defensa
+
+		annotation SummarizationSetBy = Automatic
+
+	column cambio_mediano_resto_age
+		dataType: double
+		formatString: +0%;-0%;0%
+		lineageTag: d498fe18-3f7d-4f31-a5e3-ae46ee2d9a5c
+		summarizeBy: none
+		sourceColumn: cambio_mediano_resto_age
+
+		annotation SummarizationSetBy = Automatic
+
+	column anios_que_cae_resto_age
+		dataType: string
+		lineageTag: 6dc8fbc9-235e-4815-8047-44e10291ae0a
+		summarizeBy: none
+		sourceColumn: anios_que_cae_resto_age
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RobustezCalendario = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(RutaDatos & "robustez_calendario.csv"), [Delimiter = ";", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Limpio = Table.TransformColumnNames(Encabezados, each Text.Replace(_, Character.FromNumber(65279), "")),
+				    Vacios = Table.ReplaceValue(Limpio, "", null, Replacer.ReplaceValue, Table.ColumnNames(Limpio)),
+				    Tipos = Table.TransformColumnTypes(Vacios, {{"orden", Int64.Type}, {"ventana_dias_habiles", Int64.Type}, {"medida", type text}, {"cambio_mediano_defensa", type number}, {"anios_que_cae_defensa", type text}, {"cambio_mediano_resto_age", type number}, {"anios_que_cae_resto_age", type text}}, "es-ES")
+				in
+				    Tipos
+
+	annotation PBI_ResultType = Table
+

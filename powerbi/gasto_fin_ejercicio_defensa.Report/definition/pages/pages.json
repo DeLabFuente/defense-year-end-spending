@@ -9,10 +9,12 @@
     "cierre",
     "linea_base",
     "linea_base_tipo",
+    "servicios",
     "adjudicatarios",
     "menores",
     "contexto",
+    "robustez",
     "metodo"
   ],
-  "activePageName": "resumen"
+  "activePageName": "robustez"
 }

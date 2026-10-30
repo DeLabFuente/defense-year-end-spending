@@ -1,5 +1,5 @@
 @echo off
-rem Une los registros y recalcula adjudicatarios, picos, cierre, linea base y ordenes de cierre. Ejecutar con Power BI cerrado.
+rem Une los registros y recalcula adjudicatarios, picos, cierre, linea base, ordenes de cierre, servicios por CPV, robustez y la prediccion de 2026. Ejecutar con Power BI cerrado.
 cd /d "%~dp0"
 python scripts\03_unir_registros.py registros scripts\intermedios\codigos_codice.json . || goto error
 move /Y resumen_registros.json scripts\intermedios\ >nul
@@ -10,6 +10,12 @@ echo Linea base del sector publico (tarda unos minutos)...
 python scripts\07_linea_base_sector_publico.py registros scripts\intermedios\codigos_codice.json . >nul || goto error
 echo Ordenes de cierre del ejercicio...
 python scripts\08_ordenes_cierre.py registros scripts\intermedios\codigos_codice.json . >nul || goto error
+echo Servicios por codigo CPV...
+python scripts\10_servicios_cpv.py registros scripts\intermedios\codigos_codice.json . >nul || goto error
+echo Robustez (tarda un minuto)...
+python scripts\11_robustez.py registros scripts\intermedios\codigos_codice.json . >nul || goto error
+echo Prediccion del cierre de 2026...
+python scripts\09_prediccion_cierre_2026.py . >nul || goto error
 echo.
 echo Listo. Abre powerbi\gasto_fin_ejercicio_defensa.pbip y pulsa Actualizar.
 pause

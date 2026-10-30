@@ -1,0 +1,13 @@
+﻿orden;variante;descripcion;adjudicaciones_defensa;cuota_nov_dic_defensa;cuota_nov_dic_resto_age;diferencia_puntos;anios_defensa_por_encima;salto_oferta_unica_defensa_puntos;salto_oferta_unica_resto_age_puntos;salto_negociado_defensa_puntos;salto_negociado_resto_age_puntos;cuota_servicios_defensa;cuota_servicios_resto_age
+0;Base;Umbral de programa especial de 100 M€, 2017-2025, años sumados;64164;0,272564;0,220688;5,19;8 de 9;3,21;-3,40;3,02;-2,58;0,273991;0,194456
+1;Umbral 50 M€;Programa especial desde 50 M€ por expediente y año;64149;0,264890;0,224898;4,00;6 de 9;3,21;-3,52;3,00;-2,49;0,255735;0,195062
+2;Umbral 200 M€;Programa especial desde 200 M€;64173;0,298619;0,216457;8,22;8 de 9;3,22;-3,38;3,05;-2,56;0,309979;0,176933
+3;Umbral 500 M€;Programa especial desde 500 M€;64185;0,412550;0,217453;19,51;9 de 9;3,25;-3,39;3,10;-2,57;0,309979;0,179730
+4;Sin excluir programas;Todo el importe, también los expedientes de 100 M€ o más;64204;0,626935;0,245941;38,10;7 de 9;3,28;-3,44;3,18;-2,59;0,363244;0,190759
+5;Sin 2025;2017-2024;54922;0,261075;0,220915;4,02;7 de 8;2,95;-3,19;3,21;-3,24;0,258868;0,195418
+6;Sin 2018 ni 2025;Los dos años con más programas especiales en el cierre;49628;0,257421;0,224876;3,25;6 de 7;2,89;-3,14;3,26;-2,60;0,261858;0,201498
+7;Desde 2019;Solo los años con la ley de contratos de 2017 plenamente aplicada;54948;0,271237;0,223443;4,78;6 de 7;3,23;-3,02;2,46;-2,17;0,279386;0,194142
+8;Sin urgencia ni emergencia;Sin tramitación urgente o de emergencia (covid, DANA, misiones);62098;0,261096;0,225415;3,57;7 de 9;3,45;-2,84;2,76;-1,46;0,265448;0,197907
+9;Sin contratos basados en acuerdos marco;Sin derivados de acuerdo marco ni de sistema dinámico;43736;0,332130;0,197244;13,49;8 de 9;4,80;-2,43;4,55;-2,88;0,381348;0,196965
+10;Sin las 10 mayores de cada año;Quitando las 10 mayores adjudicaciones ordinarias de cada bloque y año;64074;0,245056;0,225230;1,98;7 de 9;3,16;-3,41;2,92;-2,57;0,245355;0,194705
+11;Mediana de los años;Cada cifra, calculada año a año y resumida con la mediana;64164;0,259089;0,219479;3,96;8 de 9;3,81;-2,49;2,04;-1,39;0,257607;0,188516

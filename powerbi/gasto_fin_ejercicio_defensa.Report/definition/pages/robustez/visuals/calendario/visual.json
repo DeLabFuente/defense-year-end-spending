@@ -1,0 +1,258 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "calendario",
+  "position": {
+    "x": 24,
+    "y": 644,
+    "z": 3,
+    "height": 424,
+    "width": 920,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RobustezCalendario"
+                    }
+                  },
+                  "Property": "ventana_dias_habiles"
+                }
+              },
+              "queryRef": "RobustezCalendario.ventana_dias_habiles",
+              "nativeQueryRef": "ventana_dias_habiles",
+              "displayName": "Días hábiles a cada lado"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RobustezCalendario"
+                    }
+                  },
+                  "Property": "medida"
+                }
+              },
+              "queryRef": "RobustezCalendario.medida",
+              "nativeQueryRef": "medida",
+              "displayName": "Medida"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RobustezCalendario"
+                    }
+                  },
+                  "Property": "cambio_mediano_defensa"
+                }
+              },
+              "queryRef": "RobustezCalendario.cambio_mediano_defensa",
+              "nativeQueryRef": "cambio_mediano_defensa",
+              "displayName": "Defensa, cambio tras el plazo"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RobustezCalendario"
+                    }
+                  },
+                  "Property": "anios_que_cae_defensa"
+                }
+              },
+              "queryRef": "RobustezCalendario.anios_que_cae_defensa",
+              "nativeQueryRef": "anios_que_cae_defensa",
+              "displayName": "Defensa, años que cae"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RobustezCalendario"
+                    }
+                  },
+                  "Property": "cambio_mediano_resto_age"
+                }
+              },
+              "queryRef": "RobustezCalendario.cambio_mediano_resto_age",
+              "nativeQueryRef": "cambio_mediano_resto_age",
+              "displayName": "Resto AGE, cambio"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RobustezCalendario"
+                    }
+                  },
+                  "Property": "anios_que_cae_resto_age"
+                }
+              },
+              "queryRef": "RobustezCalendario.anios_que_cae_resto_age",
+              "nativeQueryRef": "anios_que_cae_resto_age",
+              "displayName": "Resto AGE, años que cae"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "RobustezCalendario"
+                  }
+                },
+                "Property": "ventana_dias_habiles"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "110D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "RobustezCalendario.ventana_dias_habiles"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Caída tras el plazo de fiscalización del compromiso (mediana de 9 años)'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

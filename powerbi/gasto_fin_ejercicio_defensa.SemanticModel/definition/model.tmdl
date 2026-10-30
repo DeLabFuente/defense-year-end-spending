@@ -10,7 +10,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 
-annotation PBI_QueryOrder = ["RutaDatos","Adjudicaciones","Meses","IGAE","Sucesos","AdjudicatariosAnual","PerfilAdjudicatarios","Picos","Macro","Competencia","Calendario","PresupuestoCierre","LineaBase"]
+annotation PBI_QueryOrder = ["RutaDatos","Adjudicaciones","Meses","IGAE","Sucesos","AdjudicatariosAnual","PerfilAdjudicatarios","Picos","Macro","Competencia","Calendario","PresupuestoCierre","LineaBase","ServiciosDivision","ServiciosMantenimiento","Robustez","RobustezCalendario"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -27,6 +27,10 @@ ref table Competencia
 ref table Calendario
 ref table PresupuestoCierre
 ref table LineaBase
+ref table ServiciosDivision
+ref table ServiciosMantenimiento
+ref table Robustez
+ref table RobustezCalendario
 
 ref cultureInfo es-ES
 

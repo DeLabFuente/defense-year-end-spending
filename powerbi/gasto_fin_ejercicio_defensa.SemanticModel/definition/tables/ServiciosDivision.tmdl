@@ -1,0 +1,145 @@
+/// Servicios 2017-2025 por división CPV: peso del cierre en Defensa y en el resto de la AGE (scripts/10).
+table ServiciosDivision
+	lineageTag: 01e9fc81-b7d0-4b22-9953-d3c0a5224af7
+
+	column orden
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 805a25eb-ed06-496b-984e-b7ff711b8429
+		summarizeBy: none
+		sourceColumn: orden
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Código CPV de dos dígitos (Total = todos los servicios; Resto = divisiones que pesan menos de un 1 % en Defensa).
+	column cpv_division
+		dataType: string
+		lineageTag: 926daa5e-6483-466d-934b-5dea465070ac
+		summarizeBy: none
+		sourceColumn: cpv_division
+
+		annotation SummarizationSetBy = Automatic
+
+	column division
+		dataType: string
+		lineageTag: 41c54025-3607-46db-a2c1-401d0de93605
+		summarizeBy: none
+		sourceColumn: division
+		sortByColumn: orden
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Importe ordinario de Defensa en servicios, 2017-2025 (M€).
+	column importe_defensa_meur
+		dataType: double
+		formatString: #,0.0
+		lineageTag: 7869eaed-957b-4f28-a64c-87bfde663022
+		summarizeBy: none
+		sourceColumn: importe_defensa_meur
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Parte del importe ordinario de Defensa en servicios.
+	column peso_en_servicios_defensa
+		dataType: double
+		formatString: 0.0%
+		lineageTag: c6eb17de-5231-400d-ad77-66dfc62e8484
+		summarizeBy: none
+		sourceColumn: peso_en_servicios_defensa
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Adjudicaciones ordinarias de Defensa, 2017-2025.
+	column adjudicaciones_defensa
+		dataType: int64
+		formatString: #,0
+		lineageTag: 0b6e418d-47b5-4e30-ac07-de479634185f
+		summarizeBy: none
+		sourceColumn: adjudicaciones_defensa
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Parte del importe ordinario de Defensa adjudicada en noviembre-diciembre.
+	column cuota_nov_dic_defensa
+		dataType: double
+		formatString: 0.0%
+		lineageTag: a465b59e-dea5-465a-aaa2-07274b04ddf4
+		summarizeBy: none
+		sourceColumn: cuota_nov_dic_defensa
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Lo mismo en el resto de la Administración General del Estado.
+	column cuota_nov_dic_resto_age
+		dataType: double
+		formatString: 0.0%
+		lineageTag: e6db5b96-375a-46e7-b448-2d1809b6a928
+		summarizeBy: none
+		sourceColumn: cuota_nov_dic_resto_age
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Defensa menos resto de la AGE, en puntos.
+	column diferencia_puntos
+		dataType: double
+		formatString: +0.0;-0.0;0.0
+		lineageTag: 23e7f28c-626a-43c4-95e3-ef50b7d541be
+		summarizeBy: none
+		sourceColumn: diferencia_puntos
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Diferencia ponderada por el peso en Defensa: lo que aporta a la diferencia total, en puntos.
+	column aportacion_a_la_diferencia_puntos
+		dataType: double
+		formatString: +0.0;-0.0;0.0
+		lineageTag: 888dc6cc-59a2-4359-9e65-9a2e17b50351
+		summarizeBy: none
+		sourceColumn: aportacion_a_la_diferencia_puntos
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Años de 2017-2025 en que el cierre pesa más en Defensa que en el resto de la AGE.
+	column anios_defensa_por_encima
+		dataType: string
+		lineageTag: a52fd897-0335-4c69-8389-8cb57bf00da9
+		summarizeBy: none
+		sourceColumn: anios_defensa_por_encima
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Oferta única en noviembre-diciembre menos en enero-octubre, en Defensa (puntos).
+	column salto_oferta_unica_defensa_puntos
+		dataType: double
+		formatString: +0.0;-0.0;0.0
+		lineageTag: 7667520f-4af0-48a5-9cbb-bdb22a5e4b6b
+		summarizeBy: none
+		sourceColumn: salto_oferta_unica_defensa_puntos
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Lo mismo en el resto de la AGE (puntos).
+	column salto_oferta_unica_resto_age_puntos
+		dataType: double
+		formatString: +0.0;-0.0;0.0
+		lineageTag: f08128ac-8f04-4e34-8853-8bee06493fc6
+		summarizeBy: none
+		sourceColumn: salto_oferta_unica_resto_age_puntos
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ServiciosDivision = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(RutaDatos & "servicios_cpv_division.csv"), [Delimiter = ";", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Limpio = Table.TransformColumnNames(Encabezados, each Text.Replace(_, Character.FromNumber(65279), "")),
+				    Vacios = Table.ReplaceValue(Limpio, "", null, Replacer.ReplaceValue, Table.ColumnNames(Limpio)),
+				    Tipos = Table.TransformColumnTypes(Vacios, {{"orden", Int64.Type}, {"cpv_division", type text}, {"division", type text}, {"importe_defensa_meur", type number}, {"peso_en_servicios_defensa", type number}, {"adjudicaciones_defensa", Int64.Type}, {"cuota_nov_dic_defensa", type number}, {"cuota_nov_dic_resto_age", type number}, {"diferencia_puntos", type number}, {"aportacion_a_la_diferencia_puntos", type number}, {"anios_defensa_por_encima", type text}, {"salto_oferta_unica_defensa_puntos", type number}, {"salto_oferta_unica_resto_age_puntos", type number}}, "es-ES")
+				in
+				    Tipos
+
+	annotation PBI_ResultType = Table
+

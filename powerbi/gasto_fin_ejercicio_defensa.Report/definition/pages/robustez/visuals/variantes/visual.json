@@ -1,0 +1,362 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "variantes",
+  "position": {
+    "x": 24,
+    "y": 128,
+    "z": 2,
+    "height": 500,
+    "width": 1872,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Robustez"
+                    }
+                  },
+                  "Property": "variante"
+                }
+              },
+              "queryRef": "Robustez.variante",
+              "nativeQueryRef": "variante",
+              "displayName": "Variante"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Robustez"
+                    }
+                  },
+                  "Property": "descripcion"
+                }
+              },
+              "queryRef": "Robustez.descripcion",
+              "nativeQueryRef": "descripcion",
+              "displayName": "Qué cambia"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Robustez"
+                    }
+                  },
+                  "Property": "cuota_nov_dic_defensa"
+                }
+              },
+              "queryRef": "Robustez.cuota_nov_dic_defensa",
+              "nativeQueryRef": "cuota_nov_dic_defensa",
+              "displayName": "Nov-dic Defensa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Robustez"
+                    }
+                  },
+                  "Property": "cuota_nov_dic_resto_age"
+                }
+              },
+              "queryRef": "Robustez.cuota_nov_dic_resto_age",
+              "nativeQueryRef": "cuota_nov_dic_resto_age",
+              "displayName": "Nov-dic resto AGE"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Robustez"
+                    }
+                  },
+                  "Property": "diferencia_puntos"
+                }
+              },
+              "queryRef": "Robustez.diferencia_puntos",
+              "nativeQueryRef": "diferencia_puntos",
+              "displayName": "Diferencia (puntos)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Robustez"
+                    }
+                  },
+                  "Property": "anios_defensa_por_encima"
+                }
+              },
+              "queryRef": "Robustez.anios_defensa_por_encima",
+              "nativeQueryRef": "anios_defensa_por_encima",
+              "displayName": "Años por encima"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Robustez"
+                    }
+                  },
+                  "Property": "salto_oferta_unica_defensa_puntos"
+                }
+              },
+              "queryRef": "Robustez.salto_oferta_unica_defensa_puntos",
+              "nativeQueryRef": "salto_oferta_unica_defensa_puntos",
+              "displayName": "Oferta única, Defensa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Robustez"
+                    }
+                  },
+                  "Property": "salto_oferta_unica_resto_age_puntos"
+                }
+              },
+              "queryRef": "Robustez.salto_oferta_unica_resto_age_puntos",
+              "nativeQueryRef": "salto_oferta_unica_resto_age_puntos",
+              "displayName": "Oferta única, resto AGE"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Robustez"
+                    }
+                  },
+                  "Property": "salto_negociado_defensa_puntos"
+                }
+              },
+              "queryRef": "Robustez.salto_negociado_defensa_puntos",
+              "nativeQueryRef": "salto_negociado_defensa_puntos",
+              "displayName": "Negociado, Defensa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Robustez"
+                    }
+                  },
+                  "Property": "salto_negociado_resto_age_puntos"
+                }
+              },
+              "queryRef": "Robustez.salto_negociado_resto_age_puntos",
+              "nativeQueryRef": "salto_negociado_resto_age_puntos",
+              "displayName": "Negociado, resto AGE"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Robustez"
+                    }
+                  },
+                  "Property": "cuota_servicios_defensa"
+                }
+              },
+              "queryRef": "Robustez.cuota_servicios_defensa",
+              "nativeQueryRef": "cuota_servicios_defensa",
+              "displayName": "Servicios, Defensa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Robustez"
+                    }
+                  },
+                  "Property": "cuota_servicios_resto_age"
+                }
+              },
+              "queryRef": "Robustez.cuota_servicios_resto_age",
+              "nativeQueryRef": "cuota_servicios_resto_age",
+              "displayName": "Servicios, resto AGE"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Robustez"
+                  }
+                },
+                "Property": "variante"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "230D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Robustez.variante"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "420D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Robustez.descripcion"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Peso del cierre, competencia y servicios'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "lectura",
+  "position": {
+    "x": 24,
+    "y": 884,
+    "z": 5,
+    "height": 184,
+    "width": 1872,
+    "tabOrder": 5
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Lectura",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#2A7F8F",
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• No es qué compra, sino cuándo: los servicios pesan en el cierre de Defensa un 27,4 %, frente al 19,4 % del resto de la AGE. De esos 8 puntos, 7,3 salen de que Defensa concentra más dentro de cada tipo de servicio y solo 0,6 de que compre otra mezcla de servicios.",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#374151"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Reparación y mantenimiento lo explica en buena parte: 2.411 M€, el 39 % de sus servicios; un 23,1 % en el cierre frente al 16,8 %, por encima en 7 de 9 años. La oferta única sube 8,4 puntos en el cierre (en el resto de la AGE baja 3,8) y sube en los nueve grupos de mantenimiento, sobre todo en equipo de seguridad y defensa y en aeronaves, ferrocarriles y equipo marino.",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#374151"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• I+D (71,5 % en el cierre, 8 de 9 años) y seguros (97,8 %) van casi enteros a diciembre, pero son pocos contratos: 300 y 38 en nueve años. Limpieza, telecomunicaciones y servicios a empresas pesan menos en el cierre de Defensa que en el resto de la AGE.",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#374151"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Código CPV principal de cada licitación. Mismas reglas que la línea base: sin contratos menores, sin programas especiales ni establecimiento de acuerdos marco.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#6B7280"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

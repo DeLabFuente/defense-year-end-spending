@@ -522,6 +522,18 @@ table Medidas
 		displayFolder: 10. Defensa frente al resto
 		lineageTag: f4b1db32-5d8d-4299-852c-d8d6c3421e2f
 
+	/// Parte del importe ordinario de Defensa en servicios adjudicada en noviembre-diciembre (2017-2025), por división CPV.
+	measure 'Nov-dic servicios Defensa' = MAX ( ServiciosDivision[cuota_nov_dic_defensa] )
+		formatString: 0.0%
+		displayFolder: 11. Servicios por CPV
+		lineageTag: ee57a2ee-783e-4118-a9a2-e29de4c4017d
+
+	/// Lo mismo en el resto de la Administración General del Estado.
+	measure 'Nov-dic servicios resto AGE' = MAX ( ServiciosDivision[cuota_nov_dic_resto_age] )
+		formatString: 0.0%
+		displayFolder: 11. Servicios por CPV
+		lineageTag: b299f694-3002-4668-94cd-9dc181c6252a
+
 	column Medidas
 		dataType: int64
 		isHidden

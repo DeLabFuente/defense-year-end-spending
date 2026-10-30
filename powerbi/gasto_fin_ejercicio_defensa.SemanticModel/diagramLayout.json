@@ -176,6 +176,58 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3392,
+            "y": 25
+          },
+          "nodeIndex": "ServiciosDivision",
+          "nodeLineageTag": "01e9fc81-b7d0-4b22-9953-d3c0a5224af7",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3676,
+            "y": 25
+          },
+          "nodeIndex": "ServiciosMantenimiento",
+          "nodeLineageTag": "bbb57e74-b72a-4af7-9980-708ff89901a5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3910,
+            "y": 25
+          },
+          "nodeIndex": "Robustez",
+          "nodeLineageTag": "ac3f9291-0a41-4aa2-a4b3-ade94d58a1d4",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4194,
+            "y": 51
+          },
+          "nodeIndex": "RobustezCalendario",
+          "nodeLineageTag": "7ca6f3ed-24ba-414a-9442-cc0a9e26b5f9",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Todas las tablas",

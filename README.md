@@ -29,12 +29,14 @@
 | 1. Preparación y protocolo de reserva | Hecha |
 | 2. Prueba de cobertura con 2023 | Hecha: la PLACSP sirve como fuente principal |
 | 3. Datos 2017–2026 | Hecha: 10 años extraídos y unidos (el de 2026, a 23/10/2026) |
-| 4. Análisis e índice de cierre | Hecha: picos clasificados (111), adjudicatarios (rotación, concentración, especialización), competencia y calendario del cierre, presupuesto, contexto económico (IPC, PIB, OTAN), sucesos (41, con las 9 órdenes de cierre) e IGAE 2017–2025 |
-| 5. Informe en Power BI | Hecha: 12 páginas sobre la serie 2017–2026 (`powerbi/`), con resumen inicial y tema propio |
-| 6. Publicación | Lista para subir: resumen, PDF del informe (12 páginas), licencia y `.gitignore`; falta crear el repositorio |
-| 7. Prueba con el cierre de 2026 | Enero de 2027 (procedimiento abajo) |
+| 4. Análisis e índice de cierre | Hecha: picos clasificados (111), adjudicatarios (rotación, concentración, especialización), competencia y calendario del cierre, presupuesto, contexto económico (IPC, PIB, OTAN), sucesos (43, con las 9 órdenes de cierre) e IGAE 2017–2025 |
+| 5. Informe en Power BI | Hecha: 14 páginas sobre la serie 2017–2026 (`powerbi/`), con resumen inicial y tema propio |
+| 6. Publicación | Hecha: repositorio público en GitHub (27/10/2026) con resumen, capturas, PDF del informe, licencia y `.gitignore` |
+| 7. Prueba con el cierre de 2026 | Predicción fijada el 29/10/2026 ([`prediccion_cierre_2026.md`](prediccion_cierre_2026.md)); se contrasta en enero de 2027 (procedimiento abajo) |
 | Contratos menores | Hecha: 2018–2026 integrados (sindicación 1143), aparte del importe analizado |
 | Línea base con todo el sector público | Hecha: 1,14 millones de licitaciones y 3,57 millones de menores de todos los órganos de la plataforma, 2017–2026 |
+| Servicios por código CPV | Hecha: qué servicios explican la diferencia con el resto de la AGE (paso 10) |
+| Robustez | Hecha: las conclusiones con 12 variantes de las reglas y 4 ventanas del calendario (paso 11) |
 | Órdenes de cierre del ejercicio | Hecha: las 9 órdenes de Hacienda de 2017–2025 (BOE) con sus fechas límite, contrastadas día a día con Defensa y el resto de la AGE |
 
 ## Resultados hasta ahora
@@ -72,6 +74,8 @@ Línea base: 16,7 % (2 de 12 meses).
 - **Órdenes de cierre del ejercicio** (`ordenes_cierre.csv`, paso 8): cada año el Ministerio de Hacienda publica en el BOE, entre el 9 y el 19 de noviembre, una orden con los plazos de cierre para toda la AGE. Los plazos apenas cambian: envío a fiscalización de la aprobación del gasto del 17 al 25 de noviembre, del compromiso del 3 al 9 de diciembre y documentos D y AD del 12 al 16 de diciembre. En Defensa el ritmo de adjudicaciones sube desde octubre hasta el plazo del compromiso (1,3 veces el de octubre por día hábil) y cae justo después: en los 5 días hábiles siguientes, un 28 % menos que en los 5 anteriores (mediana; cae los 9 años) y, tras los documentos D, a menos de la mitad del ritmo de octubre. **Conclusión: la orden explica el calendario del pico (por qué culmina a finales de noviembre y se hunde en diciembre), pero no su tamaño.** El resto de la AGE, con la misma orden, no cae tras el plazo (mediana +6 %, cae solo 4 de 9 años) y sigue adjudicando a 0,9 veces el ritmo de octubre tras los documentos D. Y como los plazos son casi fijos, una fecha fija (7 de diciembre) da el mismo corte en Defensa: no se puede separar el efecto de la orden del de un calendario interno propio. La orden de 2025 deja fuera de plazo lo aprobado por el Consejo de Ministros y la reserva de munición y el Plan Nacional de Ciberseguridad del Plan Industrial: encaja con los 21 contratos de programa adjudicados del 17 al 28 de diciembre de 2025, después del plazo de los documentos D (12 de diciembre).
 - **Defensa frente al resto** (línea base, mismas reglas para todo el sector público de la plataforma): todos adjudican en noviembre-diciembre algo más que el reparto uniforme (entre el 20 % y el 23 % del importe ordinario en 2017-2025). Defensa llega al 27,3 % y supera al resto de la Administración General del Estado (22,1 %) en 8 de 9 años. En número de adjudicaciones no se distingue (24,3 % frente a 23,9 %); en contratos menores sí (29,2 % frente a 20,7 %). Y es el único con un empeoramiento claro de la competencia en el cierre: oferta única +3,2 puntos y negociado sin publicidad +3,0; en universidades suben menos de 1 punto y en el resto de la AGE ambos bajan (−3,4 y −2,6). La serie de Defensa de la línea base cuadra al euro con la del proyecto.
 - **Por tipo de contrato:** en suministros Defensa y el resto de la AGE concentran lo mismo en el cierre (28,8 % y 29,1 %, frente al 21,6 % del resto del sector público): es un rasgo de la Administración del Estado. La diferencia está en los servicios: Defensa adjudica en noviembre-diciembre el 27,4 % frente al 19,4 % (más en 7 de 9 años), con oferta única +5,1 puntos y negociado sin publicidad +4,7 en el cierre, cuando en el resto de la AGE bajan. De los 5,2 puntos que separan a Defensa del resto de la AGE, 2,1 se deben a lo que compra (la mitad de su importe son suministros, frente al 30 %) y 3,1 a cómo adjudica los servicios. En contratos menores Defensa concentra más en los tres tipos.
+- **Qué servicios** (`servicios_cpv_division.csv` y `servicios_cpv_mantenimiento.csv`, paso 10, por el código CPV principal de cada licitación): no es qué compra, sino cuándo. De los 8 puntos que separan el cierre de los servicios de Defensa (27,4 %) del resto de la AGE (19,4 %), 7,3 salen de que Defensa concentra más dentro de cada división CPV y solo 0,6 de que compre otra mezcla de servicios. La mayor parte la aporta **reparación y mantenimiento** (2.411 M€, el 39 % de sus servicios): un 23,1 % en el cierre frente al 16,8 %, por encima en 7 de 9 años, con la oferta única subiendo 8,4 puntos en el cierre (en el resto de la AGE baja 3,8). Sube en los nueve grupos de mantenimiento, sobre todo en equipo de seguridad y defensa (898 M€, 24,4 % frente a 18,5 %) y en aeronaves, ferrocarriles y equipo marino (686 M€, 21,4 % frente a 15,7 %). I+D (71,5 % en el cierre, 8 de 9 años) y seguros (97,8 %, renovaciones anuales) van casi enteros a diciembre, pero son pocos contratos (300 y 38 en nueve años). Limpieza y medio ambiente, telecomunicaciones y servicios a empresas pesan menos en el cierre de Defensa que en el resto de la AGE.
+- **Robustez** (`robustez.csv` y `robustez_calendario.csv`, paso 11): las conclusiones se repiten cambiando una regla cada vez (umbral de programa especial de 50, 200 o 500 M€ o sin excluir programas; sin 2025, sin 2018 ni 2025 o desde 2019; sin tramitación urgente ni de emergencia; sin contratos basados en acuerdos marco; sin las 10 mayores adjudicaciones de cada año; mediana de los años en vez de sumarlos). **El cierre pesa más en Defensa en las 12 variantes**, de +2,0 a +38,1 puntos; la diferencia más pequeña sale al quitar las 10 mayores adjudicaciones de cada año (24,5 % frente a 22,5 %, 7 de 9 años) y la que menos años gana, con el umbral de 50 M€ (6 de 9). **La competencia es lo más sólido:** la oferta única sube en el cierre de Defensa en todas las variantes (+2,9 a +4,8 puntos) y baja en el resto de la AGE en todas (−2,4 a −3,5), y lo mismo el negociado sin publicidad (+2,0 a +4,5 frente a −1,4 a −3,2). No lo explican las emergencias: sin tramitación urgente ni de emergencia, +3,4 y +2,8. **Los servicios** pesan más en el cierre de Defensa en todas (24,5 % a 38,1 % frente a 17,7 % a 20,1 %). **Calendario:** Defensa cae tras el plazo del compromiso con ventanas de 3, 5, 7 y 10 días hábiles (−15 % a −46 % en número, 8 o 9 de 9 años; −36 % a −53 % en importe con 5 días o más). El resto de la AGE no cae en la semana siguiente (−4 % a +6 % con 3 o 5 días), pero con 7 o 10 días también cae (−11 % y −15 %) por el final de diciembre: la diferencia con Defensa se mantiene, pero es de grado.
 - **Contexto económico:** el gasto en defensa pasa del 0,90 % al 1,96 % del PIB (OTAN, 2017-2025). En euros de 2025, el importe ordinario sube de 1.012 a 2.886 M€. Medir el umbral de programa especial en euros constantes no cambia ningún expediente.
 - **Adjudicatarios:** 8.136 distintos en 2017-2025 (huellas anónimas); cada año repite algo más de la mitad. De 2.528 con 3 años o más, 1.263 son especialistas y 81 dispersos (6 divisiones CPV o más), con más adjudicaciones, más órganos y más oferta única (mediana del 51 % frente al 41 % de los especialistas): sobre todo grandes contratistas industriales.
 
@@ -89,6 +93,9 @@ Línea base: 16,7 % (2 de 12 meses).
 10. Órdenes de cierre del ejercicio 2017–2025 (24/10/2026): fechas límite del BOE en `ordenes_cierre.csv` y en la tabla de sucesos (C17–C25), script 08 y contraste día a día con el resto de la AGE.
 11. Arreglos del informe (24/10/2026): página «Método y fuentes» con la línea base y los tipos de contrato; «Crédito sin ejecutar», créditos y obligaciones del cierre y los importes en M€ de `Macro` pasan de texto a número (se veían con 4 decimales y la medida «PIB (M€)» fallaba); «PIB (M€)» solo da valor con un año; lectura de la página del cierre con la conclusión de las órdenes.
 12. Preparación de la publicación (26/10/2026): página «Resumen» con cuatro conclusiones al inicio del informe, licencia MIT para el código, `.gitignore` sin la copia antigua del PBIP ni los documentos de trabajo, comprobación de que ningún fichero publicable lleva huellas, claves ni adjudicatarios, y PDF del informe (`informe_gasto_fin_ejercicio_defensa.pdf`).
+13. Predicción del cierre de 2026 (29/10/2026): 11 predicciones sobre el peso de noviembre-diciembre, los servicios, la competencia, el calendario de la orden de cierre y los programas especiales, escritas antes de noviembre con datos a 23/10/2026 (`prediccion_cierre_2026.md`, `prediccion_cierre_2026.csv` y script 09, que en enero de 2027 rellena el resultado de cada una)). Sucesos nuevos: accidentes ferroviarios de Adamuz (enero de 2026, E07) y Urda (28/10/2026, E08), con despliegue de la UME.
+14. Servicios por código CPV (29/10/2026): script 10 sobre los mismos registros de la línea base, `servicios_cpv.csv` (año, periodo, bloque, tipo y grupo CPV), resúmenes por división y de reparación y mantenimiento, y página «Qué servicios».
+15. Robustez (29/10/2026): script 11, `robustez.csv` (12 variantes de las reglas) y `robustez_calendario.csv` (ventanas de 3 a 10 días hábiles, en número e importe), y página «¿Se sostiene?».
 
 ## Fuentes
 
@@ -133,7 +140,7 @@ Línea base: 16,7 % (2 de 12 meses).
 ├── adjudicatarios_perfil.csv                ← especialización por perfil y tramo de importe, solo agregada (grupos < 5 suprimidos)
 ├── privado/                                 ← detalle por huella (uso interno, no se publica ni lo lee Power BI)
 ├── picos_cierre.csv                         ← picos de cierre por rama y órgano, clasificados
-├── actualizar.bat                           ← ejecuta los pasos 3, 5, 6 y 7 de una vez
+├── actualizar.bat                           ← ejecuta los pasos 3 y 5 a 11 de una vez
 ├── placsp_defensa_adjudicaciones_2023.csv   ← prueba de cobertura de 2023 (se usa hasta reprocesar 2023)
 ├── igae_defensa.csv                         ← obligaciones de la IGAE 2017-2025 (denominador)
 ├── sucesos_2017_2026.csv                    ← sucesos públicos que pueden explicar picos, con su fuente
@@ -144,6 +151,13 @@ Línea base: 16,7 % (2 de 12 meses).
 ├── ordenes_cierre_tramos.csv                ← peso y ritmo de cada tramo de la orden, por año y bloque
 ├── ordenes_cierre_corte.csv                 ← 5 días hábiles antes y después del plazo del compromiso y de una fecha fija
 ├── presupuesto_y_cierre.csv                 ← situación del presupuesto, ejecución de la IGAE y peso del cierre
+├── prediccion_cierre_2026.md                ← predicción del cierre de 2026, fijada el 29/10/2026
+├── prediccion_cierre_2026.csv               ← las 11 predicciones, su respaldo 2017-2025 y, en 2027, el resultado
+├── robustez.csv                             ← las conclusiones con 12 variantes de las reglas
+├── robustez_calendario.csv                  ← caída tras el plazo del compromiso con ventanas de 3 a 10 días hábiles
+├── servicios_cpv.csv                        ← Defensa y resto de la AGE por año, periodo, tipo de contrato y grupo CPV (3 dígitos)
+├── servicios_cpv_division.csv               ← servicios 2017-2025 por división CPV: cierre, aportación a la diferencia y oferta única
+├── servicios_cpv_mantenimiento.csv          ← lo mismo dentro de reparación y mantenimiento (CPV 50)
 ├── linea_base_cierre.csv                    ← todo el sector público por año, mes, comparador, ministerio y tipo de contrato (línea base)
 ├── macro_2017_2026.csv                      ← IPC, PIB, deflactor y gasto en defensa sobre PIB (INE, Eurostat, OTAN, IGAE), con fuente
 ├── LEEME_prueba_cobertura_2023.md           ← procedencia y reglas de la prueba de 2023
@@ -160,6 +174,9 @@ Línea base: 16,7 % (2 de 12 meses).
     ├── 06_cierre_competencia_calendario.py  ← competencia, calendario y presupuesto del cierre
     ├── 07_linea_base_sector_publico.py      ← Defensa frente al resto del sector público
     ├── 08_ordenes_cierre.py                 ← el cierre de Defensa y del resto de la AGE frente a los plazos de cada orden
+    ├── 09_prediccion_cierre_2026.py         ← predicción del cierre de 2026 y su comprobación (solo lee CSV publicados)
+    ├── 10_servicios_cpv.py                  ← qué servicios explican el cierre de Defensa (CPV)
+    ├── 11_robustez.py                       ← las conclusiones con otras reglas (umbral, años, emergencias, acuerdos marco…)
     └── intermedios/                         ← códigos CODICE, datos IGAE por informe, agregado de 2023
 ```
 
@@ -168,7 +185,7 @@ Formato de los CSV: separador `;`, decimales con coma, UTF-8 e importes en euros
 ## Cómo añadir años
 
 1. Abre `scripts/extractor_placsp.html` en Chrome o Edge (siempre el mismo navegador y la misma ruta del fichero, para que la clave anónima coincida), descarga los ficheros anuales desde sus enlaces y elige los zip. Guarda cada resultado en `registros/` y los de todo el sector público en `registros/sector_publico/`. La página reconoce los ficheros de contratos menores por su nombre.
-2. Doble clic en `actualizar.bat`. Ejecuta, desde la carpeta del proyecto y en este orden: `python scripts/03_unir_registros.py registros scripts/intermedios/codigos_codice.json .`, `python scripts/05_adjudicatarios_y_picos.py registros scripts/intermedios/codigos_codice.json sucesos_2017_2026.csv .`, `python scripts/06_cierre_competencia_calendario.py registros scripts/intermedios/codigos_codice.json .`, `python scripts/07_linea_base_sector_publico.py registros scripts/intermedios/codigos_codice.json .` y `python scripts/08_ordenes_cierre.py registros scripts/intermedios/codigos_codice.json .`.
+2. Doble clic en `actualizar.bat`. Ejecuta, desde la carpeta del proyecto y en este orden: `python scripts/03_unir_registros.py registros scripts/intermedios/codigos_codice.json .`, `python scripts/05_adjudicatarios_y_picos.py registros scripts/intermedios/codigos_codice.json sucesos_2017_2026.csv .`, `python scripts/06_cierre_competencia_calendario.py registros scripts/intermedios/codigos_codice.json .`, `python scripts/07_linea_base_sector_publico.py registros scripts/intermedios/codigos_codice.json .` `python scripts/08_ordenes_cierre.py registros scripts/intermedios/codigos_codice.json .`, `python scripts/10_servicios_cpv.py registros scripts/intermedios/codigos_codice.json .`, `python scripts/11_robustez.py registros scripts/intermedios/codigos_codice.json .` y `python scripts/09_prediccion_cierre_2026.py .`.
 3. Abre `powerbi/gasto_fin_ejercicio_defensa.pbip` y pulsa *Actualizar*.
 
 ### Enero de 2027: cierre de 2026
@@ -179,6 +196,7 @@ Formato de los CSV: separador `;`, decimales con coma, UTF-8 e importes en euros
 4. Añade la orden de cierre de 2026 (se publica en el BOE a mediados de noviembre) a `ordenes_cierre.csv` y como fila C26 de `sucesos_2017_2026.csv`, y sube `ANIOS = range(2017, 2026)` a 2027 en `scripts/08_ordenes_cierre.py`.
 5. En `scripts/07_linea_base_sector_publico.py` no hay que cambiar nada; en el modelo, las medidas de la línea base se limitan a `anio <= 2025`: súbelo a 2026 en la carpeta *10. Defensa frente al resto* de `Medidas`.
 6. `actualizar.bat`, abrir el PBIP, *Actualizar* y revisar el pico de 2026 en *Picos de cierre*.
+7. Abre `prediccion_cierre_2026.csv`: con 2026 completo, `actualizar.bat` ya habrá rellenado `valor_2026` y `resultado_2026`. Resume los aciertos y los fallos en `prediccion_cierre_2026.md`, sin cambiar las predicciones. Repítelo en junio de 2027 por las publicaciones tardías.
 
 Si la carpeta del proyecto no está en la misma ruta (por ejemplo, al descargar el repositorio), cambia el parámetro `RutaDatos` en *Transformar datos → Editar parámetros* (ruta terminada en `\`).
 
@@ -195,13 +213,15 @@ Si la carpeta del proyecto no está en la misma ruta (por ejemplo, al descargar 
 | Cómo se adjudica en el cierre | Oferta única, negociado sin publicidad y baja en nov-dic frente a ene-oct, peso de cada quincena del año y presupuesto, ejecución y cierre |
 | Defensa frente al resto | Peso de noviembre-diciembre de Defensa, el resto de la AGE y el resto del sector público por año; por tipo de administración (importe, número y menores); cambio de la competencia en el cierre; y ministerios ordenados por peso del cierre |
 | Frente al resto, por tipo | La misma comparación en suministros, servicios y obras: peso de noviembre-diciembre en importe y en menores, cambio de la competencia en el cierre y reparto del importe por tipo |
+| Qué servicios | Servicios 2017-2025 por división CPV: peso de noviembre-diciembre en Defensa y en el resto de la AGE, aportación de cada división a la diferencia, años por encima y oferta única; detalle de reparación y mantenimiento |
+| ¿Se sostiene? | Las cifras del resumen con 12 variantes de las reglas y la caída tras el plazo del compromiso con ventanas de 3 a 10 días hábiles |
 | Contexto económico | Importe ordinario en euros corrientes y constantes de 2025, gasto en defensa sobre PIB (OTAN e IGAE), IPC y tabla año a año |
 | Adjudicatarios | Rotación anual, concentración (HHI) y peso de los 10 mayores y de los habituales en nov-dic frente a ene-oct, y perfil agregado (especialistas, intermedios y dispersos por tramo de importe) |
 | Método y fuentes | Fuentes, reglas, línea base y tipos de contrato, límites y cifras de control |
 
 ### Modelo
 
-Esquema en estrella: `Adjudicaciones` (hechos) → `Meses` (calendario 2017–2026 con el estado de cada año), `Sucesos` → `Meses`, más `IGAE` como tabla de referencia y `Medidas` como tabla de medidas. `AdjudicatariosAnual`, `PerfilAdjudicatarios` (agregada, sin huellas) y `Picos` son tablas independientes (con su propia columna de año) que alimentan sus páginas, igual que `LineaBase` (todo el sector público). La ruta de los CSV es un parámetro (`RutaDatos`), la fecha/hora automática está desactivada y el modelo no permite medidas implícitas.
+Esquema en estrella: `Adjudicaciones` (hechos) → `Meses` (calendario 2017–2026 con el estado de cada año), `Sucesos` → `Meses`, más `IGAE` como tabla de referencia y `Medidas` como tabla de medidas. `AdjudicatariosAnual`, `PerfilAdjudicatarios` (agregada, sin huellas) y `Picos` son tablas independientes (con su propia columna de año) que alimentan sus páginas, igual que `LineaBase` (todo el sector público), `ServiciosDivision` y `ServiciosMantenimiento` (resúmenes por CPV), `Robustez` y `RobustezCalendario`. La ruta de los CSV es un parámetro (`RutaDatos`), la fecha/hora automática está desactivada y el modelo no permite medidas implícitas.
 
 | Medida | Definición |
 | --- | --- |
